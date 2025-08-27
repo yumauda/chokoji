@@ -156,7 +156,6 @@ textarea {
   resize: vertical;
 }
 
-input[type=checkbox],
 input[type=radio] {
   display: none;
 }
