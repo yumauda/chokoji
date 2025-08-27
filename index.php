@@ -1,3 +1,71 @@
+<?php
+// #################################################################
+// ### 入力ビュー
+// #################################################################
+
+// ### コンストラクタ ##############################################
+include_once(dirname(__FILE__) . '/include/config.php');
+include_once(dirname(__FILE__) . '/include/option.php');
+
+// error array
+$errors = array();
+
+// #################################################################
+
+// 次画面処理
+if (!empty($_POST['mode']) && $_POST['mode'] == "next") {
+
+  // お問い合わせ項目
+  if (empty($_POST['kind1']) && empty($_POST['kind2']) && empty($_POST['kind3'])) {
+    $errors['kind'] = "お問い合わせ種別を選択してください";
+  }
+
+  // 氏名
+  $_POST['name'] = spaceTrim($_POST['name']);
+  if ($_POST['name'] == "") {
+    $errors['name'] = "お名前を入力してください";
+  }
+
+  //電話番号
+  $_POST['tel'] = spaceTrim($_POST['tel']);
+  if ($_POST['tel'] == "") {
+    $errors['tel'] = "電話番号を入力してください";
+  }
+
+  // メール
+  $_POST['email'] = spaceTrim($_POST['email']);
+  if ($_POST['email'] == "") $errors['email'] = "メールアドレスを入力してください";
+  elseif (!preg_match($__regex, $_POST['email'])) $errors['email'] = "メールアドレスの形式が正しくありません";
+
+  $_POST['emailcheck'] = spaceTrim($_POST['emailcheck']);
+  if ($_POST['emailcheck'] == "") $errors['emailcheck'] = "確認用メールアドレスを入力してください";
+  elseif ($_POST['email'] != $_POST['emailcheck']) $errors['emailcheck'] = "メールアドレスが上と異なります";
+
+  // 次画面実処理
+  if (empty($errors)) {
+    unset($_POST['mode']);
+    $_SESSION['CONTACT'] = $_POST;
+
+    header("Location: confirm.php");
+    exit;
+  }
+} else {
+
+  if (!isset($_SESSION['token'])) {
+    $_SESSION['token'] = sha1(random_bytes(30));
+  }
+}
+
+// 前画面リターン
+if (!empty($_SESSION['CONTACT'])) {
+
+  $_POST = $_SESSION['CONTACT'];
+
+  unset($_POST['mode']);
+  unset($_SESSION['CONTACT']);
+}
+// #################################################################
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -452,8 +520,8 @@
                         <img decoding="async" loading="lazy" src="/images/common/plan25.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
-                   
-                    
+
+
                   </ul>
                   <p class="p-plan__attention">※オプションの押し売りは一切いたしません。ご希望に応じてのみご提案します。</p>
                 </div>
@@ -479,6 +547,93 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="top_area9" id="form">
+      <div class="l-inner">
+        <div class="block1">
+          <h2 class="mtitlebox">お問い合わせ</h2>
+
+          <p class="mex">
+            この度はご訪問いただき、誠にありがとうございました。<br class="pc" />改めて弊社担当者よりご連絡差し上げますので、下記フォームよりお問い合わせ内容をお送りください。<br class="pc" /><b>お急ぎの方は下記の電話番号にお掛けください。</b>
+          </p>
+
+          <div class="dialinfo_block">
+            <p class="tel"><b>050-3395-6726</b></p>
+            <p class="dialinfo">年中無休・24時間対応</p>
+          </div>
+
+          <form method="post" name="cform" action="#form">
+            <div class="form_block">
+              <table>
+                <tr>
+                  <th class="ne"><b>お問い合わせ種別</b></th>
+                  <td class="input2">
+                    <ul>
+                      <li><input type="checkbox" name="kind1" value="1" id="kind1" <?= rc_check('kind1', 1); ?> /><label for="kind1" class="checkbox"><?= $kindlist[1]; ?></label></li>
+                      <li><input type="checkbox" name="kind2" value="1" id="kind2" <?= rc_check('kind2', 1); ?> /><label for="kind2" class="checkbox"><?= $kindlist[2]; ?></label></li>
+                      <li><input type="checkbox" name="kind3" value="1" id="kind3" <?= rc_check('kind3', 1); ?> /><label for="kind3" class="checkbox"><?= $kindlist[3]; ?></label></li>
+                    </ul>
+                    <?= error_check($errors, 'kind'); ?>
+
+                  </td>
+                </tr>
+                <tr>
+                  <th class="ne"><b>お名前</b></th>
+                  <td class="input">
+                    <p class="tdline"><input type="text" name="name" value="<?= value_check('name'); ?>" placeholder="例：寺葬 太郎" class="input100"></p>
+                    <?= error_check($errors, 'name'); ?>
+
+                  </td>
+                </tr>
+                <tr>
+                  <th class="ne"><b>電話番号</b></th>
+                  <td class="input">
+                    <p class="tdline"><input type="text" name="tel" value="<?= value_check('tel'); ?>" placeholder="例：09012345678" class="input100"></p>
+                    <?= error_check($errors, 'tel'); ?>
+
+                  </td>
+                </tr>
+                <tr>
+                  <th class="ne"><b>メールアドレス</b></th>
+                  <td class="input">
+                    <p class="tdline"><input type="text" name="email" value="<?= value_check('email'); ?>" placeholder="例：info@manyodo.ltd（半角英数）" class="input100"></p>
+                    <?= error_check($errors, 'email'); ?>
+
+                    <p class="tdline"><input type="text" name="emailcheck" value="<?= value_check('emailcheck'); ?>" placeholder="確認のため再度入力してください。" class="input100"></p>
+                    <?= error_check($errors, 'emailcheck'); ?>
+
+                  </td>
+                </tr>
+                <tr>
+                  <th><b>ご住所</b></th>
+                  <td class="input">
+                    <p class="tdline"><input type="text" name="address" placeholder="例：東京都国分寺市本多1丁目1番地" value="<?= value_check('address'); ?>" class="input100"></p>
+                  </td>
+                </tr>
+                <tr>
+                  <th><b>お問い合わせ内容</b></th>
+                  <td class="input">
+                    <div class="tdline">
+                      <textarea name="message" class="tarea100"><?= value_check('message'); ?></textarea>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <p class="checkbox">
+              当サイトの「お問い合わせ」をご利用いただいた際に、お客様の個人情報の取扱いを行いますが、<br class="pc" />そのお客様の個人情報を、お客様の同意なしに第三者に開示することはありません。<br class="pc" />送信後、送信完了メールを記載いただいたメールアドレスに自動送信いたします。
+            </p>
+
+            <div class="btn_block fade op">
+              <p class="confirm"><a href="javascript:document.cform.submit();">確認ページへ</a></p>
+            </div>
+            <input type="hidden" name="ch_token" value="<?= $_SESSION['token']; ?>" />
+            <input type="hidden" name="mode" value="next" />
+          </form>
+        </div>
+      </div>
+
     </section>
   </main>
   <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
