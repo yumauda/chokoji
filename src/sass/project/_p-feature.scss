@@ -1,0 +1,111 @@
+@use "global" as *;
+
+.p-feature {
+  padding-bottom: rem(120);
+}
+
+.p-feature__content {
+}
+
+.p-feature__title {
+  text-align: center;
+}
+
+.p-feature__grid {
+  display: grid;
+  margin-top: rem(84);
+  grid-template-columns: repeat(3, 1fr);
+  gap: rem(44);
+}
+
+.p-feature__grid-list {
+  height: 100%;
+  position: relative;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
+}
+.p-feature__grid-list::before {
+  position: absolute;
+  content: attr(data-number) "";
+  background: #990000;
+  border-radius: 9999px;
+  color: #fff;
+  font-family: $second-font-family;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(22);
+  text-align: center;
+  width: rem(50);
+  height: rem(50);
+  top: rem(-24);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.p-feature__img {
+}
+.p-feature__img img {
+  aspect-ratio: 370 / 250;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.p-feature__detail {
+  background: #990000;
+  padding: rem(24);
+  max-height: rem(310);
+  height: 100%;
+}
+
+.p-feature__text-wrapper {
+  display: flex;
+  gap: rem(8);
+}
+.p-feature__text-wrapper + .p-feature__text-wrapper {
+  margin-top: rem(14);
+}
+.p-feature__text-wrapper svg {
+  max-width: rem(24);
+  min-width: rem(24);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+  margin-top: rem(4);
+}
+.p-feature__text-title {
+  text-align: center;
+  color: #fff;
+  font-family: $second-font-family;
+  font-size: rem(25);
+  font-weight: 600;
+  line-height: calc(36 / 25);
+  margin-bottom: rem(24);
+}
+
+.p-feature__text {
+  font-size: rem(16);
+  color: #fff;
+  font-weight: 400;
+}
+
+.p-feature__flex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(44);
+  margin-top: rem(84);
+  max-width: rem(786);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-feature__detail--white .p-feature__detail {
+  background: #fff;
+}
+.p-feature__detail--white .p-feature__text-title {
+  color: #333;
+}
+.p-feature__detail--white .p-feature__text {
+  color: #333;
+}
