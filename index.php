@@ -385,11 +385,7 @@ if (!empty($_SESSION['CONTACT'])) {
                 <div class="p-plan__kind">
                   <p class="p-plan__kind-text">プランに含まれるもの</p>
                   <ul class="p-plan__lists">
-                    <li class="p-plan__list">
-                      <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan1.jpg" alt="" width="120" height="120">
-                      </figure>
-                    </li>
+
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
                         <img decoding="async" loading="lazy" src="/images/common/plan1.jpg" alt="" width="120" height="120">
@@ -428,6 +424,11 @@ if (!empty($_SESSION['CONTACT'])) {
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
                         <img decoding="async" loading="lazy" src="/images/common/plan8.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan19.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
@@ -543,8 +544,515 @@ if (!empty($_SESSION['CONTACT'])) {
                   </figure>
                 </div>
               </div>
+              <div class="p-plan__kind-wrapper">
+                <div class="p-plan__kind">
+                  <p class="p-plan__kind-text">プランに含まれるもの</p>
+                  <ul class="p-plan__lists">
+
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan1.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan28.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan26.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan27.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan29.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan3.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan4.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan5.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan6.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan7.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan8.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan19.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan9.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan10.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan11.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan12.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan13.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan14.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan15.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan16.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan17.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan18.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                  </ul>
+                </div>
+                <div class="p-plan__kind">
+                  <p class="p-plan__kind-text">オプションサービス</p>
+                  <ul class="p-plan__lists">
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan30.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan31.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan21.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan22.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan23.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan24.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                    <li class="p-plan__list">
+                      <figure class="p-plan__list-img">
+                        <img decoding="async" loading="lazy" src="/images/common/plan25.jpg" alt="" width="120" height="120">
+                      </figure>
+                    </li>
+                  </ul>
+                  <p class="p-plan__attention">※オプションの押し売りは一切いたしません。ご希望に応じてのみご提案します。</p>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-habits">
+      <div class="l-inner">
+        <div class="p-habits__content">
+          <div class="p-habits__title">
+            <span class="c-section-title--small">永代供養</span>
+            <h3 class="c-section-title">個別安置の<span class="c-section-title--red">永</span>代供養も承ります</h3>
+          </div>
+          <div class="p-habits__text-wrapper">
+            <p class="p-habits__text">永代供養とはお寺に供養を託すことです。<br>
+              色々なご事情でお墓を管理していくことが難しい方、お墓を建立することが難しい方など当寺に供養を託してください。<br>
+              永代過去帳に名を残し、生きた証として永代に渡り、当寺で責任を持って供養し続けます。</p>
+          </div>
+          <ul class="p-habits__lists">
+            <li class="p-habits__list">
+              <figure class="p-habits__img p-habits__img--1">
+                <img decoding="async" loading="lazy" src="/images/common/habits_1.png" alt="全て個別安置" width="431" height="38">
+              </figure>
+              <div class="p-habits__detail">
+                <h4 class="p-habits__detail-title">全て個別安置</h4>
+                <p class="p-habits__detail-text">他の方と一緒にならない個別納骨です。</p>
+              </div>
+            </li>
+            <li class="p-habits__list">
+              <figure class="p-habits__img p-habits__img--1">
+                <img decoding="async" loading="lazy" src="/images/common/habits_2.png" alt="20年間個別安置" width="431" height="38">
+              </figure>
+              <div class="p-habits__detail">
+                <h4 class="p-habits__detail-title">20年間個別安置</h4>
+                <p class="p-habits__detail-text">20年後で合祀いたします。（ご希望により延長可能）</p>
+              </div>
+            </li>
+            <li class="p-habits__list">
+              <figure class="p-habits__img p-habits__img--1">
+                <img decoding="async" loading="lazy" src="/images/common/habits_3.png" alt="宗旨宗派不問" width="431" height="38">
+              </figure>
+              <div class="p-habits__detail">
+                <h4 class="p-habits__detail-title">宗旨宗派不問</h4>
+                <p class="p-habits__detail-text">宗旨宗派は問いません。どなたでもご利用可能です。</p>
+              </div>
+            </li>
+            <li class="p-habits__list">
+              <figure class="p-habits__img p-habits__img--4">
+                <img decoding="async" loading="lazy" src="/images/common/habits_4.png" alt="全て個別安置" width="431" height="38">
+              </figure>
+              <div class="p-habits__detail">
+                <h4 class="p-habits__detail-title">年2回の合同供養</h4>
+                <p class="p-habits__detail-text">春彼岸・お盆に丁重に供養いたします。</p>
+              </div>
+            </li>
+            <li class="p-habits__list">
+              <figure class="p-habits__img p-habits__img--1">
+                <img decoding="async" loading="lazy" src="/images/common/habits_5.png" alt="全て個別安置" width="431" height="38">
+              </figure>
+              <div class="p-habits__detail">
+                <h4 class="p-habits__detail-title">毎日の墓前供養</h4>
+                <p class="p-habits__detail-text">住職による朝夕の墓前供養を行います。</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="p-flow">
+      <div class="l-inner">
+        <div class="p-flow__content">
+          <div class="p-flow__title">
+            <span class="c-section-title--small">ご葬儀の流れ</span>
+            <h3 class="c-section-title">もしもの時に備えて事<span class="c-section-title--red">前</span>相談が安心です</h3>
+          </div>
+          <div class="p-flow__text-wrapper">
+            <p class="p-flow__text">初めての方でも安心してご利用いただけるよう、住職が最初から最後までしっかりとサポートいたします。<br>
+              ご不明な点やご要望があれば、どんなことでもお気軽にご相談ください。</p>
+          </div>
+          <div class="p-flow__block">
+            <div class="p-flow__line">
+              <img decoding="async" loading="lazy" src="/images/common/flow_line.png" alt="" width="431" height="38">
+            </div>
+            <div class="p-flow__right">
+              <div class="p-flow__row">
+                <figure class="p-flow__img">
+                  <img decoding="async" loading="lazy" src="/images/common/flow_img1.jpg" alt="ご連絡" width="300" height="200">
+                </figure>
+                <div class="p-flow__detail">
+                  <div class="p-flow__detail-top">
+                    <p class="p-flow__num">01</p>
+                    <h4 class="p-flow__detail-title">ご連絡</h4>
+                  </div>
+                  <div class="p-flow__detail-textWrapper">
+                    <p class="p-flow__detail-text">もしもの時には、まずお電話ください。24時間いつでもご連絡を受け付けております。ご連絡をいただき次第、すぐにご自宅や病院などご指定の場所までお迎えに上がります。</p>
+                  </div>
+                  <div class="p-flow__tel-wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="19px" height="19px">
+                      <path fill-rule="evenodd" fill="rgb(153, 0, 0)"
+                        d="M17.499,12.508 C16.327,12.508 15.179,12.326 14.091,11.966 C13.560,11.782 12.957,11.925 12.607,12.280 L10.450,13.910 C7.975,12.588 6.391,11.004 5.088,8.548 L6.673,6.442 C7.072,6.043 7.215,5.459 7.044,4.911 C6.682,3.816 6.498,2.667 6.498,1.496 C6.498,0.670 5.825,-0.003 4.998,-0.003 L1.497,-0.003 C0.670,-0.003 -0.003,0.670 -0.003,1.496 C-0.003,11.147 7.849,18.999 17.499,18.999 C18.326,18.999 18.999,18.326 18.999,17.498 L18.999,14.008 C18.999,13.181 18.326,12.508 17.499,12.508 Z" />
+                    </svg>
+                    <a href="tel:0268422975" class="p-flow__tel">0268−42−2975</a>
+                  </div>
+                </div>
+              </div>
+              <div class="p-flow__row">
+                <figure class="p-flow__img">
+                  <img decoding="async" loading="lazy" src="/images/common/flow_img2.jpg" alt="ご連絡" width="300" height="200">
+                </figure>
+                <div class="p-flow__detail">
+                  <div class="p-flow__detail-top">
+                    <p class="p-flow__num">02</p>
+                    <h4 class="p-flow__detail-title">お迎え</h4>
+                  </div>
+                  <div class="p-flow__detail-textWrapper">
+                    <p class="p-flow__detail-text">ご遺体を丁寧にお迎えし、長光寺またはご希望の安置場所へご案内します。</p>
+                  </div>
+
+                </div>
+              </div>
+              <div class="p-flow__row">
+                <figure class="p-flow__img">
+                  <img decoding="async" loading="lazy" src="/images/common/flow_img3.jpg" alt="ご遺体安置・枕経" width="300" height="200">
+                </figure>
+                <div class="p-flow__detail">
+                  <div class="p-flow__detail-top">
+                    <p class="p-flow__num">03</p>
+                    <h4 class="p-flow__detail-title">ご遺体安置・枕経</h4>
+                  </div>
+                  <div class="p-flow__detail-textWrapper">
+                    <p class="p-flow__detail-text">安置後、ご家族が落ち着けるよう配慮いたします。<br>
+                      ご安置後、住職が枕経（まくらきょう）をお勤めし、故人様のご冥福をお祈りします。</p>
+                  </div>
+
+                </div>
+              </div>
+              <div class="p-flow__row">
+                <figure class="p-flow__img">
+                  <img decoding="async" loading="lazy" src="/images/common/flow_img4.jpg" alt="喪主様との打ち合わせ" width="300" height="200">
+                </figure>
+                <div class="p-flow__detail">
+                  <div class="p-flow__detail-top">
+                    <p class="p-flow__num">04</p>
+                    <h4 class="p-flow__detail-title">喪主様との打ち合わせ</h4>
+                  </div>
+                  <div class="p-flow__detail-textWrapper">
+                    <p class="p-flow__detail-text">ご家族のご希望やご事情を伺いながら、葬儀の内容や日程を丁寧にご相談・ご提案いたします。</p>
+                  </div>
+
+                </div>
+              </div>
+              <div class="p-flow__row">
+                <figure class="p-flow__img">
+                  <img decoding="async" loading="lazy" src="/images/common/flow_img5.jpg" alt="お通夜" width="300" height="200">
+                </figure>
+                <div class="p-flow__detail">
+                  <div class="p-flow__detail-top">
+                    <p class="p-flow__num">05</p>
+                    <h4 class="p-flow__detail-title">お通夜</h4>
+                  </div>
+                  <div class="p-flow__detail-textWrapper">
+                    <p class="p-flow__detail-text">ご家族・ご親族で静かにお別れの時間をお過ごしいただきます。</p>
+                  </div>
+
+                </div>
+              </div>
+              <div class="p-flow__row">
+                <figure class="p-flow__img">
+                  <img decoding="async" loading="lazy" src="/images/common/flow_img6.jpg" alt="ご葬儀・初七日法要" width="300" height="200">
+                </figure>
+                <div class="p-flow__detail">
+                  <div class="p-flow__detail-top">
+                    <p class="p-flow__num">06</p>
+                    <h4 class="p-flow__detail-title">ご葬儀・初七日法要</h4>
+                  </div>
+                  <div class="p-flow__detail-textWrapper">
+                    <p class="p-flow__detail-text">本堂にて、心を込めてご葬儀と初七日法要を執り行います。</p>
+                  </div>
+
+                </div>
+              </div>
+              <div class="p-flow__row">
+                <figure class="p-flow__img">
+                  <img decoding="async" loading="lazy" src="/images/common/flow_img7.jpg" alt="火葬" width="300" height="200">
+                </figure>
+                <div class="p-flow__detail">
+                  <div class="p-flow__detail-top">
+                    <p class="p-flow__num">07</p>
+                    <h4 class="p-flow__detail-title">火葬</h4>
+                  </div>
+                  <div class="p-flow__detail-textWrapper">
+                    <p class="p-flow__detail-text">火葬場へご出棺し、故人様をお見送りします。</p>
+                  </div>
+
+                </div>
+              </div>
+              <div class="p-flow__row">
+                <figure class="p-flow__img">
+                  <img decoding="async" loading="lazy" src="/images/common/flow_img8.jpg" alt="火収骨・解散葬" width="300" height="200">
+                </figure>
+                <div class="p-flow__detail">
+                  <div class="p-flow__detail-top">
+                    <p class="p-flow__num">07</p>
+                    <h4 class="p-flow__detail-title">収骨・解散</h4>
+                  </div>
+                  <div class="p-flow__detail-textWrapper">
+                    <p class="p-flow__detail-text">お骨上げの後、解散となります。ご希望により、その後の法要や永代供養もご案内いたします。</p>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-other">
+      <div class="l-inner">
+        <div class="p-other__content">
+          <div class="p-other__title">
+            <span class="c-section-title--small">他社との比較</span>
+            <h3 class="c-section-title">提示価格と実際にかかる料金に<span class="c-section-title--red">差</span>額が少ない料金設定</h3>
+          </div>
+          <div class="p-other__table">
+            <div class="p-price-table">
+              <table class="p-price-table__table">
+                <thead class="p-price-table__head">
+                  <tr class="p-price-table__row">
+                    <th class="p-price-table__heading text-left">会社・プラン</th>
+                    <th class="p-price-table__heading bg-990000">
+                      <p class="p-price-table__heading-text">長光寺の<br>お寺葬基本プラン</p>
+                    </th>
+                    <th class="p-price-table__heading">A社（大手）<br>家族葬プラン</th>
+                    <th class="p-price-table__heading">B社（新聞）<br>家族葬プラン</th>
+                  </tr>
+                </thead>
+                <tbody class="p-price-table__body">
+                  <tr class="p-price-table__row">
+                    <th class="p-price-table__item-title">初期提示価格</th>
+                    <td class="p-price-table__item bg-fffff1 color-red border-inline-red">50万円</td>
+                    <td class="p-price-table__item">40〜70万円</td>
+                    <td class="p-price-table__item">10〜40万円</td>
+                  </tr>
+                  <tr class="p-price-table__row">
+                    <th class="p-price-table__item-title bg-fbe7e7">総額の目安</th>
+                    <td class="p-price-table__item bg-fafac7 color-red border-inline-red"><span class="p-price-table__item-num">50</span>万円＋火葬料</td>
+                    <td class="p-price-table__item bg-fbe7e7"><span class="p-price-table__item-num">80〜200</span>万円以上</td>
+                    <td class="p-price-table__item bg-fbe7e7"><span class="p-price-table__item-num">70〜120</span>万円以上</td>
+                  </tr>
+                  <tr class="p-price-table__row">
+                    <th class="p-price-table__item-title">お布施</th>
+                    <td class="p-price-table__item bg-fffff1 border-inline-red">プラン内に含む</td>
+                    <td class="p-price-table__item">別途：15〜50万以上</td>
+                    <td class="p-price-table__item">別途：5〜20万</td>
+                  </tr>
+                  <tr class="p-price-table__row">
+                    <th class="p-price-table__item-title bg-f5f5f5">戒名料</th>
+                    <td class="p-price-table__item bg-fafac7 border-inline-red">プラン内に含む</td>
+                    <td class="p-price-table__item bg-f5f5f5">別途：10〜100万</td>
+                    <td class="p-price-table__item bg-f5f5f5">別途：10〜100万</td>
+                  </tr>
+                  <tr class="p-price-table__row">
+                    <th class="p-price-table__item-title">式場使用料</th>
+                    <td class="p-price-table__item  bg-fffff1 border-inline-red">プラン内に含む</td>
+                    <td class="p-price-table__item">別途：5〜15万</td>
+                    <td class="p-price-table__item">別途：5万程度</td>
+                  </tr>
+                  <tr class="p-price-table__row">
+                    <th class="p-price-table__item-title bg-f5f5f5">互助会・会員制度</th>
+                    <td class="p-price-table__item bg-fafac7 color-red border-inline-red">無し</td>
+                    <td class="p-price-table__item bg-f5f5f5 color-red">互助会制度あり</td>
+                    <td class="p-price-table__item bg-f5f5f5 color-red">会員制度あり</td>
+                  </tr>
+                  <tr class="p-price-table__row">
+                    <th class="p-price-table__item-title">安置日数</th>
+                    <td class="p-price-table__item bg-fffff1 border-inline-red">日数の制限無し</td>
+                    <td class="p-price-table__item">2日間程度</td>
+                    <td class="p-price-table__item">1日分</td>
+                  </tr>
+                  <tr class="p-price-table__row">
+                    <th class="p-price-table__item-title bg-f5f5f5">追加費用</th>
+                    <td class="p-price-table__item bg-fafac7 border-inline-red border-bottom-red">火葬料のみ<br>（2万以内）</td>
+                    <td class="p-price-table__item bg-f5f5f5 color-red">お布施・戒名料・式場料などが<br>追加費用として計上</td>
+                    <td class="p-price-table__item bg-f5f5f5 color-red">お布施・戒名料・式場料などが<br>追加費用として計上</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+          <div class="p-other__attention">
+            <div class="p-other__attention-titleWrapper">
+              <p class="p-other__attention-title">業界の料金や制度に関する注意点</p>
+            </div>
+            <div class="p-other__box">
+              <p class="p-other__box-text">上記の比較表を見てもらえれば分かる通り、大手の葬儀会社やネット集客型新興業者の場合、<span>「最初の提示価格を極端に安く見せ、実際には必ず必要となる費用を後から追加していく」</span>というビジネスモデルなので、最終的には高額な料金が発生する事にある場合が多いです。</p>
+              <p class="p-other__box-text">そして、葬儀社を選ぶ際、必ず目にするのが<span>「互助会」や「会員価格」</span>という言葉です。これらは、お客様のための制度に見えて、実は複雑な仕組みを抱えています。「互助会」とは、 月々積み立てにて将来の葬儀に備える仕組みです。しかし、実際には、積立金で賄えるのは基本プランのごく一部で、積立金で葬儀が全て賄えるわけではありません。さらに、一度入会すると高額な解約手数料がかかるため、他の葬儀社に頼みたくても乗り換えにくいという「囲い込み」の側面もあります。</p>
+              <p class="p-other__box-text">「会員価格」は、数千円～1万円程度の入会金で「会員」となり、割引価格で葬儀ができる制度です。これは、あらかじめ「一般価格」を高く設定しておくことで、会員価格がお得に見えるようにした価格戦略の場合が多いです。結局は入会が前提となっており、誰にでも分かりやすい料金体系とは言えません。</p>
+              <p class="p-other__box-text">そういった業界の典型とは違い、長光寺のお寺葬では、提示価格に対し、あらゆる料金をプラン内に含んでいますので、最終的に高額な料金が発生する事は決してありません。「互助会」や「会員制度」もありません。<span class="p-other__box-text--red">「ご遺族の悲しみや不安につけこむようなことは、決してしない」</span>というスタンスで運営しております。</p>
+              <p class="p-other__box-text">その分、他の葬儀社と違うのは、<span>ご家族様にも少しだけ準備に携わっていただくこと</span>があります。一見すると手間に感じられるかもしれませんが、故人様のために何かを選んだり、準備をしたりするそのひと時こそが、故人様との最後の大切な対話の時間となります。その少しの手間が、単なる流れ作業の儀式を『忘れられない、心からのお見送り』へと変えてくれると考えております。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-qa">
+      <div class="l-inner">
+        <div class="p-qa__title">
+          <span class="c-section-title--small">他社との比較</span>
+          <h3 class="c-section-title">皆様からよくご<span class="c-section-title--red">質</span>問いただく内容はこちら</h3>
+        </div>
+        <div class="p-qa__block">
+          <details class="p-qa__content js-details">
+            <summary class="p-qa__summary js-summary">
+              <p class="p-qa__q">Q.</p>
+              <h4 class="p-qa__ttl">
+                事前相談はできますか？
+              </h4>
+            </summary>
+            <div class="p-qa__inner js-content">
+              <div class="p-qa__wrap">
+                <div class="p-qa__content p-qa__content--open01">
+                  <p class="p-qa__txt">ぜひ事前相談をお勧めいたします。</p>
+                  <p class="p-qa__txt">葬儀は人生で最も大切な決断の一つです。どんな住職に葬儀をしてもらうのか、どんなお堂で大切な人を送るか、できる限り事前にご確認いただきたいと思います。</p>
+                  <p class="p-qa__txt">住職が直接お堂をご案内し、葬儀の流れや本堂の雰囲気を実際にご覧いただけます。ご不安な点やご質問など、どんなことでもお気軽にお聞かせください。電話やフォームからもご相談いただけます。</p>
+                </div>
+              </div>
+            </div>
+          </details>
+          <details class="p-qa__content p-qa__content--last js-details">
+            <summary class="p-qa__summary js-summary">
+              <p class="p-qa__q">Q.</p>
+              <h4 class="p-qa__ttl">
+                事前相談はできますか？
+              </h4>
+            </summary>
+            <div class="p-qa__inner js-content">
+              <div class="p-qa__wrap">
+                <div class="p-qa__content p-qa__content--open01">
+                  <p class="p-qa__txt">ぜひ事前相談をお勧めいたします。</p>
+                  <p class="p-qa__txt">葬儀は人生で最も大切な決断の一つです。どんな住職に葬儀をしてもらうのか、どんなお堂で大切な人を送るか、できる限り事前にご確認いただきたいと思います。</p>
+                  <p class="p-qa__txt">住職が直接お堂をご案内し、葬儀の流れや本堂の雰囲気を実際にご覧いただけます。ご不安な点やご質問など、どんなことでもお気軽にお聞かせください。電話やフォームからもご相談いただけます。</p>
+                </div>
+              </div>
+            </div>
+          </details>
         </div>
       </div>
     </section>

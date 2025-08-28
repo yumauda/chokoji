@@ -1,0 +1,76 @@
+@use "global" as *;
+
+.p-other {
+  padding-top: rem(100);
+  background: #f9f0f0;
+  padding-bottom: rem(120);
+}
+
+.p-other__content {
+}
+
+.p-other__title {
+  text-align: center;
+}
+
+.p-other__table {
+  margin-top: rem(56);
+}
+.p-other__attention {
+  background: #fff;
+  border: 1px solid #cc0000;
+  padding-top: rem(48);
+  padding-left: rem(40);
+  padding-right: rem(40);
+  border-radius: rem(10);
+  padding-bottom: rem(48);
+  max-width: rem(1200);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: rem(64);
+}
+.p-other__attention-titleWrapper {
+  position: relative;
+  margin-top: rem(-64);
+}
+.p-other__attention-titleWrapper::before {
+  position: absolute;
+  content: "";
+  background: #fff;
+  width: rem(330);
+  height: 3px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.p-other__attention-title {
+  color: #cc0000;
+  font-size: rem(22);
+  font-weight: 700;
+  font-family: $second-font-family;
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+
+.p-other__box {
+  margin-top: rem(28);
+}
+
+.p-other__box-text {
+  font-size: rem(16);
+  color: #333;
+  line-height: 2;
+}
+.p-other__box-text + .p-other__box-text {
+  margin-top: rem(32);
+}
+.p-other__box-text span {
+  font-weight: 700;
+}
+
+.p-other__box-text--red {
+  color: #cc0000;
+}
