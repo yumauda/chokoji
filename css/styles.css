@@ -2902,6 +2902,86 @@ th {
   margin-top: 2rem;
 }
 
+.p-temple {
+  padding-top: 100px;
+  padding-top: 6.25rem;
+  padding-bottom: 120px;
+  padding-bottom: 7.5rem;
+  background-color: #f9f0f0;
+}
+
+.p-temple__title {
+  text-align: center;
+}
+
+.p-temple__content {
+  max-width: 1000px;
+  max-width: 62.5rem;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.p-temple__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  gap: 56px;
+  gap: 3.5rem;
+  margin-top: 56px;
+  margin-top: 3.5rem;
+}
+
+.p-temple__img {
+  max-width: 480px;
+  max-width: 30rem;
+  width: 100%;
+}
+
+.p-temple__img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.p-temple__text-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 474px;
+  max-width: 29.625rem;
+  width: 100%;
+}
+
+.p-temple__bottomText-wrapper {
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+
+.p-temple__text {
+  color: #333;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.p-temple__text + .p-temple__text {
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+
+.p-temple__text-right {
+  text-align: right;
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+
 .c-section-title--small {
   color: #990000;
   font-size: 16px;

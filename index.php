@@ -1056,6 +1056,40 @@ if (!empty($_SESSION['CONTACT'])) {
         </div>
       </div>
     </section>
+    <section class="p-temple">
+      <div class="l-inner">
+        <div class="p-temple__title">
+          <span class="c-section-title--small">運営寺院</span>
+          <h3 class="c-section-title">ご<span class="c-section-title--red">縁</span>あってこのページをご覧の皆さまへ</h3>
+        </div>
+        <div class="p-temple__content">
+          <div class="p-temple__row">
+            <figure class="p-temple__img">
+              <img decoding="async" loading="lazy" src="/images/common/temple_img.jpg" alt="寺葬のお寺" width="1000" height="667">
+            </figure>
+            <div class="p-temple__text-wrapper">
+              <p class="p-temple__text">突然のご逝去に、気持ちも段取りも追いつかない——<br>
+                その不安や戸惑いを、私は何度もご家族のそばで見てきました。<br>
+                お葬式は、故人さまを「霊山浄土」へお送りする大切な儀式であると同時に、残された私たちが“いまをどう生きるか”を受け止めるための時間でもあります。<br>
+                だからこそ、難しい手配や費用に関する心配で、その大切なひとときを曇らせてほしくありません。その想いを形にしたのが、私どもの「お寺葬」です。</p>
+              <p class="p-temple__text">本堂という祈りの場で、心静かに故人さまと向き合い、お見送りいただけるよう、必要なご用意はお寺が窓口となって一つに整えます。</p>
+            </div>
+
+          </div>
+          <div class="p-temple__bottomText-wrapper">
+            <p class="p-temple__text">お迎え・ご安置から、祭壇やお花、遺影写真の準備、通夜・葬儀・初七日のお勤めまで——<br>複雑な費用計算に悩まされることなく、明確な一つのご布施で必要なものを全て整えさせていただきます。流れを最初に丁寧にご説明し、あとから迷いが生じないよう、住職が終始伴走いたします。</p>
+            <p class="p-temple__text">手配に追われることなく、ただ故人さまとの思い出を語り合う。<br>
+              気兼ねなく、心からの「ありがとう」を伝える。</p>
+            <p class="p-temple__text">家族葬という温かな輪の中で、「いのち」のつながりと「ご縁」の尊さを、静かに見つめ直すお手伝いをいたします。<br>
+              宗旨・宗派は問いません。檀家でない方もどうぞご安心ください。<br>
+              まずはどんなことでもご相談ください。私どもが誠心誠意、寄り添ってまいります。</p>
+          </div>
+          <div class="p-temple__text-right">
+            <p class="p-temple__text">合掌<br>長光寺 住職 小島 一洋</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="top_area9" id="form">
       <div class="l-inner">
         <div class="block1">
@@ -1141,8 +1175,8 @@ if (!empty($_SESSION['CONTACT'])) {
           </form>
         </div>
       </div>
-
     </section>
+
   </main>
   <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
 </body>
