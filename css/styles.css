@@ -401,6 +401,97 @@ select::-ms-expand {
   margin-left: auto;
 }
 
+.p-contact__table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate; /* ← ここが重要 */
+  border-spacing: 0 30px;
+}
+
+.p-contact__table th {
+  width: 257px;
+  width: 16.0625rem;
+  padding-top: 16px;
+  padding-top: 1rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.p-contact__table tr:first-child th {
+  padding-top: 2px;
+  padding-top: 0.125rem;
+}
+
+.p-contact__table tbody tr {
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
+}
+
+.p-contact__table input[type=text],
+.p-contact__table input[type=tel],
+.p-contact__table input[type=email] {
+  width: 100%;
+  padding: 16px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.p-contact__table textarea {
+  width: 100%;
+  padding: 16px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background: #fff;
+  height: 250px;
+  height: 15.625rem;
+  resize: none;
+}
+
+.tdline + .tdline {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+
+.checkbox {
+  text-align: center;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  color: #333;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.btn_block {
+  margin-top: 56px;
+  margin-top: 3.5rem;
+}
+
+.input2 ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  gap: 0.5rem;
+}
+
+.checkbox {
+  margin-top: 0;
+  margin-top: initial;
+}
+
+input[type=checkbox] {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#dedede)) !important;
+  background: linear-gradient(to bottom, #ededed, #dedede) !important;
+  border: 1px solid #ccc !important;
+}
+
 .p-feature {
   padding-bottom: 120px;
   padding-bottom: 7.5rem;
@@ -842,6 +933,7 @@ label[for] {
   width: 100%;
   line-height: 1.8;
   height: 250px;
+  height: 15.625rem;
   background-color: #fff;
   border: 1px solid #e2e1e2;
 }
@@ -862,6 +954,7 @@ label[for] {
 .btn_block p {
   margin: 0 auto;
   width: 250px;
+  width: 15.625rem;
 }
 
 .btn_block p a {
@@ -1010,7 +1103,7 @@ label[for] {
 ::-moz-placeholder,
 :-ms-input-placeholder,
 ::-placeholder {
-  color: #AAA;
+  color: #aaa;
 }
 
 /* Interactive
@@ -1258,7 +1351,7 @@ th {
 .planbox {
   margin: 0 24px 20px 0;
   width: calc(50% - 12px);
-  background-color: #FFF;
+  background-color: #fff;
   -webkit-box-shadow: 0 0 10px rgba(136, 136, 136, .3);
           box-shadow: 0 0 10px rgba(136, 136, 136, .3);
 }
@@ -1295,7 +1388,7 @@ th {
 .planbox h3 b {
   display: block;
   line-height: 30px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 24px;
   font-size: 1.5rem;
@@ -1378,7 +1471,7 @@ th {
   width: 40px;
   line-height: 40px;
   text-align: center;
-  color: #FFF;
+  color: #fff;
   font-size: 32px;
   font-size: 2rem;
   font-weight: 600;
@@ -1487,7 +1580,7 @@ th {
 }
 
 .area4_inblock .inblock1 .plan_body {
-  color: #FFF;
+  color: #fff;
   position: relative;
 }
 
@@ -1505,7 +1598,7 @@ th {
   left: 0;
   bottom: 0;
   content: "";
-  background-color: #FFF;
+  background-color: #fff;
   width: 60px;
   height: 1px;
 }
@@ -1580,7 +1673,7 @@ th {
   width: 100px;
   line-height: 26px;
   text-align: center;
-  background-color: #FFF;
+  background-color: #fff;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -1611,8 +1704,8 @@ th {
 
 .area4_inblock .inblock2 .exbox {
   padding: 15px 20px;
-  color: #FFF;
-  border: 1px solid #FFF;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 .area4_inblock .inblock2 .exbox p {
@@ -1622,7 +1715,7 @@ th {
 .area4_inblock .inblock2 .stitle {
   margin: 0 0 20px;
   line-height: 1;
-  color: #FFF;
+  color: #fff;
   font-size: 32px;
   font-size: 2rem;
 }
@@ -1638,7 +1731,7 @@ th {
   top: 50%;
   right: 0;
   content: "";
-  background-color: #FFF;
+  background-color: #fff;
   width: 50px;
   height: 1px;
 }
@@ -1649,7 +1742,7 @@ th {
 
 .point_block .pointbox {
   margin: 0 0 25px;
-  color: #FFF;
+  color: #fff;
 }
 
 .point_block .pointbox:last-child {
@@ -1703,7 +1796,7 @@ th {
 .setbox {
   margin: 0 20px 20px 0;
   width: calc(50% - 10px);
-  color: #FFF;
+  color: #fff;
 }
 
 .setbox:nth-child(2n) {
@@ -1727,7 +1820,7 @@ th {
 }
 
 .area4_inblock .inblock2 .sub {
-  color: #FFF;
+  color: #fff;
   font-size: 20.8px;
   font-size: 1.3rem;
 }
@@ -1780,7 +1873,7 @@ th {
 .top_area5 .infobox .databox .datainbox td {
   padding: 10px;
   line-height: 1.8;
-  background-color: #FFF;
+  background-color: #fff;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
@@ -1853,7 +1946,7 @@ th {
 }
 .top_area5-2 .list_block .splisttable table {
   width: 450px;
-  background-color: #FFF;
+  background-color: #fff;
   border-top: 1px solid #cbcccc;
   border-left: 1px solid #cbcccc;
 }
@@ -1961,7 +2054,7 @@ th {
 .top_area6 .data_table td.td2 {
   text-align: justify;
   width: 210px;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .top_area6 .sub {
@@ -1983,7 +2076,7 @@ th {
 .faqbox {
   margin: 0 0 20px;
   padding: 12px 15px;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 5px;
   -webkit-box-shadow: 0 0 10px rgba(136, 136, 136, .3);
           box-shadow: 0 0 10px rgba(136, 136, 136, .3);
@@ -2031,7 +2124,7 @@ th {
 }
 
 .top_area8 .data_block {
-  background-color: #FFF;
+  background-color: #fff;
   border-top: 1px solid #cccbcc;
 }
 
@@ -2165,7 +2258,7 @@ th {
   width: 100%;
   line-height: 40px;
   height: 38px;
-  background-color: #FFF;
+  background-color: #fff;
   border: 1px solid #e2e1e2;
 }
 
@@ -2174,13 +2267,14 @@ th {
   width: 100%;
   line-height: 1.8;
   height: 250px;
-  background-color: #FFF;
+  height: 15.625rem;
+  background-color: #fff;
   border: 1px solid #e2e1e2;
 }
 
 .top_area9 .form_block td .error {
   margin: 0 0 10px;
-  color: #C00;
+  color: #c00;
 }
 
 .top_area9 .form_block td .error:last-child {
@@ -2197,13 +2291,27 @@ th {
 }
 
 .btn_block p a {
-  display: block;
-  line-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
-  color: #FFF;
-  font-weight: 600;
-  background-color: #8f5e9a;
-  border-radius: 50px;
+  color: #fff;
+  font-weight: 400;
+  background-color: #cc0000;
+  border-radius: 9999px;
+  font-size: 16px;
+  font-size: 1rem;
+  width: 250px;
+  width: 15.625rem;
+  font-weight: 400;
+  height: 60px;
+  height: 3.75rem;
 }
 
 .btn_block p.back {
@@ -2242,7 +2350,7 @@ th {
 }
 .binfoblock1 h2 {
   margin: 0 0 15px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
 }
 
@@ -2255,7 +2363,7 @@ th {
 }
 
 .binfoblock1 p {
-  color: #FFF;
+  color: #fff;
 }
 
 .binfoblock2 {
@@ -2279,7 +2387,7 @@ th {
   background-size: auto 22px;
   padding: 0 0 0 37px;
   line-height: 24px;
-  color: #FFF;
+  color: #fff;
   font-size: 48px;
   font-size: 3rem;
   letter-spacing: 1px;
@@ -2287,7 +2395,7 @@ th {
 
 .binfoblock2 .tel_ex {
   margin: 0 0 15px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
 }
 
@@ -2301,7 +2409,7 @@ th {
   display: block;
   line-height: 70px;
   text-align: center;
-  color: #FFF;
+  color: #fff;
   background-color: #8f5e99;
   border-radius: 70px;
 }
@@ -2316,7 +2424,7 @@ th {
 }
 
 .binfoblock2 .dl {
-  color: #FFF;
+  color: #fff;
   text-align: center;
 }
 

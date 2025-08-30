@@ -43,6 +43,10 @@
 			if(!empty($listdata)){ $listdata .= ', '; }
 			$listdata .= $kindlist[2];
 		}
+		if(!empty($data["kind4"]) && $data["kind4"] == "1"){
+			if(!empty($listdata)){ $listdata .= ', '; }
+			$listdata .= $kindlist[2];
+		}
 
 		$data['ip'] = $_SERVER['REMOTE_ADDR'];
 		$data['agent'] = $_SERVER['HTTP_USER_AGENT'];

@@ -1178,7 +1178,7 @@ if (!empty($_SESSION['CONTACT'])) {
 
           <form method="post" name="cform" action="#form" class="p-contact__form">
             <div class="form_block">
-              <table>
+              <table class="p-contact__table">
                 <tr>
                   <th class="ne"><b>お問い合わせ種別</b></th>
                   <td class="input2">
@@ -1186,6 +1186,7 @@ if (!empty($_SESSION['CONTACT'])) {
                       <li><input type="checkbox" name="kind1" value="1" id="kind1" <?= rc_check('kind1', 1); ?> /><label for="kind1" class="checkbox"><?= $kindlist[1]; ?></label></li>
                       <li><input type="checkbox" name="kind2" value="1" id="kind2" <?= rc_check('kind2', 1); ?> /><label for="kind2" class="checkbox"><?= $kindlist[2]; ?></label></li>
                       <li><input type="checkbox" name="kind3" value="1" id="kind3" <?= rc_check('kind3', 1); ?> /><label for="kind3" class="checkbox"><?= $kindlist[3]; ?></label></li>
+                      <li><input type="checkbox" name="kind4" value="1" id="kind4" <?= rc_check('kind4', 1); ?> /><label for="kind4" class="checkbox"><?= $kindlist[4]; ?></label></li>
                     </ul>
                     <?= error_check($errors, 'kind'); ?>
 
@@ -1240,7 +1241,7 @@ if (!empty($_SESSION['CONTACT'])) {
             </p>
 
             <div class="btn_block fade op">
-              <p class="confirm"><a href="javascript:document.cform.submit();">確認ページへ</a></p>
+              <p class="confirm"><a href="javascript:document.cform.submit();">確認する</a></p>
             </div>
             <input type="hidden" name="ch_token" value="<?= $_SESSION['token']; ?>" />
             <input type="hidden" name="mode" value="next" />

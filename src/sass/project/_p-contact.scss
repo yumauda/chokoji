@@ -72,3 +72,63 @@
   margin-right: auto;
   margin-left: auto;
 }
+.p-contact__table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate; /* ← ここが重要 */
+  border-spacing: 0 30px;
+}
+.p-contact__table th {
+  width: rem(257);
+  padding-top: rem(16);
+  font-size: rem(18);
+  font-weight: 700;
+  color: #333;
+}
+.p-contact__table tr:first-child th {
+  padding-top: rem(2);
+}
+.p-contact__table tbody tr {
+  margin-bottom: rem(30);
+}
+.p-contact__table input[type="text"],
+.p-contact__table input[type="tel"],
+.p-contact__table input[type="email"] {
+  width: 100%;
+  padding: rem(16);
+  border: 1px solid #ccc;
+  background: #fff;
+}
+.p-contact__table textarea {
+  width: 100%;
+  padding: rem(16);
+  border: 1px solid #ccc;
+  background: #fff;
+  height: rem(250);
+  resize: none;
+}
+.tdline + .tdline {
+  margin-top: rem(24);
+}
+.checkbox {
+  text-align: center;
+  margin-top: rem(24);
+  color: #333;
+  font-size: rem(16);
+  line-height: 1.8;
+}
+.btn_block {
+  margin-top: rem(56);
+}
+.input2 ul li {
+  display: flex;
+  align-items: center;
+  gap: rem(8);
+}
+.checkbox {
+  margin-top: initial;
+}
+input[type="checkbox"] {
+  background: linear-gradient(to bottom, #ededed, #dedede) !important;
+  border: 1px solid #ccc !important;
+}
