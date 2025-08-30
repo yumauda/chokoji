@@ -13,6 +13,17 @@ jQuery(function ($) {
       // 画面が指定pxより上ならボタンを非表示
       topBtn.fadeOut();
     }
+    
+    // 300pxスクロール時に.is-scrolledクラスを付与
+    if ($(this).scrollTop() > 300) {
+      $(".p-header__tel-logo svg path").addClass("is-scrolled");
+      $(".p-header__tel-text").addClass("is-scrolled");
+      $(".p-header__tel").addClass("is-scrolled");
+    } else {
+      $(".p-header__tel-logo svg path").removeClass("is-scrolled");
+      $(".p-header__tel-text").removeClass("is-scrolled");
+      $(".p-header__tel").removeClass("is-scrolled");
+    }
   });
 
   // ボタンをクリックしたらスクロールして上に戻る
