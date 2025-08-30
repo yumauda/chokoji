@@ -1,0 +1,114 @@
+@use "global" as *;
+
+.p-floating {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #fff;
+  padding-top: rem(20);
+  padding-bottom: rem(20);
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  transition: 0.3s ease-in-out;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+}
+.p-floating.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+.p-floating__content {
+  display: flex;
+  align-items: center;
+  max-width: rem(1050);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-floating__title-wrapper {
+}
+
+.p-floating__title {
+  letter-spacing: 0.05em;
+  font-size: rem(30);
+  font-weight: 600;
+  color: #333;
+  font-family: $second-font-family;
+}
+.p-floating__title span {
+  color: #990000;
+}
+.p-floating__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(35);
+  flex: 1;
+}
+
+.p-floating__vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-floating__tel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(4);
+}
+
+.p-floating__tel-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(30);
+  margin-top: rem(6);
+}
+.p-floating__tel-logo svg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+.p-floating__tel-logo svg path {
+  fill: #990000;
+}
+
+.p-floating__tel-num {
+}
+
+.p-floating__tel {
+  font-size: rem(35);
+  color: #990000;
+  font-weight: 600;
+  font-family: $second-font-family;
+}
+
+.p-floating__tel-text {
+  font-size: rem(14);
+  color: #333;
+  font-weight: 400;
+}
+
+.p-floating__btn-wrapper {
+}
+
+.p-floating__btn {
+  background: #990000;
+  color: #fff;
+  width: rem(250);
+  height: rem(60);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(16);
+  font-weight: 400;
+  border-radius: 9999px;
+}

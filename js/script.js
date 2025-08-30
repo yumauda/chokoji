@@ -13,7 +13,7 @@ jQuery(function ($) {
       // 画面が指定pxより上ならボタンを非表示
       topBtn.fadeOut();
     }
-    
+
     // 300pxスクロール時に.is-scrolledクラスを付与
     if ($(this).scrollTop() > 300) {
       $(".p-header__tel-logo svg path").addClass("is-scrolled");
@@ -163,3 +163,19 @@ const openingAnimKeyframes = (content) => [
     opacity: 1,
   },
 ];
+window.addEventListener("scroll", function () {
+  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  var element = document.querySelector(".p-floating");
+  var footer = document.querySelector(".p-footer");
+  
+  // footerの位置を取得
+  var footerTop = footer.offsetTop;
+  var windowHeight = window.innerHeight;
+  
+  // 700px以上スクロール かつ footerに到達していない場合のみ表示
+  if (scrollPosition > 700 && scrollPosition < (footerTop - windowHeight)) {
+    element.classList.add("is-visible");
+  } else {
+    element.classList.remove("is-visible");
+  }
+});

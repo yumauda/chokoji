@@ -152,3 +152,13 @@
   font-family: $second-font-family;
   border-radius: 9999px;
 }
+.p-footer__small {
+  margin-top: rem(72);
+  text-align: center;
+}
+.p-footer__small small {
+  color: #fff;
+  font-size: rem(14);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}

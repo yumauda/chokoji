@@ -1,3 +1,36 @@
+<div class="p-floating">
+    <div class="l-inner">
+        <div class="p-floating__content">
+            <div class="p-floating__title-wrapper">
+                <p class="p-floating__title">ご相談とお見積りは<span>無料</span>です</p>
+            </div>
+            <div class="p-floating__row">
+                <div class="p-floating__vertical">
+                    <div class="p-floating__tel-wrapper">
+                        <div class="p-floating__tel-logo">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="26px" height="26px">
+                                <path fill-rule="evenodd"
+                                    d="M23.946,17.117 C22.342,17.117 20.771,16.868 19.282,16.376 C18.555,16.125 17.730,16.318 17.252,16.806 L14.300,19.035 C10.913,17.227 8.745,15.060 6.962,11.698 L9.132,8.816 C9.677,8.270 9.873,7.470 9.639,6.722 C9.144,5.224 8.892,3.651 8.892,2.049 C8.892,0.918 7.971,-0.003 6.839,-0.003 L2.049,-0.003 C0.917,-0.003 -0.004,0.918 -0.004,2.049 C-0.004,15.255 10.740,25.999 23.946,25.999 C25.078,25.999 25.999,25.078 25.999,23.947 L25.999,19.171 C25.999,18.039 25.078,17.117 23.946,17.117 Z" />
+                            </svg>
+                        </div>
+                        <div class="p-floating__tel-num">
+                            <a href="tel:0268-42-2975" class="p-floating__tel">0268-42-2975</a>
+                        </div>
+                    </div>
+                    <p class="p-floating__tel-text">24時間365日対応</p>
+                </div>
+
+                <div class="p-floating__btn-wrapper">
+                    <a href="#" class="p-floating__btn">お問い合わせ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <footer class="p-footer">
     <div class="l-inner">
         <div class="p-footer__content">
@@ -99,6 +132,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="p-footer__small">
+            <small>© 長光寺 All rights Reserved.</small>
         </div>
     </div>
 </footer>
