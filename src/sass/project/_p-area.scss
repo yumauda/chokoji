@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.p-area {
+  padding-top: rem(100);
+  padding-bottom: rem(120);
+}
+
+.p-area__content {
+  display: flex;
+  gap: rem(63);
+  
+}
+
+.p-area__detail {
+  max-width: rem(500);
+  width: 100%;
+}
+
+.p-area__title {
+}
+
+.p-area__text-wrapper {
+  margin-top: rem(48);
+}
+
+.p-area__text {
+  line-height: 1.8;
+  font-size: rem(16);
+  color: #333;
+}
+.p-area__text:nth-child(2) {
+  margin-top: rem(24);
+  padding-top: rem(24);
+  border-top: 1px solid #ccc;
+}
+
+.p-area__img {
+  max-width: rem(650);
+  width: 100%;
+  flex: 1;
+}
+.p-area__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}

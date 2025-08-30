@@ -1087,24 +1087,96 @@ if (!empty($_SESSION['CONTACT'])) {
           <div class="p-temple__text-right">
             <p class="p-temple__text">合掌<br>長光寺 住職 小島 一洋</p>
           </div>
+          <dl class="p-temple__dl">
+            <div class="p-temple__dlRow">
+              <dt class="p-temple__dt">名称</dt>
+              <dd class="p-temple__dd">日蓮宗 明玉山 長光寺</dd>
+            </div>
+            <div class="p-temple__dlRow">
+              <dt class="p-temple__dt">代表役員（住職）</dt>
+              <dd class="p-temple__dd">小島 一洋</dd>
+            </div>
+            <div class="p-temple__dlRow">
+              <dt class="p-temple__dt">所在地</dt>
+              <dd class="p-temple__dd">〒386-0403 長野県上田市腰越1530 [<a href="#" target="_blank" rel="noopener noreferrer">地図</a>]</dd>
+            </div>
+            <div class="p-temple__dlRow">
+              <dt class="p-temple__dt">アクセス</dt>
+              <dd class="p-temple__dd">
+                <p class="p-temple__dd-text">北陸新幹線「上田駅」より車で約30分</p>
+                <p class="p-temple__dd-text">上信越自動車道「東部湯の丸IC」より車で約30分</p>
+              </dd>
+            </div>
+            <div class="p-temple__dlRow">
+              <dt class="p-temple__dt">開創</dt>
+              <dd class="p-temple__dd">明治23年</dd>
+            </div>
+            <div class="p-temple__dlRow">
+              <dt class="p-temple__dt">連絡先</dt>
+              <dd class="p-temple__dd">TEL：<a class="p-temple__dd-tel" href="tel:0268-42-2975">0268-42-2975</a><br>公式HP：<a class="p-temple__dd-link" href="https://m-chokoji.com" target="_blank" rel="noopener noreferrer">https://m-chokoji.com</a></dd>
+            </div>
+            <div class="p-temple__dlRow">
+              <dt class="p-temple__dt">アクセス</dt>
+              <dd class="p-temple__dd">
+                <p class="p-temple__dd-text">葬儀・法事</p>
+                <p class="p-temple__dd-text">墓地・永代供養</p>
+                <p class="p-temple__dd-text">水子供養・ペット供養</p>
+                <p class="p-temple__dd-text">お焚き上げ</p>
+                <p class="p-temple__dd-text">各種御祈祷・御祈願 など</p>
+              </dd>
+            </div>
+          </dl>
         </div>
       </div>
     </section>
-    <section class="top_area9" id="form">
+    <section class="p-area">
       <div class="l-inner">
-        <div class="block1">
-          <h2 class="mtitlebox">お問い合わせ</h2>
-
-          <p class="mex">
-            この度はご訪問いただき、誠にありがとうございました。<br class="pc" />改めて弊社担当者よりご連絡差し上げますので、下記フォームよりお問い合わせ内容をお送りください。<br class="pc" /><b>お急ぎの方は下記の電話番号にお掛けください。</b>
+        <div class="p-area__content">
+          <div class="p-area__detail">
+            <div class="p-area__title">
+              <span class="c-section-title--small">対応エリア</span>
+              <h3 class="c-section-title">長野県・<span class="c-section-title--red">東信</span>エリアに対応</h3>
+            </div>
+            <div class="p-area__text-wrapper">
+              <p class="p-area__text">長野県上田市を拠点に「東信エリア」に対応しております。<br>
+                エリア外のご相談者様も長野県内でしたら柔軟に対応いたします。</p>
+              <p class="p-area__text">上田市、東御市、佐久市、小諸市、坂城町、青木村、長和町、軽井沢町、御代田町、立科町、小海町、川上村、南牧村、南相木村、北相木村、佐久穂町など</p>
+            </div>
+          </div>
+          <figure class="p-area__img">
+            <img decoding="async" loading="lazy" src="/images/common/area_img.png" alt="長野県・東信エリア" width="650" height="400">
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="p-contact" id="form">
+      <div class="l-inner">
+        <div class="p-contact__content">
+          <div class="p-contact__title">
+            <span class="c-section-title--small">お問い合わせ</span>
+            <h3 class="c-section-title">ご相談は<span class="c-section-title--red">無料</span>。お気軽にお問い合わせください</h3>
+          </div>
+          <p class="p-contact__top-text">この度はご訪問いただき、誠にありがとうございました。<br>
+            改めて当寺院よりご連絡差し上げますので、下記フォームよりお問い合わせ内容をお送りください。<br>
+            <span>お急ぎ方や直接のご相談をご希望される方はお電話でも承っております。</span>
           </p>
-
-          <div class="dialinfo_block">
-            <p class="tel"><b>050-3395-6726</b></p>
-            <p class="dialinfo">年中無休・24時間対応</p>
+          <div class="p-contact__tel-wrapper">
+            <div class="p-contact__tel-logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="26px" height="26px">
+                <path fill-rule="evenodd" fill="rgb(153, 0, 0)"
+                  d="M23.946,17.117 C22.342,17.117 20.771,16.868 19.282,16.376 C18.555,16.125 17.730,16.318 17.252,16.806 L14.300,19.035 C10.913,17.227 8.745,15.060 6.962,11.698 L9.132,8.816 C9.677,8.270 9.873,7.470 9.639,6.722 C9.144,5.224 8.892,3.651 8.892,2.049 C8.892,0.918 7.971,-0.003 6.839,-0.003 L2.049,-0.003 C0.917,-0.003 -0.004,0.918 -0.004,2.049 C-0.004,15.255 10.740,25.999 23.946,25.999 C25.078,25.999 25.999,25.078 25.999,23.947 L25.999,19.171 C25.999,18.039 25.078,17.117 23.946,17.117 Z" />
+              </svg>
+            </div>
+            <div class="p-contact__num-wrapper">
+              <a href="tel:0268-42-2975" class="p-contact__num">0268-42-2975</a>
+            </div>
+            <p class="p-contact__num-text">24時間365日対応</p>
           </div>
 
-          <form method="post" name="cform" action="#form">
+          <form method="post" name="cform" action="#form" class="p-contact__form">
             <div class="form_block">
               <table>
                 <tr>
