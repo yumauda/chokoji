@@ -2,6 +2,38 @@
 
 .p-feature {
   padding-bottom: rem(120);
+  position: relative;
+  overflow-x: clip;
+}
+.p-feature::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/about_bg_left.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(360);
+  height: auto;
+  aspect-ratio: 360 / 360;
+  object-fit: cover;
+  top: rem(-48);
+  right: rem(-40);
+  z-index: -1;
+}
+.p-feature::after {
+  position: absolute;
+  content: "";
+  background: url(../images/common/about_bg_left.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(360);
+  height: auto;
+  aspect-ratio: 360 / 360;
+  object-fit: cover;
+  bottom: rem(100);
+  left: rem(-44);
+  z-index: -1;
 }
 
 .p-feature__content {

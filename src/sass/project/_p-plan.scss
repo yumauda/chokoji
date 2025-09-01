@@ -4,9 +4,27 @@
   background: #f9f0f0;
   padding-top: rem(100);
   padding-bottom: rem(100);
+  position: relative;
+  overflow-x: clip;
+}
+.p-plan::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/plan_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(448);
+  height: auto;
+  aspect-ratio: 448 / 242;
+  object-fit: cover;
+  top: 0;
+  right: 0;
 }
 
 .p-plan__content {
+  position: relative;
+  z-index: 2;
 }
 
 .p-plan__title {
@@ -32,11 +50,16 @@
 .p-plan__anchor-link::before {
   position: absolute;
   content: "";
-  background: #990000;
+  background: url(../images/common/triangle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   width: rem(30);
-  height: rem(30);
-  top: 10%;
-  left: 25%;
+  height: auto;
+  aspect-ratio: 30 / 30;
+  object-fit: cover;
+  bottom: 0;
+  right: 0;
 }
 
 .p-plan__anchor-img {
@@ -93,6 +116,24 @@
 .p-plan__row {
   display: flex;
   gap: rem(48);
+}
+.p-plan__row--1 {
+  position: relative;
+  z-index: 2;
+}
+.p-plan__row--1::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/plan_bg_normal.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(362);
+  height: auto;
+  aspect-ratio: 362 / 362;
+  object-fit: cover;
+  top: rem(-96);
+  left: rem(-200);
 }
 .p-plan__block + .p-plan__block {
   margin-top: rem(120);
@@ -170,8 +211,44 @@
 .p-plan__kind-wrapper {
   margin-top: rem(64);
 }
-
+.p-plan__kind-wrapper--1,
+.p-plan__kind-wrapper--2 {
+  position: relative;
+  z-index: 10;
+}
+.p-plan__kind-wrapper--1::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/plan_bg_normal.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(362);
+  height: auto;
+  aspect-ratio: 362 / 362;
+  object-fit: cover;
+  top: rem(360);
+  right: rem(-160);
+  z-index: 1;
+}
+.p-plan__kind-wrapper--2::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/plan_bg_normal.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(362);
+  height: auto;
+  aspect-ratio: 362 / 362;
+  object-fit: cover;
+  top: rem(120);
+  left: rem(-240);
+  z-index: 1;
+}
 .p-plan__kind {
+  position: relative;
+  z-index: 2;
 }
 .p-plan__kind + .p-plan__kind {
   margin-top: rem(64);

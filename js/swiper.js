@@ -11,9 +11,10 @@ let swiper = new Swiper(".swiper1", {
   speed: 300,
   slidesPerView: 1,
   spaceBetween: 20,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
   },
   breakpoints: {
     768: {

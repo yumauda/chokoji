@@ -16,9 +16,14 @@
     drop-shadow(0 0 16px rgba(0, 0, 0, 0.18))
     drop-shadow(0 0 30px rgba(0, 0, 0, 0.1));
   display: inline-block;
-  width: rem(200);
+  width: min(rem(200), calc(200 / 1440) * 100vw);
 }
-
+.p-header__logo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
 .p-header__tel-wrapper {
   position: fixed;
   text-align: center;
