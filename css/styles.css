@@ -850,6 +850,27 @@ input[type=checkbox] {
   padding-top: 6.25rem;
   padding-bottom: 120px;
   padding-bottom: 7.5rem;
+  position: relative;
+  overflow: clip;
+}
+
+.p-flow::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/flow_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 360px;
+  width: 22.5rem;
+  height: auto;
+  aspect-ratio: 360/357;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: -40px;
+  top: -2.5rem;
+  right: -40px;
+  right: -2.5rem;
 }
 
 .p-flow__content {
@@ -858,6 +879,48 @@ input[type=checkbox] {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.p-flow__content::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/flow_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 360px;
+  width: 22.5rem;
+  height: auto;
+  aspect-ratio: 360/357;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 660px;
+  top: 41.25rem;
+  left: -330px;
+  left: -20.625rem;
+  z-index: 1;
+}
+
+.p-flow__content::after {
+  position: absolute;
+  content: "";
+  background: url(../images/common/flow_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 360px;
+  width: 22.5rem;
+  height: auto;
+  aspect-ratio: 360/357;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 1400px;
+  top: 87.5rem;
+  right: -240px;
+  right: -15rem;
+  z-index: 1;
 }
 
 .p-flow__title {
@@ -3307,6 +3370,51 @@ th {
   background: #f9f0f0;
   padding-bottom: 120px;
   padding-bottom: 7.5rem;
+  position: relative;
+  overflow: clip;
+}
+
+.p-other::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/other_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 360px;
+  width: 22.5rem;
+  height: auto;
+  aspect-ratio: 360/360;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: -96px;
+  top: -6rem;
+  left: -96px;
+  left: -6rem;
+}
+
+.p-other::after {
+  position: absolute;
+  content: "";
+  background: url(../images/common/other_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 360px;
+  width: 22.5rem;
+  height: auto;
+  aspect-ratio: 360/360;
+  -o-object-fit: cover;
+     object-fit: cover;
+  bottom: 490px;
+  bottom: 30.625rem;
+  right: 0;
+  z-index: 1;
+}
+
+.p-other__content {
+  position: relative;
+  z-index: 2;
 }
 
 .p-other__title {
@@ -4254,7 +4362,8 @@ th {
   color: #990000;
 }
 
-.p-plan .c-section-title {
+.p-plan .c-section-title,
+.p-other .c-section-title {
   font-size: 30px;
   font-size: 1.875rem;
 }

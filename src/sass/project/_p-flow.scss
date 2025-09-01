@@ -3,6 +3,22 @@
 .p-flow {
   padding-top: rem(100);
   padding-bottom: rem(120);
+  position: relative;
+  overflow: clip;
+}
+.p-flow::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/flow_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(360);
+  height: auto;
+  aspect-ratio: 360 / 357;
+  object-fit: cover;
+  top: rem(-40);
+  right: rem(-40);
 }
 
 .p-flow__content {
@@ -10,8 +26,39 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 2;
 }
-
+.p-flow__content::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/flow_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(360);
+  height: auto;
+  aspect-ratio: 360 / 357;
+  object-fit: cover;
+  top: rem(660);
+  left: rem(-330);
+  z-index: 1;
+}
+.p-flow__content::after {
+  position: absolute;
+  content: "";
+  background: url(../images/common/flow_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(360);
+  height: auto;
+  aspect-ratio: 360 / 357;
+  object-fit: cover;
+  top: rem(1400);
+  right: rem(-240);
+  z-index: 1;
+}
 .p-flow__title {
   text-align: center;
 }
