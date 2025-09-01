@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .p-drawer-icon {
-  background: #fff;
+  background: transparent;
   transition: 0.3s;
   border-radius: 9999px;
   width: rem(44);
@@ -9,6 +9,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  right: rem(20);
+  top: rem(20);
+  z-index: 9999;
   @include mq(md) {
     display: none;
   }
@@ -16,7 +20,7 @@
 .p-drawer-icon.is-active {
   position: relative;
   z-index: 10001;
-  background: #222;
+  background: transparent;
   .p-drawer-icon__bars {
     width: rem(15);
     height: rem(15);
@@ -27,6 +31,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  .p-drawer-icon__bar2 {
+    display: none;
   }
   .p-drawer-icon__bar3 {
     background: white;
@@ -39,21 +46,26 @@
 .p-drawer-icon__bars {
   position: relative;
   width: rem(28);
-  height: rem(8);
+  height: rem(28);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: rem(6);
-  @include mq(md) {
-    gap: rem(8);
-    width: rem(28);
-    height: rem(12);
-  }
 }
 .p-drawer-icon__bar1 {
-  height: 2px;
-  background: #333;
+  height: 1px;
+  background: #fff;
+  transition: 0.5s;
+  width: rem(20);
+  display: flex;
+  @include mq(md) {
+    width: rem(28);
+  }
+}
+.p-drawer-icon__bar2 {
+  height: 1px;
+  background: #fff;
   transition: 0.5s;
   width: rem(20);
   display: flex;
@@ -63,8 +75,8 @@
 }
 
 .p-drawer-icon__bar3 {
-  height: 2px;
-  background: #333;
+  height: 1px;
+  background: #fff;
   transition: 0.5s;
   display: flex;
   width: rem(20);
@@ -74,27 +86,21 @@
 }
 
 .p-drawer-content {
-  width: 100%;
+  width: rem(230);
   height: 100dvh;
   position: fixed;
   right: 0;
   top: 0;
-  left: 0;
   bottom: 0;
-  backdrop-filter: blur(16px);
-  background: rgba($color: #fff, $alpha: 0.7);
+  background: rgba($color: #000, $alpha: 0.9);
   z-index: 9998;
   visibility: hidden;
   opacity: 0;
   transition: 0.3s;
-  padding-top: rem(125);
-  padding-left: rem(32);
+  padding-top: rem(70);
+  padding-left: rem(30);
   padding-right: rem(32);
-  @include mq(md) {
-    padding-top: rem(8);
-    padding-left: initial;
-    padding-right: initial;
-  }
+  overflow-y: auto;
 }
 .p-drawer-content.is-active {
   visibility: visible;
@@ -119,77 +125,17 @@
 }
 .p-drawer-content__lists {
 }
-
-.p-drawer-content__list {
-  text-align: center;
-}
 .p-drawer-content__list + .p-drawer-content__list {
-  margin-top: rem(30);
+  margin-top: rem(28);
 }
 .p-drawer-content__link {
-  font-size: rem(17);
+  font-size: rem(18);
   display: block;
   font-weight: 500;
-}
-
-.p-drawer-content__sns {
-  display: flex;
-  margin-top: rem(50);
-  align-items: center;
-  justify-content: center;
-  gap: rem(20);
-}
-
-.p-drawer-content__sns-text {
-  font-size: rem(10);
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.p-drawer-content__sns-link {
-  width: rem(30);
-}
-.p-drawer-content__sns-link img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-}
-
-.p-drawer-content__contact-wrapper {
-  margin-top: rem(80);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.p-drawer-content__contact {
-  width: rem(240);
-  height: rem(60);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(to right, #f56112, #f5ab03);
-  border-radius: rem(5);
-  position: relative;
-}
-
-.p-drawer-content__contact-text {
   color: #fff;
-  font-size: rem(14);
-  font-weight: 500;
+  font-family: $second-font-family;
 }
-.p-drawer-content__contact svg {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: rem(11);
-  transition: 0.3s ease-in-out;
-}
-.p-drawer-content__contact:hover.p-drawer-content__contact svg {
-  right: rem(5);
-}
+
 .no-scroll {
   overflow: hidden;
   height: 100%;
