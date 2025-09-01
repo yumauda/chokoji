@@ -16,7 +16,10 @@
     drop-shadow(0 0 16px rgba(0, 0, 0, 0.18))
     drop-shadow(0 0 30px rgba(0, 0, 0, 0.1));
   display: inline-block;
-  width: min(rem(200), calc(200 / 1440) * 100vw);
+  width: rem(100);
+  @include mq(md) {
+    width: min(rem(200), calc(200 / 1440) * 100vw);
+  }
 }
 .p-header__logo img {
   width: 100%;
@@ -38,10 +41,14 @@
 }
 
 .p-header__tel-text {
-  color: #fff;
-  font-size: rem(14);
-  font-weight: 400;
-  transition: 0.3s ease-in-out;
+  display: none;
+  @include mq(md) {
+    display: block;
+    color: #fff;
+    font-size: rem(14);
+    font-weight: 400;
+    transition: 0.3s ease-in-out;
+  }
 }
 .p-header__tel-text.is-scrolled {
   color: #333;
@@ -73,12 +80,22 @@
   fill: #333;
 }
 .p-header__tel {
-  font-family: $second-font-family;
-  font-size: rem(35);
-  color: #fff;
-  font-weight: 600;
-  transition: 0.3s ease-in-out;
+  display: none;
+  @include mq(md) {
+    display: block;
+    font-family: $second-font-family;
+    font-size: rem(35);
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+  }
 }
 .p-header__tel.is-scrolled {
   color: #333;
+}
+.p-header__drawer {
+  position: fixed;
+  right: rem(20);
+  top: rem(22);
+  z-index: 9999;
 }

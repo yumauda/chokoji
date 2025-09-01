@@ -38,15 +38,6 @@ jQuery(function ($) {
     return false;
   });
 
-  //ドロワーメニュー
-  $("#MenuButton").click(function () {
-    // $(".l-drawer-menu").toggleClass("is-show");
-    // $(".p-drawer-menu").toggleClass("is-show");
-    $(".js-drawer-open").toggleClass("open");
-    $(".drawer-menu").toggleClass("open");
-    $("html").toggleClass("is-fixed");
-  });
-
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
 
   $(document).on("click", 'a[href*="#"]', function () {
@@ -167,15 +158,22 @@ window.addEventListener("scroll", function () {
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
   var element = document.querySelector(".p-floating");
   var footer = document.querySelector(".p-footer");
-  
+
   // footerの位置を取得
   var footerTop = footer.offsetTop;
   var windowHeight = window.innerHeight;
-  
+
   // 700px以上スクロール かつ footerに到達していない場合のみ表示
-  if (scrollPosition > 700 && scrollPosition < (footerTop - windowHeight)) {
+  if (scrollPosition > 700 && scrollPosition < footerTop - windowHeight) {
     element.classList.add("is-visible");
   } else {
     element.classList.remove("is-visible");
   }
+});
+jQuery(".p-drawer-icon").on("click", function (e) {
+  e.preventDefault();
+  jQuery(".p-drawer-icon").toggleClass("is-active");
+  jQuery(".p-drawer-content").toggleClass("is-active");
+  jQuery(".p-drawer-background").toggleClass("is-active");
+  return false;
 });

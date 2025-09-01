@@ -149,7 +149,7 @@ if (!empty($_SESSION['CONTACT'])) {
               </svg>
             </div>
             <h1 class="p-mv__top-text">本堂で執り行う家族葬</h1>
-            <p class="p-mv__text">住職がご家族と向き合い「本当に必要なこと」だけをご提案。<br>
+            <p class="p-mv__text">住職がご家族と向き合い「本当に必要なこと」だけをご提案。<br class="u-desktop">
               真心のこもったご葬儀で、故人様を心を込めてお送りいたします。</p>
           </div>
 
