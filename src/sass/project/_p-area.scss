@@ -1,44 +1,70 @@
 @use "global" as *;
 
 .p-area {
-  padding-top: rem(100);
-  padding-bottom: rem(120);
+  padding-top: rem(56);
+  padding-bottom: rem(56);
+  @include mq(md) {
+    padding-top: rem(100);
+    padding-bottom: rem(120);
+  }
 }
 
 .p-area__content {
-  display: flex;
-  gap: rem(63);
-  
+  @include mq(md) {
+    display: flex;
+    gap: rem(63);
+  }
 }
 
 .p-area__detail {
-  max-width: rem(500);
   width: 100%;
+  @include mq(md) {
+    max-width: rem(500);
+  }
 }
 
 .p-area__title {
+  text-align: center;
+  @include mq(md) {
+    text-align: initial;
+  }
 }
 
 .p-area__text-wrapper {
-  margin-top: rem(48);
+  margin-top: rem(32);
+  @include mq(md) {
+    margin-top: rem(48);
+  }
 }
 
 .p-area__text {
   line-height: 1.8;
-  font-size: rem(16);
   color: #333;
+  font-size: rem(15);
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 .p-area__text:nth-child(2) {
-  margin-top: rem(24);
-  padding-top: rem(24);
   border-top: 1px solid #ccc;
+  padding-top: rem(20);
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(24);
+    padding-top: rem(24);
+  }
 }
 
 .p-area__img {
-  max-width: rem(650);
   width: 100%;
-  flex: 1;
+  margin-top: rem(32);
+  @include mq(md) {
+    margin-top: initial;
+    flex: 1;
+    max-width: rem(650);
+  }
 }
+
 .p-area__img img {
   width: 100%;
   height: auto;

@@ -1,9 +1,13 @@
 @use "global" as *;
 
 .p-contact {
-  padding-top: rem(120);
-  padding-bottom: rem(100);
   background: #f9f0f0;
+  padding-top: rem(56);
+  padding-bottom: rem(56);
+  @include mq(md) {
+    padding-top: rem(120);
+    padding-bottom: rem(100);
+  }
 }
 
 .p-contact__content {
@@ -14,11 +18,15 @@
 }
 
 .p-contact__top-text {
-  margin-top: rem(56);
-  text-align: center;
-  font-size: rem(16);
   color: #333;
   line-height: 1.8;
+  margin-top: rem(36);
+  font-size: rem(15);
+  @include mq(md) {
+    text-align: center;
+    font-size: rem(16);
+    margin-top: rem(56);
+  }
 }
 .p-contact__top-text span {
   color: #cc0000;

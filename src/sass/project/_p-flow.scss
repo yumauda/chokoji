@@ -1,10 +1,14 @@
 @use "global" as *;
 
 .p-flow {
-  padding-top: rem(100);
-  padding-bottom: rem(120);
   position: relative;
   overflow: clip;
+  padding-top: rem(56);
+  padding-bottom: rem(56);
+  @include mq(md) {
+    padding-top: rem(100);
+    padding-bottom: rem(120);
+  }
 }
 .p-flow::before {
   position: absolute;
@@ -64,20 +68,31 @@
 }
 
 .p-flow__text-wrapper {
-  margin-top: rem(48);
-  text-align: center;
+  margin-top: rem(36);
+  @include mq(md) {
+    margin-top: rem(48);
+    text-align: center;
+  }
 }
 
 .p-flow__text {
-  font-size: rem(16);
   color: #333;
   font-weight: 400;
+  font-size: rem(15);
+  line-height: 1.8;
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 
 .p-flow__block {
   display: flex;
-  gap: rem(28);
-  margin-top: rem(56);
+  margin-top: rem(40);
+  gap: rem(20);
+  @include mq(md) {
+    gap: rem(28);
+    margin-top: rem(56);
+  }
 }
 
 .p-flow__line {
@@ -95,15 +110,19 @@
 }
 
 .p-flow__row {
-  display: flex;
-  gap: rem(32);
+  @include mq(md) {
+    display: flex;
+    gap: rem(32);
+  }
 }
 .p-flow__row + .p-flow__row {
   margin-top: rem(40);
 }
 .p-flow__img {
-  max-width: rem(300);
   width: 100%;
+  @include mq(md) {
+    max-width: rem(300);
+  }
 }
 .p-flow__img img {
   width: 100%;
@@ -114,6 +133,10 @@
 
 .p-flow__detail {
   flex: 1;
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: initial;
+  }
 }
 
 .p-flow__detail-top {
@@ -125,17 +148,23 @@
 }
 
 .p-flow__num {
-  font-size: rem(25);
   color: #990000;
   font-weight: 600;
   font-family: $second-font-family;
+  font-size: rem(20);
+  @include mq(md) {
+    font-size: rem(25);
+  }
 }
 
 .p-flow__detail-title {
   color: #333;
-  font-size: rem(25);
   font-weight: 600;
   font-family: $second-font-family;
+  font-size: rem(20);
+  @include mq(md) {
+    font-size: rem(25);
+  }
 }
 
 .p-flow__detail-textWrapper {
@@ -143,9 +172,14 @@
 }
 
 .p-flow__detail-text {
-  font-size: rem(16);
   color: #333;
   font-weight: 400;
+  font-size: rem(15);
+  line-height: 1.8;
+  @include mq(md){
+    font-size: rem(16);
+    
+  }
 }
 
 .p-flow__tel-wrapper {

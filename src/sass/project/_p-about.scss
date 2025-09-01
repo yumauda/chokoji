@@ -1,10 +1,14 @@
 @use "global" as *;
 
 .p-about {
-  padding-top: rem(100);
-  padding-bottom: rem(100);
   position: relative;
   overflow-x: clip;
+  padding-top: rem(48);
+  padding-bottom: rem(56);
+  @include mq(md) {
+    padding-top: rem(100);
+    padding-bottom: rem(100);
+  }
 }
 
 .p-about::before {
@@ -30,13 +34,20 @@
 }
 
 .p-about__text-wrapper {
-  margin-top: rem(48);
-  text-align: center;
+  margin-top: rem(32);
+  @include mq(md) {
+    text-align: center;
+    margin-top: rem(48);
+  }
 }
 
 .p-about__text {
-  font-size: rem(16);
   font-weight: 400;
-  line-height: calc(36 / 16);
   color: #333;
+  line-height: 2;
+  font-size: rem(15);
+  @include mq(md) {
+    line-height: calc(36 / 16);
+    font-size: rem(16);
+  }
 }

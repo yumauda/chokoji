@@ -7,14 +7,18 @@
   right: 0;
   width: 100%;
   background: #fff;
-  padding-top: rem(20);
-  padding-bottom: rem(20);
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   transition: 0.3s ease-in-out;
   z-index: 9999;
   opacity: 0;
   visibility: hidden;
+  padding-top: rem(16);
+  padding-bottom: rem(16);
+  @include mq(md) {
+    padding-top: rem(20);
+    padding-bottom: rem(20);
+  }
 }
 .p-floating.is-visible {
   opacity: 1;
@@ -30,6 +34,10 @@
 }
 
 .p-floating__title-wrapper {
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
 }
 
 .p-floating__title {
@@ -46,8 +54,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: rem(35);
   flex: 1;
+  gap: rem(15);
+  @include mq(md) {
+    gap: rem(35);
+  }
 }
 
 .p-floating__vertical {
@@ -68,8 +79,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: rem(30);
   margin-top: rem(6);
+  width: rem(16);
+  @include mq(md) {
+    width: rem(30);
+  }
 }
 .p-floating__tel-logo svg {
   width: 100%;
@@ -85,16 +99,22 @@
 }
 
 .p-floating__tel {
-  font-size: rem(35);
   color: #990000;
   font-weight: 600;
   font-family: $second-font-family;
+  font-size: rem(20);
+  @include mq(md) {
+    font-size: rem(35);
+  }
 }
 
 .p-floating__tel-text {
-  font-size: rem(14);
   color: #333;
   font-weight: 400;
+  font-size: rem(12);
+  @include mq(md) {
+    font-size: rem(14);
+  }
 }
 
 .p-floating__btn-wrapper {
@@ -103,12 +123,17 @@
 .p-floating__btn {
   background: #990000;
   color: #fff;
-  width: rem(250);
-  height: rem(60);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: rem(16);
   font-weight: 400;
   border-radius: 9999px;
+  width: rem(170);
+  height: rem(40);
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(16);
+    height: rem(60);
+    width: rem(250);
+  }
 }

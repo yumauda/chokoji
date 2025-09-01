@@ -1,9 +1,13 @@
 @use "global" as *;
 
 .p-temple {
-  padding-top: rem(100);
-  padding-bottom: rem(120);
   background-color: #f9f0f0;
+  padding-top: rem(56);
+  padding-bottom: rem(56);
+  @include mq(md) {
+    padding-top: rem(100);
+    padding-bottom: rem(120);
+  }
 }
 
 .p-temple__title {
@@ -11,16 +15,21 @@
 }
 
 .p-temple__content {
-  max-width: rem(1000);
   width: 100%;
   margin-inline: auto;
+  @include mq(md) {
+    max-width: rem(1000);
+  }
 }
 
 .p-temple__row {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: rem(56);
-  margin-top: rem(56);
+  margin-top: rem(32);
+  @include mq(md) {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: rem(56);
+    margin-top: rem(56);
+  }
 }
 
 .p-temple__img {
@@ -35,9 +44,13 @@
 }
 
 .p-temple__text-wrapper {
-  flex: 1;
-  max-width: rem(474);
   width: 100%;
+  margin-top: rem(36);
+  @include mq(md) {
+    max-width: rem(474);
+    flex: 1;
+    margin-top: initial;
+  }
 }
 
 .p-temple__bottomText-wrapper {
@@ -46,23 +59,36 @@
 
 .p-temple__text {
   color: #333;
-  font-size: rem(16);
   line-height: 1.8;
+  font-size: rem(15);
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 .p-temple__text + .p-temple__text {
-  margin-top: rem(32);
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(32);
+  }
 }
 .p-temple__text-right {
   text-align: right;
-  margin-top: rem(32);
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(32);
+  }
 }
 .p-temple__dl {
-  margin-top: rem(56);
   background: #fff;
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(56);
+  }
 }
 
 .p-temple__dlRow {
   border-top: 1px solid #ccc;
+  padding: rem(16);
   @include mq(md) {
     display: flex;
     padding-left: rem(26);
@@ -77,18 +103,22 @@
 
 .p-temple__dt {
   color: #333;
-  font-size: rem(16);
   font-weight: 700;
+  font-size: rem(15);
   @include mq(md) {
+    font-size: rem(16);
     width: rem(248);
   }
 }
 
 .p-temple__dd {
-  font-size: rem(16);
   color: #333;
   line-height: 1.8;
+  font-size: rem(15);
+  margin-top: rem(14);
   @include mq(md) {
+    margin-top: initial;
+    font-size: rem(16);
     width: calc(100% - rem(248));
   }
 }
@@ -109,9 +139,12 @@
   width: rem(7);
   height: rem(7);
   border-radius: 9999px;
-  top: 50%;
+  top: rem(9);
   left: 0;
-  transform: translateY(-50%);
+  @include mq(md) {
+    transform: translateY(-50%);
+    top: 50%;
+  }
 }
 
 .p-temple__dd-tel {

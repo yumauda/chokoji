@@ -190,7 +190,7 @@ if (!empty($_SESSION['CONTACT'])) {
         <div class="p-about__content">
           <div class="p-about__title">
             <span class="c-section-title--small">お寺葬とは</span>
-            <h3 class="c-section-title">お寺が主体となって執り行う、<span class="c-section-title--red">温</span>かい家族葬</h3>
+            <h3 class="c-section-title">お寺が主体となって<br class="u-mobile">執り行う、<span class="c-section-title--red">温</span>かい家族葬</h3>
           </div>
           <div class="p-about__text-wrapper">
             <p class="p-about__text">お寺葬とは、伝統と格式を重視したお寺の本堂にて執り行う葬儀のことです。<br>
@@ -206,7 +206,7 @@ if (!empty($_SESSION['CONTACT'])) {
         <div class="p-feature__content">
           <div class="p-feature__title">
             <span class="c-section-title--small">5つの特徴</span>
-            <h3 class="c-section-title">長光寺お寺葬 <span class="c-section-title--big">5つの特徴</span></h3>
+            <h3 class="c-section-title">長光寺お寺葬 <br class="u-mobile"><span class="c-section-title--big">5つの特徴</span></h3>
           </div>
           <ul class="p-feature__grid">
             <li class="p-feature__grid-list" data-number="1">
@@ -352,7 +352,7 @@ if (!empty($_SESSION['CONTACT'])) {
         <div class="p-plan__content">
           <div class="p-plan__title">
             <span class="c-section-title--small">葬儀プラン</span>
-            <h3 class="c-section-title">余分な費用をかけず、本当に<span class="c-section-title--red">必</span>要なことだけを選んだプラン</h3>
+            <h3 class="c-section-title">余分な費用をかけず、<br class="u-mobile">本当に<span class="c-section-title--red">必</span>要なことだけを<br class="u-mobile">選んだプラン</h3>
           </div>
           <div class="p-plan__anchor">
             <a href="#plan1" class="p-plan__anchor-link">
@@ -386,7 +386,7 @@ if (!empty($_SESSION['CONTACT'])) {
                   <h4 class="p-plan__detail-title">お寺葬基本プラン</h4>
                   <p class="p-plan__price">500,000<span class="p-plan__price-unit">円</span><span class="p-plan__price-tax">(税込)</span></p>
                   <p class="p-plan__number">参加者数目安：～30名程度</p>
-                  <p class="p-plan__text">お寺葬の基本的な葬儀プランです。<br>
+                  <p class="p-plan__text">お寺葬の基本的な葬儀プランです。<br class="u-desktop">
                     お通夜・ご葬儀（初七日）と二日間かけて執り行います。<br>
                     戒名授与も含まれます。</p>
                   <figure class="p-plan__flow p-plan__flow--1">
@@ -727,7 +727,7 @@ if (!empty($_SESSION['CONTACT'])) {
         <div class="p-habits__content">
           <div class="p-habits__title">
             <span class="c-section-title--small">永代供養</span>
-            <h3 class="c-section-title">個別安置の<span class="c-section-title--red">永</span>代供養も承ります</h3>
+            <h3 class="c-section-title">個別安置の<span class="c-section-title--red">永</span>代供養も<br class="u-mobile">承ります</h3>
           </div>
           <div class="p-habits__text-wrapper">
             <p class="p-habits__text">永代供養とはお寺に供養を託すことです。<br>
@@ -789,10 +789,10 @@ if (!empty($_SESSION['CONTACT'])) {
         <div class="p-flow__content">
           <div class="p-flow__title">
             <span class="c-section-title--small">ご葬儀の流れ</span>
-            <h3 class="c-section-title">もしもの時に備えて事<span class="c-section-title--red">前</span>相談が安心です</h3>
+            <h3 class="c-section-title">もしもの時に備えて<br class="u-mobile">事<span class="c-section-title--red">前</span>相談が安心です</h3>
           </div>
           <div class="p-flow__text-wrapper">
-            <p class="p-flow__text">初めての方でも安心してご利用いただけるよう、住職が最初から最後までしっかりとサポートいたします。<br>
+            <p class="p-flow__text">初めての方でも安心してご利用いただけるよう、住職が最初から最後までしっかりとサポートいたします。<br class="u-desktop">
               ご不明な点やご要望があれば、どんなことでもお気軽にご相談ください。</p>
           </div>
           <div class="p-flow__block">
@@ -1029,7 +1029,7 @@ if (!empty($_SESSION['CONTACT'])) {
       <div class="l-inner">
         <div class="p-qa__title">
           <span class="c-section-title--small">他社との比較</span>
-          <h3 class="c-section-title">皆様からよくご<span class="c-section-title--red">質</span>問いただく内容はこちら</h3>
+          <h3 class="c-section-title">皆様からよくご<span class="c-section-title--red">質</span>問いただく<br class="u-mobile">内容はこちら</h3>
         </div>
         <div class="p-qa__block">
           <details class="p-qa__content js-details">
@@ -1073,7 +1073,7 @@ if (!empty($_SESSION['CONTACT'])) {
       <div class="l-inner">
         <div class="p-temple__title">
           <span class="c-section-title--small">運営寺院</span>
-          <h3 class="c-section-title">ご<span class="c-section-title--red">縁</span>あってこのページをご覧の皆さまへ</h3>
+          <h3 class="c-section-title">ご<span class="c-section-title--red">縁</span>あってこのページを<br class="u-mobile">ご覧の皆さまへ</h3>
         </div>
         <div class="p-temple__content">
           <div class="p-temple__row">
@@ -1083,7 +1083,7 @@ if (!empty($_SESSION['CONTACT'])) {
             <div class="p-temple__text-wrapper">
               <p class="p-temple__text">突然のご逝去に、気持ちも段取りも追いつかない——<br>
                 その不安や戸惑いを、私は何度もご家族のそばで見てきました。<br>
-                お葬式は、故人さまを「霊山浄土」へお送りする大切な儀式であると同時に、残された私たちが“いまをどう生きるか”を受け止めるための時間でもあります。<br>
+                お葬式は、故人さまを「霊山浄土」へお送りする大切な儀式であると同時に、残された私たちが“いまをどう生きるか”を受け止めるための時間でもあります。<br class="u-desktop">
                 だからこそ、難しい手配や費用に関する心配で、その大切なひとときを曇らせてほしくありません。その想いを形にしたのが、私どもの「お寺葬」です。</p>
               <p class="p-temple__text">本堂という祈りの場で、心静かに故人さまと向き合い、お見送りいただけるよう、必要なご用意はお寺が窓口となって一つに整えます。</p>
             </div>
@@ -1091,7 +1091,7 @@ if (!empty($_SESSION['CONTACT'])) {
           </div>
           <div class="p-temple__bottomText-wrapper">
             <p class="p-temple__text">お迎え・ご安置から、祭壇やお花、遺影写真の準備、通夜・葬儀・初七日のお勤めまで——<br>複雑な費用計算に悩まされることなく、明確な一つのご布施で必要なものを全て整えさせていただきます。流れを最初に丁寧にご説明し、あとから迷いが生じないよう、住職が終始伴走いたします。</p>
-            <p class="p-temple__text">手配に追われることなく、ただ故人さまとの思い出を語り合う。<br>
+            <p class="p-temple__text">手配に追われることなく、ただ故人さまとの思い出を語り合う。<br class="u-desktop">
               気兼ねなく、心からの「ありがとう」を伝える。</p>
             <p class="p-temple__text">家族葬という温かな輪の中で、「いのち」のつながりと「ご縁」の尊さを、静かに見つめ直すお手伝いをいたします。<br>
               宗旨・宗派は問いません。檀家でない方もどうぞご安心ください。<br>
@@ -1167,9 +1167,9 @@ if (!empty($_SESSION['CONTACT'])) {
         <div class="p-contact__content">
           <div class="p-contact__title">
             <span class="c-section-title--small">お問い合わせ</span>
-            <h3 class="c-section-title">ご相談は<span class="c-section-title--red">無料</span>。お気軽にお問い合わせください</h3>
+            <h3 class="c-section-title">ご相談は<span class="c-section-title--red">無料</span>。<br class="u-mobile">お気軽にお問い合わせください</h3>
           </div>
-          <p class="p-contact__top-text">この度はご訪問いただき、誠にありがとうございました。<br>
+          <p class="p-contact__top-text">この度はご訪問いただき、誠にありがとうございました。<br class="u-desktop">
             改めて当寺院よりご連絡差し上げますので、下記フォームよりお問い合わせ内容をお送りください。<br>
             <span>お急ぎ方や直接のご相談をご希望される方はお電話でも承っております。</span>
           </p>

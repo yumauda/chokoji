@@ -1,9 +1,11 @@
 @use "global" as *;
 
 .p-habits {
-  padding-top: rem(114);
   padding-bottom: rem(56);
   background: #f9f0f0;
+  @include mq(md) {
+    padding-top: rem(114);
+  }
 }
 
 .p-habits__title {
@@ -11,21 +13,33 @@
 }
 
 .p-habits__text-wrapper {
-  margin-top: rem(48);
-  text-align: center;
+  margin-top: rem(36);
+  @include mq(md) {
+    margin-top: rem(48);
+    text-align: center;
+  }
 }
 
 .p-habits__text {
-  font-size: rem(16);
   color: #333;
   font-weight: 400;
+  font-size: rem(15);
+  line-height: 1.8;
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 
 .p-habits__lists {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: rem(64);
-  margin-top: rem(56);
+  margin-top: rem(32);
+  gap: rem(28);
+  grid-template-columns: repeat(2, 1fr);
+  @include mq(md) {
+    margin-top: rem(56);
+    grid-template-columns: repeat(5, 1fr);
+    gap: rem(64);
+  }
 }
 
 .p-habits__list {
@@ -55,16 +69,23 @@
 }
 
 .p-habits__detail-title {
-  font-size: rem(20);
   text-align: center;
   color: #333;
   font-weight: 600;
   font-family: $second-font-family;
+  font-size: rem(18);
+  @include mq(md) {
+    font-size: rem(20);
+  }
 }
 
 .p-habits__detail-text {
-  font-size: rem(16);
   color: #333;
   font-weight: 400;
-  margin-top: rem(20);
+  font-size: rem(15);
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: rem(20);
+    font-size: rem(16);
+  }
 }

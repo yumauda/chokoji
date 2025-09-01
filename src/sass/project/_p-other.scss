@@ -1,11 +1,15 @@
 @use "global" as *;
 
 .p-other {
-  padding-top: rem(100);
   background: #f9f0f0;
-  padding-bottom: rem(120);
   position: relative;
   overflow: clip;
+  padding-top: rem(56);
+  padding-bottom: rem(56);
+  @include mq(md) {
+    padding-top: rem(100);
+    padding-bottom: rem(120);
+  }
 }
 .p-other::before {
   position: absolute;
@@ -51,41 +55,54 @@
 .p-other__attention {
   background: #fff;
   border: 1px solid #cc0000;
-  padding-top: rem(48);
-  padding-left: rem(40);
-  padding-right: rem(40);
   border-radius: rem(10);
-  padding-bottom: rem(48);
-  max-width: rem(1200);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: rem(64);
+  padding: rem(22);
+  margin-top: rem(48);
+  @include mq(md) {
+    max-width: rem(1200);
+    margin-top: rem(64);
+    padding-top: rem(48);
+    padding-left: rem(40);
+    padding-right: rem(40);
+    padding-bottom: rem(48);
+  }
 }
 
 .p-other__attention-titleWrapper {
   position: relative;
-  margin-top: rem(-64);
+  margin-top: rem(-36);
+  @include mq(md) {
+    margin-top: rem(-64);
+  }
 }
 .p-other__attention-titleWrapper::before {
   position: absolute;
   content: "";
   background: #fff;
-  width: rem(330);
   height: 3px;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
   z-index: 1;
+  width: rem(280);
+  @include mq(md) {
+    width: rem(330);
+  }
 }
 .p-other__attention-title {
   color: #cc0000;
-  font-size: rem(22);
   font-weight: 700;
   font-family: $second-font-family;
   position: relative;
   display: inline-block;
   z-index: 2;
+  font-size: rem(18);
+  @include mq(md) {
+    font-size: rem(22);
+  }
 }
 
 .p-other__box {
@@ -98,7 +115,10 @@
   line-height: 2;
 }
 .p-other__box-text + .p-other__box-text {
-  margin-top: rem(32);
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(32);
+  }
 }
 .p-other__box-text span {
   font-weight: 700;

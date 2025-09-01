@@ -1,28 +1,43 @@
 @use "global" as *;
 
 .p-footer {
-  padding-top: rem(72);
-  padding-bottom: rem(72);
   background: url(../images/common/footer_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-top: rem(48);
+  padding-bottom: rem(48);
+  @include mq(md) {
+    padding-top: rem(72);
+    padding-bottom: rem(72);
+  }
 }
 
 .p-footer__content {
   display: flex;
+  flex-direction: column-reverse;
+  @include mq(md) {
+    flex-direction: row;
+  }
 }
 
 .p-footer__left {
-  max-width: rem(275);
   width: 100%;
+  margin-top: rem(60);
+  @include mq(md) {
+    margin-top: initial;
+    max-width: rem(275);
+  }
 }
 
 .p-footer__logo {
-  max-width: rem(224);
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  max-width: rem(150);
+  @include mq(md) {
+    max-width: rem(224);
+  }
 }
 
 .p-footer__home {
@@ -36,15 +51,22 @@
 }
 .p-footer__text-wrapper {
   margin-top: rem(32);
-  text-align: center;
+  @include mq(md) {
+    text-align: center;
+  }
 }
 
 .p-footer__text {
   color: #fff;
   letter-spacing: 0.05em;
-  font-size: rem(16);
-  font-weight: 400;
   line-height: 1.8;
+  font-weight: 400;
+  font-size: rem(15);
+  text-align: left;
+  @include mq(md) {
+    text-align: center;
+    font-size: rem(16);
+  }
 }
 
 .p-footer__lists {
@@ -71,10 +93,12 @@
 }
 
 .p-footer__right {
-  margin-left: rem(108);
-  border-left: 1px solid #fff;
-  flex: 1;
-  padding-left: rem(90);
+  @include mq(md) {
+    margin-left: rem(108);
+    border-left: 1px solid #fff;
+    flex: 1;
+    padding-left: rem(90);
+  }
 }
 
 .p-footer__right-top {
@@ -83,19 +107,26 @@
 
 .p-footer__title {
   color: #fff;
-  font-size: rem(30);
   letter-spacing: 0.05em;
   font-weight: 600;
   font-family: $second-font-family;
-  margin-bottom: rem(40);
+  font-size: rem(22);
+  margin-bottom: rem(28);
+  @include mq(md) {
+    margin-bottom: rem(40);
+    font-size: rem(30);
+  }
 }
 
 .p-footer__row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: rem(64);
-  margin-top: rem(48);
+  margin-top: rem(36);
+  @include mq(md) {
+    margin-top: rem(48);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(64);
+  }
 }
 
 .p-footer__tel-wrapper {
@@ -125,9 +156,12 @@
 }
 .p-footer__tel {
   color: #fff;
-  font-size: rem(40);
   font-weight: 600;
   font-family: $second-font-family;
+  font-size: rem(35);
+  @include mq(md) {
+    font-size: rem(40);
+  }
 }
 
 .p-footer__tel-text {
@@ -137,13 +171,19 @@
 }
 
 .p-footer__btn-wrapper {
+  margin-top: rem(28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mq(md) {
+    display: initial;
+    margin-top: initial;
+  }
 }
 
 .p-footer__btn {
   background: #990000;
   color: #fff;
-  width: rem(350);
-  height: rem(70);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,10 +191,18 @@
   font-weight: 600;
   font-family: $second-font-family;
   border-radius: 9999px;
+  width: rem(300);
+  height: rem(70);
+  @include mq(md) {
+    width: rem(350);
+  }
 }
 .p-footer__small {
-  margin-top: rem(72);
   text-align: center;
+  margin-top: rem(45);
+  @include mq(md) {
+    margin-top: rem(72);
+  }
 }
 .p-footer__small small {
   color: #fff;
