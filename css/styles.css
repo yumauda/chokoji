@@ -5954,4 +5954,14 @@ th {
     font-size: 2.1875rem;
   }
 }
+
+.p-feature__title .c-section-title--big {
+  font-size: 35px;
+  font-size: 2.1875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-feature__title .c-section-title--big {
+    font-size: 3.125rem;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

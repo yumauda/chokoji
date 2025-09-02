@@ -59,3 +59,9 @@
     font-size: rem(35);
   }
 }
+.p-feature__title .c-section-title--big {
+  font-size: rem(35);
+  @include mq(md) {
+    font-size: rem(50);
+  }
+}
