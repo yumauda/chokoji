@@ -94,10 +94,10 @@
 
 .p-footer__right {
   @include mq(md) {
-    margin-left: rem(108);
+    margin-left: min(rem(108), calc(108 / 1440) * 100vw);
     border-left: 1px solid #fff;
     flex: 1;
-    padding-left: rem(90);
+    padding-left: min(rem(90), calc(90 / 1440) * 100vw);
   }
 }
 
@@ -117,7 +117,9 @@
     font-size: rem(30);
   }
 }
-
+.p-footer__title span {
+  color: #cc0000;
+}
 .p-footer__row {
   margin-top: rem(36);
   @include mq(md) {
@@ -125,7 +127,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: rem(64);
+    gap: min(rem(64), calc(64 / 1440) * 100vw);
   }
 }
 
@@ -141,6 +143,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @include mq(md){
+    width: min(rem(35), calc(35 / 1440) * 100vw);
+  }
 }
 .p-footer__tel-logo svg path {
   fill: #fff;
@@ -160,7 +165,7 @@
   font-family: $second-font-family;
   font-size: rem(35);
   @include mq(md) {
-    font-size: rem(40);
+    font-size: min(rem(40), calc(40 / 1440) * 100vw);
   }
 }
 
@@ -194,7 +199,7 @@
   width: rem(300);
   height: rem(70);
   @include mq(md) {
-    width: rem(350);
+    width: min(rem(350), calc(350 / 1440) * 100vw);
   }
 }
 .p-footer__small {

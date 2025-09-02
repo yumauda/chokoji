@@ -18,9 +18,8 @@
   }
 }
 .p-drawer-icon.is-active {
-  position: relative;
+  position: fixed;
   z-index: 10001;
-  right: initial;
   background: transparent;
   .p-drawer-icon__bars {
     width: rem(15);

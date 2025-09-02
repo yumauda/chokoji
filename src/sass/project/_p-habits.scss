@@ -4,7 +4,7 @@
   padding-bottom: rem(56);
   background: #f9f0f0;
   @include mq(md) {
-    padding-top: rem(114);
+    padding-top: rem(20);
   }
 }
 
@@ -38,7 +38,7 @@
   @include mq(md) {
     margin-top: rem(56);
     grid-template-columns: repeat(5, 1fr);
-    gap: rem(64);
+    gap: rem(56);
   }
 }
 

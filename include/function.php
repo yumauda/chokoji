@@ -7,7 +7,7 @@
 // #################################################################
 
 	//基本設定
-	$admin_mail = 'info@manyodo.ltd';
+	$admin_mail = 'firststep@first-step-yuma.com';
 	// $admin_mail = 'shin@shin-design.jp';
 
 	// $admin_mail = 'info@regraviti.com';

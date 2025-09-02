@@ -16,7 +16,7 @@ $errors = array();
 if (!empty($_POST['mode']) && $_POST['mode'] == "next") {
 
   // お問い合わせ項目
-  if (empty($_POST['kind1']) && empty($_POST['kind2']) && empty($_POST['kind3'])) {
+  if (empty($_POST['kind1']) && empty($_POST['kind2']) && empty($_POST['kind3']) && empty($_POST['kind4'])) {
     $errors['kind'] = "お問い合わせ種別を選択してください";
   }
 
@@ -190,7 +190,7 @@ if (!empty($_SESSION['CONTACT'])) {
         <div class="p-about__content">
           <div class="p-about__title">
             <span class="c-section-title--small">お寺葬とは</span>
-            <h3 class="c-section-title">お寺が主体となって<br class="u-mobile">執り行う、<span class="c-section-title--red">温</span>かい家族葬</h3>
+            <h2 class="c-section-title">お寺が主体となって<br class="u-mobile">執り行う、<span class="c-section-title--red">温</span>かい家族葬</h2>
           </div>
           <div class="p-about__text-wrapper">
             <p class="p-about__text">お寺葬とは、伝統と格式を重視したお寺の本堂にて執り行う葬儀のことです。<br>
@@ -206,7 +206,7 @@ if (!empty($_SESSION['CONTACT'])) {
         <div class="p-feature__content">
           <div class="p-feature__title">
             <span class="c-section-title--small">5つの特徴</span>
-            <h3 class="c-section-title">長光寺お寺葬 <br class="u-mobile"><span class="c-section-title--big">5つの特徴</span></h3>
+            <h2 class="c-section-title">長光寺お寺葬 <br class="u-mobile"><span class="c-section-title--big">5つの特徴</span></h2>
           </div>
           <ul class="p-feature__grid">
             <li class="p-feature__grid-list" data-number="1">
@@ -214,25 +214,29 @@ if (!empty($_SESSION['CONTACT'])) {
                 <img decoding="async" loading="lazy" src="/images/common/feature_1.jpg" alt="" width="740" height="500">
               </figure>
               <div class="p-feature__detail">
-                <h4 class="p-feature__text-title">住職が主体だから<br>どこまでも<span class="p-feature__text-title--yellow">安心</span></h4>
+                <h3 class="p-feature__text-title">住職が主体だから<br>どこまでも<span class="p-feature__text-title--yellow">安心</span></h3>
                 <div class="p-feature__text-wrapper">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="17px" height="14px" viewBox="0 0 17 14">
-                    <path fill-rule="evenodd" fill="rgb(255, 255, 204)"
-                      d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
-                  </svg>
+                  <div class="p-feature__svg-wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="17px" height="14px" viewBox="0 0 17 14">
+                      <path fill-rule="evenodd" fill="rgb(255, 255, 204)"
+                        d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
+                    </svg>
+                  </div>
                   <p class="p-feature__text">営業担当者ではなく、住職自らがご相談から葬儀後まで責任を持って対応します。</p>
                 </div>
                 <div class="p-feature__text-wrapper">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="17px" height="14px" viewBox="0 0 17 14">
-                    <path fill-rule="evenodd" fill="rgb(255, 255, 204)"
-                      d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
-                  </svg>
+                  <div class="p-feature__svg-wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="17px" height="14px" viewBox="0 0 17 14">
+                      <path fill-rule="evenodd" fill="rgb(255, 255, 204)"
+                        d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
+                    </svg>
+                  </div>
                   <p class="p-feature__text">不要な営業一切行いません。本当に必要なものだけをご提案。ご家族の心に寄り添います。</p>
                 </div>
               </div>
@@ -242,26 +246,31 @@ if (!empty($_SESSION['CONTACT'])) {
                 <img decoding="async" loading="lazy" src="/images/common/feature_2.jpg" alt="" width="740" height="500">
               </figure>
               <div class="p-feature__detail">
-                <h4 class="p-feature__text-title">必要な<span class="p-feature__text-title--red">費用</span>だけを<br>わかりやすく</h4>
+                <h3 class="p-feature__text-title">必要な<span class="p-feature__text-title--red">費用</span>だけを<br>わかりやすく</h3>
 
                 <div class="p-feature__text-wrapper">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="17px" height="14px" viewBox="0 0 17 14">
-                    <path fill-rule="evenodd" fill="#990000"
-                      d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
-                  </svg>
+
+                  <div class="p-feature__svg-wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="17px" height="14px" viewBox="0 0 17 14">
+                      <path fill-rule="evenodd" fill="#990000"
+                        d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
+                    </svg>
+                  </div>
                   <p class="p-feature__text">長光寺が直接お受けします。紹介手数料などの上乗せ費用はいただきません。</p>
                 </div>
                 <div class="p-feature__text-wrapper">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="17px" height="14px" viewBox="0 0 17 14">
-                    <path fill-rule="evenodd" fill="#990000"
-                      d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
-                  </svg>
+                  <div class="p-feature__svg-wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="17px" height="14px" viewBox="0 0 17 14">
+                      <path fill-rule="evenodd" fill="#990000"
+                        d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
+                    </svg>
+                  </div>
                   <p class="p-feature__text">お布施込みの総額提示をさせていただきます。後から高額な請求が来る心配はありません。</p>
                 </div>
               </div>
@@ -271,25 +280,30 @@ if (!empty($_SESSION['CONTACT'])) {
                 <img decoding="async" loading="lazy" src="/images/common/feature_3.jpg" alt="" width="740" height="500">
               </figure>
               <div class="p-feature__detail">
-                <h4 class="p-feature__text-title">由緒ある本堂で<br>心安らぐ葬送</h4>
+                <h3 class="p-feature__text-title">由緒ある本堂で<br>心安らぐ葬送</h3>
                 <div class="p-feature__text-wrapper">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="17px" height="14px" viewBox="0 0 17 14">
-                    <path fill-rule="evenodd" fill="rgb(255, 255, 204)"
-                      d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
-                  </svg>
+
+                  <div class="p-feature__svg-wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="17px" height="14px" viewBox="0 0 17 14">
+                      <path fill-rule="evenodd" fill="rgb(255, 255, 204)"
+                        d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
+                    </svg>
+                  </div>
                   <p class="p-feature__text">本堂を利用した厳かで心安らぐ空間です。貸しホールにはない、由緒正しき荘厳な本堂でお見送りできます。</p>
                 </div>
                 <div class="p-feature__text-wrapper">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="17px" height="14px" viewBox="0 0 17 14">
-                    <path fill-rule="evenodd" fill="rgb(255, 255, 204)"
-                      d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
-                  </svg>
+                  <div class="p-feature__svg-wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="17px" height="14px" viewBox="0 0 17 14">
+                      <path fill-rule="evenodd" fill="rgb(255, 255, 204)"
+                        d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
+                    </svg>
+                  </div>
                   <p class="p-feature__text">寺院には十分な設備がそなわっております。本堂収容人数：最大40名様、駐車場完備：30台</p>
                 </div>
               </div>
@@ -301,25 +315,29 @@ if (!empty($_SESSION['CONTACT'])) {
                 <img decoding="async" loading="lazy" src="/images/common/feature_4.jpg" alt="" width="740" height="500">
               </figure>
               <div class="p-feature__detail">
-                <h4 class="p-feature__text-title">宗旨宗派不問<br>どなたでもご利用可能</h4>
+                <h3 class="p-feature__text-title">宗旨宗派不問<br>どなたでもご利用可能</h3>
                 <div class="p-feature__text-wrapper">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="17px" height="14px" viewBox="0 0 17 14">
-                    <path fill-rule="evenodd" fill="#990000"
-                      d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
-                  </svg>
+                  <div class="p-feature__svg-wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="17px" height="14px" viewBox="0 0 17 14">
+                      <path fill-rule="evenodd" fill="#990000"
+                        d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
+                    </svg>
+                  </div>
                   <p class="p-feature__text">宗旨宗派を問わず、どなたでもご利用いただけます。</p>
                 </div>
                 <div class="p-feature__text-wrapper">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="17px" height="14px" viewBox="0 0 17 14">
-                    <path fill-rule="evenodd" fill="#990000"
-                      d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
-                  </svg>
+                  <div class="p-feature__svg-wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="17px" height="14px" viewBox="0 0 17 14">
+                      <path fill-rule="evenodd" fill="#990000"
+                        d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
+                    </svg>
+                  </div>
                   <p class="p-feature__text">檀家になる必要はありません。葬儀後の関係も、ご家族のご希望を尊重します。</p>
                 </div>
               </div>
@@ -329,15 +347,17 @@ if (!empty($_SESSION['CONTACT'])) {
                 <img decoding="async" loading="lazy" src="/images/common/feature_5.jpg" alt="" width="740" height="500">
               </figure>
               <div class="p-feature__detail">
-                <h4 class="p-feature__text-title">葬儀後も続く<br>末永いお付き合い</h4>
+                <h3 class="p-feature__text-title">葬儀後も続く<br>末永いお付き合い</h3>
                 <div class="p-feature__text-wrapper">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="17px" height="14px" viewBox="0 0 17 14">
-                    <path fill-rule="evenodd" fill="rgb(255, 255, 204)"
-                      d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
-                  </svg>
+                  <div class="p-feature__svg-wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="17px" height="14px" viewBox="0 0 17 14">
+                      <path fill-rule="evenodd" fill="rgb(255, 255, 204)"
+                        d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
+                    </svg>
+                  </div>
                   <p class="p-feature__text">葬儀から永代供養まで一貫対応。葬儀後の法要や納骨も、すべて長光寺が責任を持ってサポートします。</p>
                 </div>
 
@@ -352,7 +372,7 @@ if (!empty($_SESSION['CONTACT'])) {
         <div class="p-plan__content">
           <div class="p-plan__title">
             <span class="c-section-title--small">葬儀プラン</span>
-            <h3 class="c-section-title">余分な費用をかけず、<br class="u-mobile">本当に<span class="c-section-title--red">必</span>要なことだけを<br class="u-mobile">選んだプラン</h3>
+            <h2 class="c-section-title">余分な費用をかけず、<br class="u-mobile">本当に<span class="c-section-title--red">必</span>要なことだけを<br class="u-mobile">選んだプラン</h2>
           </div>
           <div class="p-plan__anchor">
             <a href="#plan1" class="p-plan__anchor-link">
@@ -360,7 +380,7 @@ if (!empty($_SESSION['CONTACT'])) {
                 <img decoding="async" loading="lazy" src="/images/common/plan_img1.jpg" alt="お寺葬基本プラン" width="370" height="250">
               </figure>
               <div class="p-plan__anchor-detail">
-                <h4 class="p-plan__anchor-title">お寺葬基本プラン</h4>
+                <h3 class="p-plan__anchor-title">お寺葬基本プラン</h3>
                 <p class="p-plan__anchor-price">500,000<span class="p-plan__anchor-price-unit">円</span><span class="p-plan__anchor-price-tax">(税込)</span></p>
                 <p class="p-plan__anchor-text">お通夜・ご葬儀（初七日）と二日間かけて執り行います。お寺葬の基本的な葬儀プランです。</p>
               </div>
@@ -370,7 +390,7 @@ if (!empty($_SESSION['CONTACT'])) {
                 <img decoding="async" loading="lazy" src="/images/common/plan_img2.jpg" alt="永代供養付プラン" width="370" height="250">
               </figure>
               <div class="p-plan__anchor-detail">
-                <h4 class="p-plan__anchor-title">永代供養付プラン</h4>
+                <h3 class="p-plan__anchor-title">永代供養付プラン</h3>
                 <p class="p-plan__anchor-price">650,000<span class="p-plan__anchor-price-unit">円</span><span class="p-plan__anchor-price-tax">(税込)</span></p>
                 <p class="p-plan__anchor-text">お寺葬基本プランに永代供養を付けたプランです。お通夜・ご葬儀・四十九日法要・納骨式を三日間かけて執り行います。</p>
               </div>
@@ -383,7 +403,7 @@ if (!empty($_SESSION['CONTACT'])) {
                   <img decoding="async" loading="lazy" src="/images/common/plan_img3.jpg" alt="お寺葬基本プラン" width="740" height="500">
                 </figure>
                 <div class="p-plan__detail">
-                  <h4 class="p-plan__detail-title">お寺葬基本プラン</h4>
+                  <h3 class="p-plan__detail-title">お寺葬基本プラン</h3>
                   <p class="p-plan__price">500,000<span class="p-plan__price-unit">円</span><span class="p-plan__price-tax">(税込)</span></p>
                   <p class="p-plan__number">参加者数目安：～30名程度</p>
                   <p class="p-plan__text">お寺葬の基本的な葬儀プランです。<br class="u-desktop">
@@ -506,7 +526,7 @@ if (!empty($_SESSION['CONTACT'])) {
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan20.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="/images/common/plan200.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
@@ -547,7 +567,7 @@ if (!empty($_SESSION['CONTACT'])) {
                   <img decoding="async" loading="lazy" src="/images/common/plan_img4.jpg" alt="永代供養付プラン" width="740" height="500">
                 </figure>
                 <div class="p-plan__detail">
-                  <h4 class="p-plan__detail-title">永代供養付プラン</h4>
+                  <h3 class="p-plan__detail-title">永代供養付プラン</h3>
                   <p class="p-plan__price">650,000<span class="p-plan__price-unit">円</span><span class="p-plan__price-tax">(税込)</span></p>
                   <p class="p-plan__number">参加者数目安：～30名程度</p>
                   <p class="p-plan__text">お寺葬基本プランに永代供養を付けたプランです。<br>
@@ -727,7 +747,7 @@ if (!empty($_SESSION['CONTACT'])) {
         <div class="p-habits__content">
           <div class="p-habits__title">
             <span class="c-section-title--small">永代供養</span>
-            <h3 class="c-section-title">個別安置の<span class="c-section-title--red">永</span>代供養も<br class="u-mobile">承ります</h3>
+            <h2 class="c-section-title">個別安置の<span class="c-section-title--red">永</span>代供養も<br class="u-mobile">承ります</h2>
           </div>
           <div class="p-habits__text-wrapper">
             <p class="p-habits__text">永代供養とはお寺に供養を託すことです。<br>
@@ -740,7 +760,7 @@ if (!empty($_SESSION['CONTACT'])) {
                 <img decoding="async" loading="lazy" src="/images/common/habits_1.png" alt="全て個別安置" width="431" height="38">
               </figure>
               <div class="p-habits__detail">
-                <h4 class="p-habits__detail-title">全て個別安置</h4>
+                <h3 class="p-habits__detail-title">全て個別安置</h3>
                 <p class="p-habits__detail-text">他の方と一緒にならない個別納骨です。</p>
               </div>
             </li>
@@ -749,7 +769,7 @@ if (!empty($_SESSION['CONTACT'])) {
                 <img decoding="async" loading="lazy" src="/images/common/habits_2.png" alt="20年間個別安置" width="431" height="38">
               </figure>
               <div class="p-habits__detail">
-                <h4 class="p-habits__detail-title">20年間個別安置</h4>
+                <h3 class="p-habits__detail-title">20年間個別安置</h3>
                 <p class="p-habits__detail-text">20年後で合祀いたします。（ご希望により延長可能）</p>
               </div>
             </li>
@@ -758,7 +778,7 @@ if (!empty($_SESSION['CONTACT'])) {
                 <img decoding="async" loading="lazy" src="/images/common/habits_3.png" alt="宗旨宗派不問" width="431" height="38">
               </figure>
               <div class="p-habits__detail">
-                <h4 class="p-habits__detail-title">宗旨宗派不問</h4>
+                <h3 class="p-habits__detail-title">宗旨宗派不問</h3>
                 <p class="p-habits__detail-text">宗旨宗派は問いません。どなたでもご利用可能です。</p>
               </div>
             </li>
@@ -767,7 +787,7 @@ if (!empty($_SESSION['CONTACT'])) {
                 <img decoding="async" loading="lazy" src="/images/common/habits_4.png" alt="全て個別安置" width="431" height="38">
               </figure>
               <div class="p-habits__detail">
-                <h4 class="p-habits__detail-title">年2回の合同供養</h4>
+                <h3 class="p-habits__detail-title">年2回の合同供養</h3>
                 <p class="p-habits__detail-text">春彼岸・お盆に丁重に供養いたします。</p>
               </div>
             </li>
@@ -776,7 +796,7 @@ if (!empty($_SESSION['CONTACT'])) {
                 <img decoding="async" loading="lazy" src="/images/common/habits_5.png" alt="全て個別安置" width="431" height="38">
               </figure>
               <div class="p-habits__detail">
-                <h4 class="p-habits__detail-title">毎日の墓前供養</h4>
+                <h3 class="p-habits__detail-title">毎日の墓前供養</h3>
                 <p class="p-habits__detail-text">住職による朝夕の墓前供養を行います。</p>
               </div>
             </li>
@@ -789,7 +809,7 @@ if (!empty($_SESSION['CONTACT'])) {
         <div class="p-flow__content">
           <div class="p-flow__title">
             <span class="c-section-title--small">ご葬儀の流れ</span>
-            <h3 class="c-section-title">もしもの時に備えて<br class="u-mobile">事<span class="c-section-title--red">前</span>相談が安心です</h3>
+            <h2 class="c-section-title">もしもの時に備えて<br class="u-mobile">事<span class="c-section-title--red">前</span>相談が安心です</h2>
           </div>
           <div class="p-flow__text-wrapper">
             <p class="p-flow__text">初めての方でも安心してご利用いただけるよう、住職が最初から最後までしっかりとサポートいたします。<br class="u-desktop">
@@ -807,7 +827,7 @@ if (!empty($_SESSION['CONTACT'])) {
                 <div class="p-flow__detail">
                   <div class="p-flow__detail-top">
                     <p class="p-flow__num">01</p>
-                    <h4 class="p-flow__detail-title">ご連絡</h4>
+                    <h3 class="p-flow__detail-title">ご連絡</h3>
                   </div>
                   <div class="p-flow__detail-textWrapper">
                     <p class="p-flow__detail-text">もしもの時には、まずお電話ください。24時間いつでもご連絡を受け付けております。ご連絡をいただき次第、すぐにご自宅や病院などご指定の場所までお迎えに上がります。</p>
@@ -831,7 +851,7 @@ if (!empty($_SESSION['CONTACT'])) {
                 <div class="p-flow__detail">
                   <div class="p-flow__detail-top">
                     <p class="p-flow__num">02</p>
-                    <h4 class="p-flow__detail-title">お迎え</h4>
+                    <h3 class="p-flow__detail-title">お迎え</h3>
                   </div>
                   <div class="p-flow__detail-textWrapper">
                     <p class="p-flow__detail-text">ご遺体を丁寧にお迎えし、長光寺またはご希望の安置場所へご案内します。</p>
@@ -846,7 +866,7 @@ if (!empty($_SESSION['CONTACT'])) {
                 <div class="p-flow__detail">
                   <div class="p-flow__detail-top">
                     <p class="p-flow__num">03</p>
-                    <h4 class="p-flow__detail-title">ご遺体安置・枕経</h4>
+                    <h3 class="p-flow__detail-title">ご遺体安置・枕経</h3>
                   </div>
                   <div class="p-flow__detail-textWrapper">
                     <p class="p-flow__detail-text">安置後、ご家族が落ち着けるよう配慮いたします。<br>
@@ -862,7 +882,7 @@ if (!empty($_SESSION['CONTACT'])) {
                 <div class="p-flow__detail">
                   <div class="p-flow__detail-top">
                     <p class="p-flow__num">04</p>
-                    <h4 class="p-flow__detail-title">喪主様との打ち合わせ</h4>
+                    <h3 class="p-flow__detail-title">喪主様との打ち合わせ</h3>
                   </div>
                   <div class="p-flow__detail-textWrapper">
                     <p class="p-flow__detail-text">ご家族のご希望やご事情を伺いながら、葬儀の内容や日程を丁寧にご相談・ご提案いたします。</p>
@@ -877,7 +897,7 @@ if (!empty($_SESSION['CONTACT'])) {
                 <div class="p-flow__detail">
                   <div class="p-flow__detail-top">
                     <p class="p-flow__num">05</p>
-                    <h4 class="p-flow__detail-title">お通夜</h4>
+                    <h3 class="p-flow__detail-title">お通夜</h3>
                   </div>
                   <div class="p-flow__detail-textWrapper">
                     <p class="p-flow__detail-text">ご家族・ご親族で静かにお別れの時間をお過ごしいただきます。</p>
@@ -892,7 +912,7 @@ if (!empty($_SESSION['CONTACT'])) {
                 <div class="p-flow__detail">
                   <div class="p-flow__detail-top">
                     <p class="p-flow__num">06</p>
-                    <h4 class="p-flow__detail-title">ご葬儀・初七日法要</h4>
+                    <h3 class="p-flow__detail-title">ご葬儀・初七日法要</h3>
                   </div>
                   <div class="p-flow__detail-textWrapper">
                     <p class="p-flow__detail-text">本堂にて、心を込めてご葬儀と初七日法要を執り行います。</p>
@@ -907,7 +927,7 @@ if (!empty($_SESSION['CONTACT'])) {
                 <div class="p-flow__detail">
                   <div class="p-flow__detail-top">
                     <p class="p-flow__num">07</p>
-                    <h4 class="p-flow__detail-title">火葬</h4>
+                    <h3 class="p-flow__detail-title">火葬</h3>
                   </div>
                   <div class="p-flow__detail-textWrapper">
                     <p class="p-flow__detail-text">火葬場へご出棺し、故人様をお見送りします。</p>
@@ -922,7 +942,7 @@ if (!empty($_SESSION['CONTACT'])) {
                 <div class="p-flow__detail">
                   <div class="p-flow__detail-top">
                     <p class="p-flow__num">07</p>
-                    <h4 class="p-flow__detail-title">収骨・解散</h4>
+                    <h3 class="p-flow__detail-title">収骨・解散</h3>
                   </div>
                   <div class="p-flow__detail-textWrapper">
                     <p class="p-flow__detail-text">お骨上げの後、解散となります。ご希望により、その後の法要や永代供養もご案内いたします。</p>
@@ -941,7 +961,7 @@ if (!empty($_SESSION['CONTACT'])) {
         <div class="p-other__content">
           <div class="p-other__title">
             <span class="c-section-title--small">他社との比較</span>
-            <h3 class="c-section-title">提示価格と実際にかかる料金に<br class="u-mobile"><span class="c-section-title--red">差</span>額が少ない料金設定</h3>
+            <h2 class="c-section-title">提示価格と実際にかかる料金に<br class="u-mobile"><span class="c-section-title--red">差</span>額が少ない料金設定</h2>
           </div>
           <div class="p-other__table">
             <div class="p-price-table">
@@ -1028,16 +1048,16 @@ if (!empty($_SESSION['CONTACT'])) {
     <section class="p-qa">
       <div class="l-inner">
         <div class="p-qa__title">
-          <span class="c-section-title--small">他社との比較</span>
-          <h3 class="c-section-title">皆様からよくご<span class="c-section-title--red">質</span>問いただく<br class="u-mobile">内容はこちら</h3>
+          <span class="c-section-title--small">よくある質問</span>
+          <h2 class="c-section-title">皆様からよくご<span class="c-section-title--red">質</span>問いただく<br class="u-mobile">内容はこちら</h2>
         </div>
         <div class="p-qa__block">
           <details class="p-qa__content js-details">
             <summary class="p-qa__summary js-summary">
               <p class="p-qa__q">Q.</p>
-              <h4 class="p-qa__ttl">
+              <h3 class="p-qa__ttl">
                 事前相談はできますか？
-              </h4>
+              </h3>
             </summary>
             <div class="p-qa__inner js-content">
               <div class="p-qa__wrap">
@@ -1052,9 +1072,9 @@ if (!empty($_SESSION['CONTACT'])) {
           <details class="p-qa__content p-qa__content--last js-details">
             <summary class="p-qa__summary js-summary">
               <p class="p-qa__q">Q.</p>
-              <h4 class="p-qa__ttl">
+              <h3 class="p-qa__ttl">
                 事前相談はできますか？
-              </h4>
+              </h3>
             </summary>
             <div class="p-qa__inner js-content">
               <div class="p-qa__wrap">
@@ -1073,7 +1093,7 @@ if (!empty($_SESSION['CONTACT'])) {
       <div class="l-inner">
         <div class="p-temple__title">
           <span class="c-section-title--small">運営寺院</span>
-          <h3 class="c-section-title">ご<span class="c-section-title--red">縁</span>あってこのページを<br class="u-mobile">ご覧の皆さまへ</h3>
+          <h2 class="c-section-title">ご<span class="c-section-title--red">縁</span>あってこのページを<br class="u-mobile">ご覧の皆さまへ</h2>
         </div>
         <div class="p-temple__content">
           <div class="p-temple__row">
@@ -1111,7 +1131,7 @@ if (!empty($_SESSION['CONTACT'])) {
             </div>
             <div class="p-temple__dlRow">
               <dt class="p-temple__dt">所在地</dt>
-              <dd class="p-temple__dd">〒386-0403 長野県上田市腰越1530 [<a href="#" target="_blank" rel="noopener noreferrer">地図</a>]</dd>
+              <dd class="p-temple__dd">〒386-0403 長野県上田市腰越1530 [<a href="https://maps.app.goo.gl/P6TD3CyUGzDDFKJu7" target="_blank" rel="noopener noreferrer">地図</a>]</dd>
             </div>
             <div class="p-temple__dlRow">
               <dt class="p-temple__dt">アクセス</dt>
@@ -1148,7 +1168,7 @@ if (!empty($_SESSION['CONTACT'])) {
           <div class="p-area__detail">
             <div class="p-area__title">
               <span class="c-section-title--small">対応エリア</span>
-              <h3 class="c-section-title">長野県・<span class="c-section-title--red">東信</span>エリアに対応</h3>
+              <h2 class="c-section-title">長野県・<span class="c-section-title--red">東信</span>エリアに対応</h2>
             </div>
             <div class="p-area__text-wrapper">
               <p class="p-area__text">長野県上田市を拠点に「東信エリア」に対応しております。<br>
@@ -1167,7 +1187,7 @@ if (!empty($_SESSION['CONTACT'])) {
         <div class="p-contact__content">
           <div class="p-contact__title">
             <span class="c-section-title--small">お問い合わせ</span>
-            <h3 class="c-section-title">ご相談は<span class="c-section-title--red">無料</span>。<br class="u-mobile">お気軽にお問い合わせください</h3>
+            <h2 class="c-section-title">ご相談は<span class="c-section-title--red">無料</span>。<br class="u-mobile">お気軽にお問い合わせください</h2>
           </div>
           <p class="p-contact__top-text">この度はご訪問いただき、誠にありがとうございました。<br class="u-desktop">
             改めて当寺院よりご連絡差し上げますので、下記フォームよりお問い合わせ内容をお送りください。<br>
@@ -1232,7 +1252,7 @@ if (!empty($_SESSION['CONTACT'])) {
                     <?= error_check($errors, 'emailcheck'); ?>
                   </td>
                 </tr>
-              
+
                 <tr>
                   <th><b>お問い合わせ内容</b></th>
                   <td class="input">

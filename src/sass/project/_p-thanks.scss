@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.p-thanks {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-thanks__content {
+}
+
+.p-thanks__text {
+  color: #333;
+  line-height: 1.8;
+  font-size: rem(15);
+  @include mq(md) {
+    font-size: rem(16);
+    text-align: center;
+  }
+}
+
+.p-thanks__btn-wrapper {
+  margin-top: rem(32);
+  @include mq(md) {
+    text-align: center;
+  }
+}
+
+.p-thanks__btn {
+  color: #3366cc;
+  font-weight: 400;
+  font-size: rem(15);
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
