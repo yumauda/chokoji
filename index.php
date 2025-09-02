@@ -93,7 +93,7 @@ if (!empty($_SESSION['CONTACT'])) {
 
   <!-- css -->
   <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.css?20250902" />
   <!-- JavaScript -->
   <script>
     (function(d) {
