@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="p-floating__btn-wrapper">
-                    <a href="#contact" class="p-floating__btn">お問い合わせ</a>
+                    <a href="#form" class="p-floating__btn">お問い合わせ</a>
                 </div>
             </div>
         </div>
@@ -130,7 +130,7 @@
                     </div>
 
                     <div class="p-footer__btn-wrapper">
-                        <a href="#contact" class="p-footer__btn">お問い合わせ</a>
+                        <a href="#form" class="p-footer__btn">お問い合わせ</a>
                     </div>
                 </div>
             </div>
