@@ -10,7 +10,7 @@
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   transition: 0.3s ease-in-out;
-  z-index: 9999;
+  z-index: 9996;
   opacity: 0;
   visibility: hidden;
   padding-top: rem(16);
@@ -55,8 +55,9 @@
   align-items: center;
   justify-content: center;
   flex: 1;
-  gap: rem(15);
+  gap: min(rem(15), calc(15 / 375) * 100vw);
   @include mq(md) {
+    justify-content: flex-end;
     gap: rem(35);
   }
 }
@@ -102,7 +103,7 @@
   color: #990000;
   font-weight: 600;
   font-family: $second-font-family;
-  font-size: rem(20);
+  font-size: min(rem(19), calc(19 / 375) * 100vw);
   @include mq(md) {
     font-size: rem(35);
   }
@@ -128,8 +129,8 @@
   justify-content: center;
   font-weight: 400;
   border-radius: 9999px;
-  width: rem(170);
-  height: rem(40);
+  width: min(rem(170), calc(170 / 375) * 100vw);
+  height: min(rem(40), calc(40 / 375) * 100vw);
   font-size: rem(14);
   @include mq(md) {
     font-size: rem(16);

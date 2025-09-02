@@ -55,6 +55,9 @@ jQuery(function ($) {
     $("html,body").animate({ scrollTop: targetY }, time, "swing");
     return false;
   });
+  $("#drawer a[href]").on("click", function (event) {
+    $(".p-drawer-icon").trigger("click");
+  });
 });
 document.addEventListener("DOMContentLoaded", () => {
   setUpAccordion();
@@ -182,4 +185,28 @@ jQuery(".p-drawer-icon").on("click", function (e) {
   jQuery(".p-drawer-content").toggleClass("is-active");
   jQuery(".p-drawer-background").toggleClass("is-active");
   return false;
+});
+jQuery(document).ready(function ($) {
+  $(".p-drawer-icon").on("click", function () {
+    $("body").toggleClass("drawer-open");
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const targets = document.querySelectorAll(".fadein");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target); // 一度だけ発火
+        }
+      });
+    },
+    {
+      threshold: 0.2, // 画面の10%入ったら発火
+    }
+  );
+
+  targets.forEach((target) => observer.observe(target));
 });

@@ -33,36 +33,36 @@
             </div>
             <div class="p-header__drawer-content p-drawer-content">
                 <div class="p-drawer-content__items">
-                    <ul class="p-drawer-content__lists">
+                    <ul class="p-drawer-content__lists" id="drawer">
                         <li class="p-drawer-content__list">
-                            <a href="" class="p-drawer-content__link">お寺葬とは</a>
+                            <a href="#about" class="p-drawer-content__link">お寺葬とは</a>
                         </li>
                         <li class="p-drawer-content__list">
-                            <a href="" class="p-drawer-content__link">5つの特徴</a>
+                            <a href="#feature" class="p-drawer-content__link">5つの特徴</a>
                         </li>
                         <li class="p-drawer-content__list">
-                            <a href="" class="p-drawer-content__link">葬儀プラン</a>
+                            <a href="#plan" class="p-drawer-content__link">葬儀プラン</a>
                         </li>
                         <li class="p-drawer-content__list">
-                            <a href="" class="p-drawer-content__link">永代供養</a>
+                            <a href="#habits" class="p-drawer-content__link">永代供養</a>
                         </li>
                         <li class="p-drawer-content__list">
-                            <a href="" class="p-drawer-content__link">葬儀の流れ</a>
+                            <a href="#flow" class="p-drawer-content__link">葬儀の流れ</a>
                         </li>
                         <li class="p-drawer-content__list">
-                            <a href="" class="p-drawer-content__link">他社との比較</a>
+                            <a href="#other" class="p-drawer-content__link">他社との比較</a>
                         </li>
                         <li class="p-drawer-content__list">
-                            <a href="" class="p-drawer-content__link">よくある質問</a>
+                            <a href="#qa" class="p-drawer-content__link">よくある質問</a>
                         </li>
                         <li class="p-drawer-content__list">
-                            <a href="" class="p-drawer-content__link">運営寺院</a>
+                            <a href="#temple" class="p-drawer-content__link">運営寺院</a>
                         </li>
                         <li class="p-drawer-content__list">
-                            <a href="" class="p-drawer-content__link">対応エリア</a>
+                            <a href="#area" class="p-drawer-content__link">対応エリア</a>
                         </li>
                         <li class="p-drawer-content__list">
-                            <a href="" class="p-drawer-content__link">お問い合わせ</a>
+                            <a href="#form" class="p-drawer-content__link">お問い合わせ</a>
                         </li>
                     </ul>
                 </div>

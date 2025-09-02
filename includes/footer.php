@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="p-floating__btn-wrapper">
-                    <a href="#" class="p-floating__btn">お問い合わせ</a>
+                    <a href="#contact" class="p-floating__btn">お問い合わせ</a>
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@
                         </a>
                     </li>
                     <li class="p-footer__list">
-                        <a href="https://m-chokoji.com" class="p-footer__link" target="_blank" rel="noopener noreferrer">
+                        <a href="https://tera-blo.com/" class="p-footer__link" target="_blank" rel="noopener noreferrer">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -130,7 +130,7 @@
                     </div>
 
                     <div class="p-footer__btn-wrapper">
-                        <a href="#" class="p-footer__btn">お問い合わせ</a>
+                        <a href="#contact" class="p-footer__btn">お問い合わせ</a>
                     </div>
                 </div>
             </div>

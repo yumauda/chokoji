@@ -19,6 +19,10 @@ body {
   }
 }
 
+body.drawer-open {
+  overflow: hidden;
+}
+
 html {
   font-size: 16px;
 }
@@ -1350,7 +1354,7 @@ input[type=checkbox] {
   border-bottom: 1px solid #ccc;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  z-index: 9999;
+  z-index: 9996;
   opacity: 0;
   visibility: hidden;
   padding-top: 16px;
@@ -1419,11 +1423,14 @@ input[type=checkbox] {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  gap: 15px;
-  gap: 0.9375rem;
+  gap: min(15px, 4vw);
+  gap: min(0.9375rem, 4vw);
 }
 @media screen and (min-width: 768px) {
   .p-floating__row {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     gap: 2.1875rem;
   }
 }
@@ -1496,8 +1503,8 @@ input[type=checkbox] {
   color: #990000;
   font-weight: 600;
   font-family: "source-han-serif-japanese", serif;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: min(19px, 5.0666666667vw);
+  font-size: min(1.1875rem, 5.0666666667vw);
 }
 @media screen and (min-width: 768px) {
   .p-floating__tel {
@@ -1531,10 +1538,10 @@ input[type=checkbox] {
           justify-content: center;
   font-weight: 400;
   border-radius: 9999px;
-  width: 170px;
-  width: 10.625rem;
-  height: 40px;
-  height: 2.5rem;
+  width: min(170px, 45.3333333333vw);
+  width: min(10.625rem, 45.3333333333vw);
+  height: min(40px, 10.6666666667vw);
+  height: min(2.5rem, 10.6666666667vw);
   font-size: 14px;
   font-size: 0.875rem;
 }
@@ -2198,6 +2205,22 @@ input[type=checkbox] {
     text-align: left;
     text-align: initial;
   }
+}
+
+.fadein {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: opacity 0.8s ease, -webkit-transform 0.8s ease;
+  transition: opacity 0.8s ease, -webkit-transform 0.8s ease;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition: opacity 0.8s ease, transform 0.8s ease, -webkit-transform 0.8s ease;
+}
+
+.fadein.show {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 /* Forms
