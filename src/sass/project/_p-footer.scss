@@ -51,6 +51,7 @@
 }
 .p-footer__text-wrapper {
   margin-top: rem(32);
+  text-align: left;
   @include mq(md) {
     text-align: center;
   }
@@ -62,7 +63,6 @@
   line-height: 1.8;
   font-weight: 400;
   font-size: rem(15);
-  text-align: left;
   @include mq(md) {
     text-align: center;
     font-size: rem(16);
@@ -209,4 +209,10 @@
   font-size: rem(14);
   font-weight: 400;
   letter-spacing: 0.05em;
+}
+.p-footer__text-wrapper--mobile {
+  text-align: center;
+  @include mq(md) {
+    text-align: initial;
+  }
 }

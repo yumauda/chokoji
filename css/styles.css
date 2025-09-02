@@ -218,16 +218,23 @@ select::-ms-expand {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 360px;
-  width: 22.5rem;
+  width: 180px;
+  width: 11.25rem;
   height: auto;
   aspect-ratio: 360/360;
   -o-object-fit: cover;
      object-fit: cover;
-  top: -40px;
-  top: -2.5rem;
-  left: -44px;
-  left: -2.75rem;
+  top: -64px;
+  top: -4rem;
+  left: -88px;
+  left: -5.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-about::before {
+    top: -2.5rem;
+    left: -2.75rem;
+    width: 22.5rem;
+  }
 }
 
 .p-about__title {
@@ -264,11 +271,39 @@ select::-ms-expand {
   padding-top: 3.5rem;
   padding-bottom: 56px;
   padding-bottom: 3.5rem;
+  position: relative;
+  overflow: clip;
 }
 @media screen and (min-width: 768px) {
   .p-area {
     padding-top: 6.25rem;
     padding-bottom: 7.5rem;
+  }
+}
+
+.p-area::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/area_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 360/357;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+  width: 180px;
+  width: 11.25rem;
+  top: -64px;
+  top: -4rem;
+  left: -80px;
+  left: -5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-area::before {
+    width: 22.5rem;
+    top: -7.5rem;
+    left: -6.875rem;
   }
 }
 
@@ -367,12 +402,71 @@ select::-ms-expand {
   padding-top: 3.5rem;
   padding-bottom: 56px;
   padding-bottom: 3.5rem;
+  position: relative;
+  overflow: clip;
 }
 @media screen and (min-width: 768px) {
   .p-contact {
     padding-top: 7.5rem;
     padding-bottom: 6.25rem;
   }
+}
+
+.p-contact::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/contact_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 360/360;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 180px;
+  width: 11.25rem;
+  height: auto;
+  top: -64px;
+  top: -4rem;
+  right: -80px;
+  right: -5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-contact::before {
+    width: 22.5rem;
+    top: -6.875rem;
+    right: -4rem;
+  }
+}
+
+.p-contact::after {
+  position: absolute;
+  content: "";
+  background: url(../images/common/contact_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 360/360;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 180px;
+  width: 11.25rem;
+  height: auto;
+  left: -80px;
+  left: -5rem;
+  top: 1100px;
+  top: 68.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-contact::after {
+    width: 22.5rem;
+    top: 68.75rem;
+    left: -4rem;
+  }
+}
+
+.p-contact__content {
+  position: relative;
+  z-index: 10;
 }
 
 .p-contact__title {
@@ -401,17 +495,23 @@ select::-ms-expand {
 }
 
 .p-contact__tel-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 56px;
-  margin-top: 3.5rem;
+  margin-top: 32px;
+  margin-top: 2rem;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .p-contact__tel-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 3.5rem;
+  }
 }
 
 .p-contact__tel-logo {
@@ -454,46 +554,64 @@ select::-ms-expand {
 }
 
 .p-contact__num-text {
-  font-size: 16px;
-  font-size: 1rem;
   color: #990000;
-  margin-left: 24px;
-  margin-left: 1.5rem;
   line-height: 1;
   font-weight: 400;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  margin-top: 10px;
+  margin-top: 0.625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-contact__num-text {
+    margin-top: 0;
+    margin-top: initial;
+    font-size: 1rem;
+    margin-left: 1.5rem;
+  }
 }
 
 .p-contact__form {
-  margin-top: 88px;
-  margin-top: 5.5rem;
-  max-width: 710px;
-  max-width: 44.375rem;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-contact__form {
+    max-width: 44.375rem;
+    margin-top: 5.5rem;
+  }
 }
 
 .p-contact__table {
   width: 100%;
-  table-layout: fixed;
+  /*   table-layout: fixed; */
   border-collapse: separate; /* ← ここが重要 */
   border-spacing: 0 30px;
 }
 
 .p-contact__table th {
-  width: 257px;
-  width: 16.0625rem;
   padding-top: 16px;
   padding-top: 1rem;
   font-size: 18px;
   font-size: 1.125rem;
   font-weight: 700;
   color: #333;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .p-contact__table th {
+    display: table-cell;
+    width: 16.0625rem;
+  }
 }
 
 .p-contact__table tr:first-child th {
   padding-top: 2px;
   padding-top: 0.125rem;
+  display: block;
 }
 
 .p-contact__table tbody tr {
@@ -528,18 +646,28 @@ select::-ms-expand {
 }
 
 .checkbox {
-  text-align: center;
   margin-top: 24px;
   margin-top: 1.5rem;
   color: #333;
-  font-size: 16px;
-  font-size: 1rem;
   line-height: 1.8;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+@media screen and (min-width: 768px) {
+  .checkbox {
+    text-align: center;
+    font-size: 1rem;
+  }
 }
 
 .btn_block {
-  margin-top: 56px;
-  margin-top: 3.5rem;
+  margin-top: 36px;
+  margin-top: 2.25rem;
+}
+@media screen and (min-width: 768px) {
+  .btn_block {
+    margin-top: 3.5rem;
+  }
 }
 
 .input2 ul li {
@@ -564,6 +692,20 @@ input[type=checkbox] {
   border: 1px solid #ccc !important;
 }
 
+.p-contact__tel-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2px;
+  gap: 0.125rem;
+}
+
 .p-drawer-icon {
   background: transparent;
   -webkit-transition: 0.3s;
@@ -583,10 +725,10 @@ input[type=checkbox] {
       -ms-flex-pack: center;
           justify-content: center;
   position: fixed;
+  top: 14px;
+  top: 0.875rem;
   right: 20px;
   right: 1.25rem;
-  top: 20px;
-  top: 1.25rem;
   z-index: 9999;
 }
 @media screen and (min-width: 768px) {
@@ -598,6 +740,8 @@ input[type=checkbox] {
 .p-drawer-icon.is-active {
   position: relative;
   z-index: 10001;
+  right: auto;
+  right: initial;
   background: transparent;
 }
 .p-drawer-icon.is-active .p-drawer-icon__bars {
@@ -659,11 +803,19 @@ input[type=checkbox] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 @media screen and (min-width: 768px) {
   .p-drawer-icon__bar1 {
     width: 1.75rem;
   }
+}
+
+.p-drawer-icon__bar1.is-scrolled,
+.p-drawer-icon__bar2.is-scrolled,
+.p-drawer-icon__bar3.is-scrolled {
+  background: #333;
 }
 
 .p-drawer-icon__bar2 {
@@ -676,6 +828,8 @@ input[type=checkbox] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 @media screen and (min-width: 768px) {
   .p-drawer-icon__bar2 {
@@ -693,6 +847,8 @@ input[type=checkbox] {
   display: flex;
   width: 20px;
   width: 1.25rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 @media screen and (min-width: 768px) {
   .p-drawer-icon__bar3 {
@@ -791,17 +947,24 @@ input[type=checkbox] {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 360px;
-  width: 22.5rem;
+  width: 180px;
+  width: 11.25rem;
   height: auto;
   aspect-ratio: 360/360;
   -o-object-fit: cover;
      object-fit: cover;
-  top: -48px;
-  top: -3rem;
-  right: -40px;
-  right: -2.5rem;
   z-index: -1;
+  top: 110px;
+  top: 6.875rem;
+  right: -88px;
+  right: -5.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-feature::before {
+    width: 22.5rem;
+    top: -3rem;
+    right: -2.5rem;
+  }
 }
 
 .p-feature::after {
@@ -811,17 +974,24 @@ input[type=checkbox] {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 360px;
-  width: 22.5rem;
   height: auto;
   aspect-ratio: 360/360;
   -o-object-fit: cover;
      object-fit: cover;
-  bottom: 100px;
-  bottom: 6.25rem;
-  left: -44px;
-  left: -2.75rem;
   z-index: -1;
+  width: 180px;
+  width: 11.25rem;
+  bottom: 1600px;
+  bottom: 100rem;
+  left: -90px;
+  left: -5.625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-feature::after {
+    width: 22.5rem;
+    bottom: 6.25rem;
+    left: -2.75rem;
+  }
 }
 
 .p-feature__title {
@@ -892,11 +1062,12 @@ input[type=checkbox] {
 
 .p-feature__detail {
   background: #990000;
-  padding: 24px;
-  padding: 1.5rem;
+  padding: 20px;
+  padding: 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .p-feature__detail {
+    padding: 1.5rem;
     max-height: 19.375rem;
     height: 100%;
   }
@@ -921,10 +1092,10 @@ input[type=checkbox] {
 }
 
 .p-feature__text-wrapper svg {
-  max-width: 24px;
-  max-width: 1.5rem;
-  min-width: 24px;
-  min-width: 1.5rem;
+  max-width: 17px;
+  max-width: 1.0625rem;
+  min-width: 17px;
+  min-width: 1.0625rem;
   width: 100%;
   height: auto;
   -o-object-fit: cover;
@@ -933,6 +1104,12 @@ input[type=checkbox] {
      object-position: center center;
   margin-top: 4px;
   margin-top: 0.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-feature__text-wrapper svg {
+    max-width: 1.5rem;
+    min-width: 1.5rem;
+  }
 }
 
 .p-feature__text-title {
@@ -950,6 +1127,14 @@ input[type=checkbox] {
   .p-feature__text-title {
     font-size: 1.5625rem;
   }
+}
+
+.p-feature__text-title--yellow {
+  color: #ffffcc;
+}
+
+.p-feature__text-title--red {
+  color: #990000;
 }
 
 .p-feature__text {
@@ -1226,16 +1411,23 @@ input[type=checkbox] {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 360px;
-  width: 22.5rem;
   height: auto;
   aspect-ratio: 360/357;
   -o-object-fit: cover;
      object-fit: cover;
-  top: -40px;
-  top: -2.5rem;
-  right: -40px;
-  right: -2.5rem;
+  width: 180px;
+  width: 11.25rem;
+  top: -64px;
+  top: -4rem;
+  right: -88px;
+  right: -5.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-flow::before {
+    width: 22.5rem;
+    top: -2.5rem;
+    right: -2.5rem;
+  }
 }
 
 .p-flow__content {
@@ -1255,17 +1447,24 @@ input[type=checkbox] {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 360px;
-  width: 22.5rem;
+  width: 180px;
+  width: 11.25rem;
   height: auto;
   aspect-ratio: 360/357;
   -o-object-fit: cover;
      object-fit: cover;
-  top: 660px;
-  top: 41.25rem;
-  left: -330px;
-  left: -20.625rem;
   z-index: 1;
+  left: -90px;
+  left: -5.625rem;
+  top: 1280px;
+  top: 80rem;
+}
+@media screen and (min-width: 768px) {
+  .p-flow__content::before {
+    width: 22.5rem;
+    top: 41.25rem;
+    left: -20.625rem;
+  }
 }
 
 .p-flow__content::after {
@@ -1275,17 +1474,24 @@ input[type=checkbox] {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 360px;
-  width: 22.5rem;
+  width: 180px;
+  width: 11.25rem;
   height: auto;
   aspect-ratio: 360/357;
   -o-object-fit: cover;
      object-fit: cover;
-  top: 1400px;
-  top: 87.5rem;
-  right: -240px;
-  right: -15rem;
   z-index: 1;
+  right: -90px;
+  right: -5.625rem;
+  top: 2400px;
+  top: 150rem;
+}
+@media screen and (min-width: 768px) {
+  .p-flow__content::after {
+    top: 87.5rem;
+    width: 22.5rem;
+    right: -15rem;
+  }
 }
 
 .p-flow__title {
@@ -1324,6 +1530,8 @@ input[type=checkbox] {
   margin-top: 2.5rem;
   gap: 20px;
   gap: 1.25rem;
+  position: relative;
+  z-index: 10;
 }
 @media screen and (min-width: 768px) {
   .p-flow__block {
@@ -1350,8 +1558,14 @@ input[type=checkbox] {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  position: relative;
+  z-index: 10;
 }
 
+.p-flow__row {
+  position: relative;
+  z-index: 10;
+}
 @media screen and (min-width: 768px) {
   .p-flow__row {
     display: -webkit-box;
@@ -1565,6 +1779,7 @@ input[type=checkbox] {
 .p-footer__text-wrapper {
   margin-top: 32px;
   margin-top: 2rem;
+  text-align: left;
 }
 @media screen and (min-width: 768px) {
   .p-footer__text-wrapper {
@@ -1579,7 +1794,6 @@ input[type=checkbox] {
   font-weight: 400;
   font-size: 15px;
   font-size: 0.9375rem;
-  text-align: left;
 }
 @media screen and (min-width: 768px) {
   .p-footer__text {
@@ -1808,6 +2022,16 @@ input[type=checkbox] {
   font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: 0.05em;
+}
+
+.p-footer__text-wrapper--mobile {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .p-footer__text-wrapper--mobile {
+    text-align: left;
+    text-align: initial;
+  }
 }
 
 /* Forms
@@ -3304,7 +3528,7 @@ th {
   text-align: center;
   color: #fff;
   font-weight: 400;
-  background-color: #cc0000;
+  background-color: #990000;
   border-radius: 9999px;
   font-size: 16px;
   font-size: 1rem;
@@ -3431,6 +3655,85 @@ th {
 
 .binfoblock2 .dl a {
   color: #ff9900;
+}
+
+.input2 {
+  display: block;
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .input2 {
+    margin-top: 0;
+    margin-top: initial;
+    display: table-cell;
+  }
+}
+
+.input {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .input {
+    display: table-cell;
+  }
+}
+
+::-webkit-input-placeholder {
+  color: #999;
+}
+
+::-moz-placeholder {
+  color: #999;
+}
+
+::-ms-input-placeholder {
+  color: #999;
+}
+
+::placeholder {
+  color: #999;
+}
+
+.input {
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .input {
+    margin-top: 0;
+    margin-top: initial;
+    width: 28.75rem;
+  }
+}
+
+.ne,
+.ne--kind {
+  position: relative;
+}
+
+.ne::before {
+  position: absolute;
+  content: "必須";
+  color: #fff;
+  font-size: 12px;
+  font-size: 0.75rem;
+  background: #cc0000;
+  padding: 2px 4px;
+  padding: 0.125rem 0.25rem;
+  top: 18px;
+  top: 1.125rem;
+  right: 0;
+}
+@media screen and (min-width: 768px) {
+  .ne::before {
+    right: 2.25rem;
+  }
+}
+
+.ne--kind::before {
+  top: 6px;
+  top: 0.375rem;
 }
 
 .p-habits {
@@ -3990,16 +4293,23 @@ th {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 360px;
-  width: 22.5rem;
+  width: 180px;
+  width: 11.25rem;
   height: auto;
   aspect-ratio: 360/360;
   -o-object-fit: cover;
      object-fit: cover;
-  top: -96px;
-  top: -6rem;
-  left: -96px;
-  left: -6rem;
+  top: -80px;
+  top: -5rem;
+  left: -80px;
+  left: -5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-other::before {
+    width: 22.5rem;
+    top: -6rem;
+    left: -6rem;
+  }
 }
 
 .p-other::after {
@@ -4009,16 +4319,26 @@ th {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 360px;
-  width: 22.5rem;
+  width: 180px;
+  width: 11.25rem;
   height: auto;
   aspect-ratio: 360/360;
   -o-object-fit: cover;
      object-fit: cover;
-  bottom: 490px;
-  bottom: 30.625rem;
-  right: 0;
   z-index: 1;
+  right: -90px;
+  right: -5.625rem;
+  top: 760px;
+  top: 47.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-other::after {
+    right: 0;
+    top: auto;
+    top: initial;
+    width: 22.5rem;
+    bottom: 30.625rem;
+  }
 }
 
 .p-other__content {
@@ -4033,6 +4353,13 @@ th {
 .p-other__table {
   margin-top: 56px;
   margin-top: 3.5rem;
+  margin-right: calc(50% - 50vw);
+}
+@media screen and (min-width: 768px) {
+  .p-other__table {
+    margin-right: 0;
+    margin-right: initial;
+  }
 }
 
 .p-other__attention {
@@ -4137,7 +4464,7 @@ th {
 .p-plan {
   background: #f9f0f0;
   position: relative;
-  overflow-x: clip;
+  overflow: clip;
   padding-top: 54px;
   padding-top: 3.375rem;
   padding-bottom: 54px;
@@ -4153,18 +4480,27 @@ th {
 .p-plan::before {
   position: absolute;
   content: "";
-  background: url(../images/common/plan_bg.png);
+  background: url(../images/common/plan_bg_normal.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 448px;
-  width: 28rem;
   height: auto;
-  aspect-ratio: 448/242;
   -o-object-fit: cover;
      object-fit: cover;
-  top: 0;
-  right: 0;
+  width: 180px;
+  width: 11.25rem;
+  aspect-ratio: 360/360;
+  top: -64px;
+  top: -4rem;
+  right: -88px;
+  right: -5.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-plan::before {
+    width: 22.5rem;
+    top: -7.5rem;
+    right: -5rem;
+  }
 }
 
 .p-plan__content {
@@ -4202,6 +4538,7 @@ th {
   -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, .1));
           filter: drop-shadow(0 0 10px rgba(0, 0, 0, .1));
   position: relative;
+  z-index: 5;
 }
 
 .p-plan__anchor-link::before {
@@ -4323,16 +4660,24 @@ th {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 362px;
-  width: 22.625rem;
+  width: 180px;
+  width: 11.25rem;
   height: auto;
   aspect-ratio: 362/362;
   -o-object-fit: cover;
      object-fit: cover;
-  top: -96px;
-  top: -6rem;
-  left: -200px;
-  left: -12.5rem;
+  left: -90px;
+  left: -5.625rem;
+  top: -72px;
+  top: -4.5rem;
+  z-index: 0;
+}
+@media screen and (min-width: 768px) {
+  .p-plan__row--1::before {
+    top: -6rem;
+    left: -12.5rem;
+    width: 22.625rem;
+  }
 }
 
 .p-plan__block + .p-plan__block {
@@ -4504,17 +4849,24 @@ th {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 362px;
-  width: 22.625rem;
+  width: 180px;
+  width: 11.25rem;
   height: auto;
   aspect-ratio: 362/362;
   -o-object-fit: cover;
      object-fit: cover;
-  top: 360px;
-  top: 22.5rem;
-  right: -160px;
-  right: -10rem;
   z-index: 1;
+  top: 920px;
+  top: 57.5rem;
+  right: -120px;
+  right: -7.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-plan__kind-wrapper--1::before {
+    top: 22.5rem;
+    right: -10rem;
+    width: 22.625rem;
+  }
 }
 
 .p-plan__kind-wrapper--2::before {
@@ -4524,17 +4876,24 @@ th {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 362px;
-  width: 22.625rem;
+  width: 180px;
+  width: 11.25rem;
   height: auto;
   aspect-ratio: 362/362;
   -o-object-fit: cover;
      object-fit: cover;
-  top: 120px;
-  top: 7.5rem;
-  left: -240px;
-  left: -15rem;
   z-index: 1;
+  left: -90px;
+  left: -5.625rem;
+  top: 960px;
+  top: 60rem;
+}
+@media screen and (min-width: 768px) {
+  .p-plan__kind-wrapper--2::before {
+    top: 7.5rem;
+    left: -15rem;
+    width: 22.625rem;
+  }
 }
 
 .p-plan__kind {
@@ -4611,8 +4970,8 @@ th {
   background-color: #f5f5f5;
 }
 .p-price-table__heading {
-  padding: 20px;
-  padding: 1.25rem;
+  padding: 12px;
+  padding: 0.75rem;
   font-size: 16px;
   font-size: 1rem;
   font-weight: 700;
@@ -4622,6 +4981,9 @@ th {
   text-align: center;
   border: 1px solid #ccc;
   background-color: #666;
+  width: 200px;
+  width: 12.5rem;
+  white-space: nowrap;
 }
 .p-price-table__body {
   background-color: #fff;
@@ -4630,8 +4992,8 @@ th {
   border-bottom: 1px solid #ddd;
 }
 .p-price-table__item-title {
-  padding: 20px;
-  padding: 1.25rem;
+  padding: 12px;
+  padding: 0.75rem;
   font-size: 16px;
   font-size: 1rem;
   font-weight: 700;
@@ -4644,8 +5006,8 @@ th {
   vertical-align: middle;
 }
 .p-price-table__item {
-  padding: 20px;
-  padding: 1.25rem;
+  padding: 12px;
+  padding: 0.75rem;
   font-size: 16px;
   font-size: 1rem;
   font-weight: 700;
@@ -4668,6 +5030,7 @@ th {
   .p-price-table__item,
   .p-price-table__item-title {
     font-size: 0.9375rem;
+    padding: 1.25rem;
   }
 }
 .bg666 {
@@ -4716,8 +5079,8 @@ th {
   content: "";
   position: absolute;
   background: #990000;
-  top: -20px;
-  top: -1.25rem;
+  top: -40px;
+  top: -2.5rem;
   left: 0;
   right: 0;
   bottom: 0;
@@ -4750,11 +5113,67 @@ th {
   padding-top: 3.5rem;
   padding-bottom: 56px;
   padding-bottom: 3.5rem;
+  overflow: clip;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .p-qa {
     padding-top: 6.25rem;
     padding-bottom: 7.5rem;
+  }
+}
+
+.p-qa::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/qa_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 180px;
+  width: 11.25rem;
+  height: auto;
+  aspect-ratio: 360/360;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 10%;
+  top: -90px;
+  top: -5.625rem;
+  left: -90px;
+  left: -5.625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-qa::before {
+    width: 22.5rem;
+    top: -7.5rem;
+    left: -7.5rem;
+  }
+}
+
+.p-qa::after {
+  position: absolute;
+  content: "";
+  background: url(../images/common/qa_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 180px;
+  width: 11.25rem;
+  height: auto;
+  aspect-ratio: 360/360;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 760px;
+  top: 47.5rem;
+  right: -90px;
+  right: -5.625rem;
+  z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  .p-qa::after {
+    width: 22.5rem;
+    top: 18.75rem;
+    right: -2.5rem;
   }
 }
 
@@ -4768,6 +5187,9 @@ th {
   margin-right: auto;
   margin-top: 30px;
   margin-top: 1.875rem;
+  position: relative;
+  background: #fff;
+  z-index: 5;
 }
 @media screen and (min-width: 768px) {
   .p-qa__block {
@@ -4780,6 +5202,8 @@ th {
   color: #fff;
   cursor: pointer;
   position: relative;
+  background: #fff;
+  z-index: 10;
   padding-left: 16px;
   padding-left: 1rem;
   list-style: none;
@@ -4810,6 +5234,8 @@ th {
   font-family: "source-han-serif-japanese", serif;
   font-size: 16px;
   font-size: 1rem;
+  z-index: 10;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .p-qa__q {
@@ -4892,6 +5318,8 @@ th {
   padding-left: 2.25rem;
   padding-right: 36px;
   padding-right: 2.25rem;
+  z-index: 10;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .p-qa__inner {
@@ -4939,11 +5367,65 @@ th {
   padding-top: 3.5rem;
   padding-bottom: 56px;
   padding-bottom: 3.5rem;
+  position: relative;
+  overflow: clip;
 }
 @media screen and (min-width: 768px) {
   .p-temple {
     padding-top: 6.25rem;
     padding-bottom: 7.5rem;
+  }
+}
+
+.p-temple::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/temple_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 180px;
+  width: 11.25rem;
+  height: auto;
+  aspect-ratio: 360/360;
+  top: -64px;
+  top: -4rem;
+  left: -80px;
+  left: -5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .p-temple::before {
+    width: 22.5rem;
+    top: -7.5rem;
+    left: -7.5rem;
+  }
+}
+
+.p-temple::after {
+  position: absolute;
+  content: "";
+  background: url(../images/common/temple_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 180px;
+  width: 11.25rem;
+  height: auto;
+  aspect-ratio: 360/360;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 1520px;
+  top: 95rem;
+  right: -90px;
+  right: -5.625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-temple::after {
+    width: 22.5rem;
+    top: 68.75rem;
+    right: -4rem;
   }
 }
 
@@ -5052,6 +5534,8 @@ th {
   background: #fff;
   margin-top: 40px;
   margin-top: 2.5rem;
+  position: relative;
+  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   .p-temple__dl {

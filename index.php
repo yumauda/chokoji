@@ -214,12 +214,12 @@ if (!empty($_SESSION['CONTACT'])) {
                 <img decoding="async" loading="lazy" src="/images/common/feature_1.jpg" alt="" width="740" height="500">
               </figure>
               <div class="p-feature__detail">
-                <h4 class="p-feature__text-title">住職が主体だから<br>どこまでも安心</h4>
+                <h4 class="p-feature__text-title">住職が主体だから<br>どこまでも<span class="p-feature__text-title--yellow">安心</span></h4>
                 <div class="p-feature__text-wrapper">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="17px" height="14px">
+                    width="17px" height="14px" viewBox="0 0 17 14">
                     <path fill-rule="evenodd" fill="rgb(255, 255, 204)"
                       d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
                   </svg>
@@ -229,7 +229,7 @@ if (!empty($_SESSION['CONTACT'])) {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="17px" height="14px">
+                    width="17px" height="14px" viewBox="0 0 17 14">
                     <path fill-rule="evenodd" fill="rgb(255, 255, 204)"
                       d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
                   </svg>
@@ -242,13 +242,13 @@ if (!empty($_SESSION['CONTACT'])) {
                 <img decoding="async" loading="lazy" src="/images/common/feature_2.jpg" alt="" width="740" height="500">
               </figure>
               <div class="p-feature__detail">
-                <h4 class="p-feature__text-title">必要な費用だけを<br>わかりやすく</h4>
+                <h4 class="p-feature__text-title">必要な<span class="p-feature__text-title--red">費用</span>だけを<br>わかりやすく</h4>
 
                 <div class="p-feature__text-wrapper">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="17px" height="14px">
+                    width="17px" height="14px" viewBox="0 0 17 14">
                     <path fill-rule="evenodd" fill="#990000"
                       d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
                   </svg>
@@ -258,7 +258,7 @@ if (!empty($_SESSION['CONTACT'])) {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="17px" height="14px">
+                    width="17px" height="14px" viewBox="0 0 17 14">
                     <path fill-rule="evenodd" fill="#990000"
                       d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
                   </svg>
@@ -276,7 +276,7 @@ if (!empty($_SESSION['CONTACT'])) {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="17px" height="14px">
+                    width="17px" height="14px" viewBox="0 0 17 14">
                     <path fill-rule="evenodd" fill="rgb(255, 255, 204)"
                       d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
                   </svg>
@@ -286,7 +286,7 @@ if (!empty($_SESSION['CONTACT'])) {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="17px" height="14px">
+                    width="17px" height="14px" viewBox="0 0 17 14">
                     <path fill-rule="evenodd" fill="rgb(255, 255, 204)"
                       d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
                   </svg>
@@ -306,7 +306,7 @@ if (!empty($_SESSION['CONTACT'])) {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="17px" height="14px">
+                    width="17px" height="14px" viewBox="0 0 17 14">
                     <path fill-rule="evenodd" fill="#990000"
                       d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
                   </svg>
@@ -316,7 +316,7 @@ if (!empty($_SESSION['CONTACT'])) {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="17px" height="14px">
+                    width="17px" height="14px" viewBox="0 0 17 14">
                     <path fill-rule="evenodd" fill="#990000"
                       d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
                   </svg>
@@ -334,7 +334,7 @@ if (!empty($_SESSION['CONTACT'])) {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="17px" height="14px">
+                    width="17px" height="14px" viewBox="0 0 17 14">
                     <path fill-rule="evenodd" fill="rgb(255, 255, 204)"
                       d="M5.191,10.816 C6.680,8.621 12.153,2.972 16.691,0.038 C16.884,-0.086 17.102,0.158 16.942,0.320 C12.630,4.688 8.021,9.630 5.374,13.902 C5.300,14.021 5.122,14.026 5.045,13.909 C3.713,11.884 2.571,8.975 0.122,8.083 C-0.060,8.017 -0.042,7.770 0.147,7.727 C2.493,7.184 3.593,9.109 5.191,10.816 L5.191,10.816 L5.191,10.816 Z" />
                   </svg>
@@ -941,7 +941,7 @@ if (!empty($_SESSION['CONTACT'])) {
         <div class="p-other__content">
           <div class="p-other__title">
             <span class="c-section-title--small">他社との比較</span>
-            <h3 class="c-section-title">提示価格と実際にかかる料金に<span class="c-section-title--red">差</span>額が少ない料金設定</h3>
+            <h3 class="c-section-title">提示価格と実際にかかる料金に<br class="u-mobile"><span class="c-section-title--red">差</span>額が少ない料金設定</h3>
           </div>
           <div class="p-other__table">
             <div class="p-price-table">
@@ -1174,17 +1174,19 @@ if (!empty($_SESSION['CONTACT'])) {
             <span>お急ぎ方や直接のご相談をご希望される方はお電話でも承っております。</span>
           </p>
           <div class="p-contact__tel-wrapper">
-            <div class="p-contact__tel-logo">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="26px" height="26px">
-                <path fill-rule="evenodd" fill="rgb(153, 0, 0)"
-                  d="M23.946,17.117 C22.342,17.117 20.771,16.868 19.282,16.376 C18.555,16.125 17.730,16.318 17.252,16.806 L14.300,19.035 C10.913,17.227 8.745,15.060 6.962,11.698 L9.132,8.816 C9.677,8.270 9.873,7.470 9.639,6.722 C9.144,5.224 8.892,3.651 8.892,2.049 C8.892,0.918 7.971,-0.003 6.839,-0.003 L2.049,-0.003 C0.917,-0.003 -0.004,0.918 -0.004,2.049 C-0.004,15.255 10.740,25.999 23.946,25.999 C25.078,25.999 25.999,25.078 25.999,23.947 L25.999,19.171 C25.999,18.039 25.078,17.117 23.946,17.117 Z" />
-              </svg>
-            </div>
-            <div class="p-contact__num-wrapper">
-              <a href="tel:0268-42-2975" class="p-contact__num">0268-42-2975</a>
+            <div class="p-contact__tel-block">
+              <div class="p-contact__tel-logo">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="26px" height="26px">
+                  <path fill-rule="evenodd" fill="rgb(153, 0, 0)"
+                    d="M23.946,17.117 C22.342,17.117 20.771,16.868 19.282,16.376 C18.555,16.125 17.730,16.318 17.252,16.806 L14.300,19.035 C10.913,17.227 8.745,15.060 6.962,11.698 L9.132,8.816 C9.677,8.270 9.873,7.470 9.639,6.722 C9.144,5.224 8.892,3.651 8.892,2.049 C8.892,0.918 7.971,-0.003 6.839,-0.003 L2.049,-0.003 C0.917,-0.003 -0.004,0.918 -0.004,2.049 C-0.004,15.255 10.740,25.999 23.946,25.999 C25.078,25.999 25.999,25.078 25.999,23.947 L25.999,19.171 C25.999,18.039 25.078,17.117 23.946,17.117 Z" />
+                </svg>
+              </div>
+              <div class="p-contact__num-wrapper">
+                <a href="tel:0268-42-2975" class="p-contact__num">0268-42-2975</a>
+              </div>
             </div>
             <p class="p-contact__num-text">24時間365日対応</p>
           </div>
@@ -1193,7 +1195,7 @@ if (!empty($_SESSION['CONTACT'])) {
             <div class="form_block">
               <table class="p-contact__table">
                 <tr>
-                  <th class="ne"><b>お問い合わせ種別</b></th>
+                  <th class="ne ne--kind"><b>お問い合わせ種別</b></th>
                   <td class="input2">
                     <ul>
                       <li><input type="checkbox" name="kind1" value="1" id="kind1" <?= rc_check('kind1', 1); ?> /><label for="kind1" class="checkbox"><?= $kindlist[1]; ?></label></li>
@@ -1208,7 +1210,7 @@ if (!empty($_SESSION['CONTACT'])) {
                 <tr>
                   <th class="ne"><b>お名前</b></th>
                   <td class="input">
-                    <p class="tdline"><input type="text" name="name" value="<?= value_check('name'); ?>" placeholder="例：寺葬 太郎" class="input100"></p>
+                    <p class="tdline"><input type="text" name="name" value="<?= value_check('name'); ?>" placeholder="例：長光 太郎" class="input100"></p>
                     <?= error_check($errors, 'name'); ?>
 
                   </td>
@@ -1218,26 +1220,19 @@ if (!empty($_SESSION['CONTACT'])) {
                   <td class="input">
                     <p class="tdline"><input type="text" name="tel" value="<?= value_check('tel'); ?>" placeholder="例：09012345678" class="input100"></p>
                     <?= error_check($errors, 'tel'); ?>
-
                   </td>
                 </tr>
                 <tr>
                   <th class="ne"><b>メールアドレス</b></th>
                   <td class="input">
-                    <p class="tdline"><input type="text" name="email" value="<?= value_check('email'); ?>" placeholder="例：info@manyodo.ltd（半角英数）" class="input100"></p>
+                    <p class="tdline tdline__required"><input type="text" name="email" value="<?= value_check('email'); ?>" placeholder="例：info@m-chokoji.com（半角英数）" class="input100"></p>
                     <?= error_check($errors, 'email'); ?>
 
                     <p class="tdline"><input type="text" name="emailcheck" value="<?= value_check('emailcheck'); ?>" placeholder="確認のため再度入力してください。" class="input100"></p>
                     <?= error_check($errors, 'emailcheck'); ?>
-
                   </td>
                 </tr>
-                <tr>
-                  <th><b>ご住所</b></th>
-                  <td class="input">
-                    <p class="tdline"><input type="text" name="address" placeholder="例：東京都国分寺市本多1丁目1番地" value="<?= value_check('address'); ?>" class="input100"></p>
-                  </td>
-                </tr>
+              
                 <tr>
                   <th><b>お問い合わせ内容</b></th>
                   <td class="input">

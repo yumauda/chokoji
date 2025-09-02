@@ -19,10 +19,16 @@ jQuery(function ($) {
       $(".p-header__tel-logo svg path").addClass("is-scrolled");
       $(".p-header__tel-text").addClass("is-scrolled");
       $(".p-header__tel").addClass("is-scrolled");
+      $(".p-drawer-icon__bar1").addClass("is-scrolled");
+      $(".p-drawer-icon__bar2").addClass("is-scrolled");
+      $(".p-drawer-icon__bar3").addClass("is-scrolled");
     } else {
       $(".p-header__tel-logo svg path").removeClass("is-scrolled");
       $(".p-header__tel-text").removeClass("is-scrolled");
       $(".p-header__tel").removeClass("is-scrolled");
+      $(".p-drawer-icon__bar1").removeClass("is-scrolled");
+      $(".p-drawer-icon__bar2").removeClass("is-scrolled");
+      $(".p-drawer-icon__bar3").removeClass("is-scrolled");
     }
   });
 

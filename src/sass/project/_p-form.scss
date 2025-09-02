@@ -1436,13 +1436,13 @@ th {
 }
 
 .btn_block p a {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #fff;
   font-weight: 400;
-  background-color: #cc0000;
+  background-color: #990000;
   border-radius: 9999px;
   font-size: rem(16);
   width: rem(250);
@@ -1565,4 +1565,48 @@ th {
 
 .binfoblock2 .dl a {
   color: #ff9900;
+}
+.input2 {
+  display: block;
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: initial;
+    display: table-cell;
+  }
+}
+.input {
+  display: block;
+  @include mq(md) {
+    display: table-cell;
+  }
+}
+::placeholder {
+  color: #999;
+}
+.input {
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: initial;
+    width: rem(460);
+  }
+}
+.ne,
+.ne--kind {
+  position: relative;
+}
+.ne::before {
+  position: absolute;
+  content: "必須";
+  color: #fff;
+  font-size: rem(12);
+  background: #cc0000;
+  padding: rem(2) rem(4);
+  top: rem(18);
+  right: 0;
+  @include mq(md) {
+    right: rem(36);
+  }
+}
+.ne--kind::before {
+  top: rem(6);
 }

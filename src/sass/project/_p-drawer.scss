@@ -10,8 +10,8 @@
   align-items: center;
   justify-content: center;
   position: fixed;
+  top: rem(14);
   right: rem(20);
-  top: rem(20);
   z-index: 9999;
   @include mq(md) {
     display: none;
@@ -20,6 +20,7 @@
 .p-drawer-icon.is-active {
   position: relative;
   z-index: 10001;
+  right: initial;
   background: transparent;
   .p-drawer-icon__bars {
     width: rem(15);
@@ -59,9 +60,15 @@
   transition: 0.5s;
   width: rem(20);
   display: flex;
+  transition: 0.3s ease-in-out;
   @include mq(md) {
     width: rem(28);
   }
+}
+.p-drawer-icon__bar1.is-scrolled,
+.p-drawer-icon__bar2.is-scrolled,
+.p-drawer-icon__bar3.is-scrolled {
+  background: #333;
 }
 .p-drawer-icon__bar2 {
   height: 1px;
@@ -69,6 +76,7 @@
   transition: 0.5s;
   width: rem(20);
   display: flex;
+  transition: 0.3s ease-in-out;
   @include mq(md) {
     width: rem(28);
   }
@@ -80,6 +88,7 @@
   transition: 0.5s;
   display: flex;
   width: rem(20);
+  transition: 0.3s ease-in-out;
   @include mq(md) {
     width: rem(28);
   }

@@ -18,12 +18,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(360);
+  width: rem(180);
   height: auto;
   aspect-ratio: 360 / 360;
   object-fit: cover;
-  top: rem(-40);
-  left: rem(-44);
+  top: rem(-64);
+  left: rem(-88);
+  @include mq(md) {
+    top: rem(-40);
+    left: rem(-44);
+    width: rem(360);
+  }
 }
 
 .p-about__content {

@@ -3,12 +3,53 @@
 .p-qa {
   padding-top: rem(56);
   padding-bottom: rem(56);
+  overflow: clip;
+  position: relative;
   @include mq(md) {
     padding-top: rem(100);
     padding-bottom: rem(120);
   }
 }
-
+.p-qa::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/qa_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(180);
+  height: auto;
+  aspect-ratio: 360 / 360;
+  object-fit: cover;
+  top: 10%;
+  top: rem(-90);
+  left: rem(-90);
+  @include mq(md) {
+    width: rem(360);
+    top: rem(-120);
+    left: rem(-120);
+  }
+}
+.p-qa::after {
+  position: absolute;
+  content: "";
+  background: url(../images/common/qa_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(180);
+  height: auto;
+  aspect-ratio: 360 / 360;
+  object-fit: cover;
+  top: rem(760);
+  right: rem(-90);
+  z-index: -1;
+  @include mq(md) {
+    width: rem(360);
+    top: rem(300);
+    right: rem(-40);
+  }
+}
 .p-qa__title {
   text-align: center;
 }
@@ -17,6 +58,9 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: rem(30);
+  position: relative;
+  background: #fff;
+  z-index: 5;
   @include mq(md) {
     max-width: rem(846);
     margin-top: rem(40);
@@ -27,6 +71,8 @@
   color: #fff;
   cursor: pointer;
   position: relative;
+  background: #fff;
+  z-index: 10;
   padding-left: rem(16);
   list-style: none;
   border-top: 1px solid #cc0000;
@@ -45,6 +91,8 @@
   font-weight: 600;
   font-family: $second-font-family;
   font-size: rem(16);
+  z-index: 10;
+  position: relative;
   @include mq(md) {
     font-size: rem(20);
   }
@@ -105,6 +153,8 @@
   overflow: hidden;
   padding-left: rem(36);
   padding-right: rem(36);
+  z-index: 10;
+  position: relative;
   @include mq(md) {
     padding-right: rem(44);
     padding-left: rem(44);
@@ -129,7 +179,7 @@
 }
 .p-qa__txt + .p-qa__txt {
   margin-top: rem(24);
-  @include mq(md){
+  @include mq(md) {
     margin-top: rem(32);
   }
 }

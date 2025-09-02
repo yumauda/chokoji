@@ -4,9 +4,49 @@
   background-color: #f9f0f0;
   padding-top: rem(56);
   padding-bottom: rem(56);
+  position: relative;
+  overflow: clip;
   @include mq(md) {
     padding-top: rem(100);
     padding-bottom: rem(120);
+  }
+}
+.p-temple::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/temple_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(180);
+  height: auto;
+  aspect-ratio: 360 / 360;
+  top: rem(-64);
+  left: rem(-80);
+  object-fit: cover;
+  @include mq(md) {
+    width: rem(360);
+    top: rem(-120);
+    left: rem(-120);
+  }
+}
+.p-temple::after {
+  position: absolute;
+  content: "";
+  background: url(../images/common/temple_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(180);
+  height: auto;
+  aspect-ratio: 360 / 360;
+  object-fit: cover;
+  top: rem(1520);
+  right: rem(-90);
+  @include mq(md) {
+    width: rem(360);
+    top: rem(1100);
+    right: rem(-64);
   }
 }
 
@@ -81,6 +121,8 @@
 .p-temple__dl {
   background: #fff;
   margin-top: rem(40);
+  position: relative;
+  z-index: 1;
   @include mq(md) {
     margin-top: rem(56);
   }

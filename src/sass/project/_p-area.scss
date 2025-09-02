@@ -3,12 +3,33 @@
 .p-area {
   padding-top: rem(56);
   padding-bottom: rem(56);
+  position: relative;
+  overflow: clip;
   @include mq(md) {
     padding-top: rem(100);
     padding-bottom: rem(120);
   }
 }
-
+.p-area::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/area_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 360 / 357;
+  object-fit: cover;
+  height: auto;
+  width: rem(180);
+  top: rem(-64);
+  left: rem(-80);
+  @include mq(md){
+    width: rem(360);
+    top: rem(-120);
+    left: rem(-110);
+    
+  }
+}
 .p-area__content {
   @include mq(md) {
     display: flex;

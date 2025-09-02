@@ -40,7 +40,7 @@
                         <img decoding="async" loading="lazy" src="/images/common/footer_logo.png" alt="お寺葬" width="450" height="236">
                     </a>
                 </div>
-                <div class="p-footer__text-wrapper">
+                <div class="p-footer__text-wrapper p-footer__text-wrapper--mobile">
                     <p class="p-footer__text">運営寺院：明玉山 長光寺<br>
                         〒386-0403 長野県上田市腰越1530</p>
                 </div>
@@ -105,8 +105,10 @@
             <div class="p-footer__right">
                 <div class="p-footer__right-top">
                     <p class="p-footer__title">ご相談とお見積りは<span>無料</span>です</p>
-                    <p class="p-footer__text">ご相談者様のご要望を丁寧にお伺いし、適切なご提案をさせていただきます。<br class="u-desktop">
-                        一同、心よりお問い合わせお待ちしております。</p>
+                    <div class="p-footer__text-wrapper">
+                        <p class="p-footer__text">ご相談者様のご要望を丁寧にお伺いし、適切なご提案をさせていただきます。<br class="u-desktop">
+                            一同、心よりお問い合わせお待ちしております。</p>
+                    </div>
                 </div>
                 <div class="p-footer__row">
                     <div class="p-footer__vertical">

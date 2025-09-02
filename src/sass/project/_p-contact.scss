@@ -4,13 +4,56 @@
   background: #f9f0f0;
   padding-top: rem(56);
   padding-bottom: rem(56);
+  position: relative;
+  overflow: clip;
   @include mq(md) {
     padding-top: rem(120);
     padding-bottom: rem(100);
   }
 }
+.p-contact::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/contact_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 360 / 360;
+  object-fit: cover;
+  width: rem(180);
+  height: auto;
+  top: rem(-64);
+  right: rem(-80);
+  @include mq(md) {
+    width: rem(360);
+    top: rem(-110);
+    right: rem(-64);
+  }
+}
+.p-contact::after {
+  position: absolute;
+  content: "";
+  background: url(../images/common/contact_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 360 / 360;
+  object-fit: cover;
+  width: rem(180);
+  height: auto;
+  left: rem(-80);
+  top: rem(1100);
+  @include mq(md) {
+    width: rem(360);
+    top: rem(1100);
+
+    left: rem(-64);
+  }
+}
 
 .p-contact__content {
+  position: relative;
+  z-index: 10;
 }
 
 .p-contact__title {
@@ -34,10 +77,14 @@
 }
 
 .p-contact__tel-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: rem(56);
+  margin-top: rem(32);
+  text-align: center;
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: rem(56);
+  }
 }
 
 .p-contact__tel-logo {
@@ -67,34 +114,47 @@
 }
 
 .p-contact__num-text {
-  font-size: rem(16);
   color: #990000;
-  margin-left: rem(24);
   line-height: 1;
   font-weight: 400;
+  font-size: rem(15);
+  margin-top: rem(10);
+  @include mq(md) {
+    margin-top: initial;
+    font-size: rem(16);
+    margin-left: rem(24);
+  }
 }
 .p-contact__form {
-  margin-top: rem(88);
-  max-width: rem(710);
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  margin-top: rem(24);
+  @include mq(md) {
+    max-width: rem(710);
+    margin-top: rem(88);
+  }
 }
 .p-contact__table {
   width: 100%;
-  table-layout: fixed;
+  /*   table-layout: fixed; */
   border-collapse: separate; /* ← ここが重要 */
   border-spacing: 0 30px;
 }
 .p-contact__table th {
-  width: rem(257);
   padding-top: rem(16);
   font-size: rem(18);
   font-weight: 700;
   color: #333;
+  display: block;
+  @include mq(md) {
+    display: table-cell;
+    width: rem(257);
+  }
 }
 .p-contact__table tr:first-child th {
   padding-top: rem(2);
+  display: block;
 }
 .p-contact__table tbody tr {
   margin-bottom: rem(30);
@@ -119,14 +179,20 @@
   margin-top: rem(24);
 }
 .checkbox {
-  text-align: center;
   margin-top: rem(24);
   color: #333;
-  font-size: rem(16);
   line-height: 1.8;
+  font-size: rem(15);
+  @include mq(md) {
+    text-align: center;
+    font-size: rem(16);
+  }
 }
 .btn_block {
-  margin-top: rem(56);
+  margin-top: rem(36);
+  @include mq(md) {
+    margin-top: rem(56);
+  }
 }
 .input2 ul li {
   display: flex;
@@ -139,4 +205,10 @@
 input[type="checkbox"] {
   background: linear-gradient(to bottom, #ededed, #dedede) !important;
   border: 1px solid #ccc !important;
+}
+.p-contact__tel-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(2);
 }

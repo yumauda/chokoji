@@ -18,12 +18,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(360);
+  width: rem(180);
   height: auto;
   aspect-ratio: 360 / 360;
   object-fit: cover;
-  top: rem(-96);
-  left: rem(-96);
+  top: rem(-80);
+  left: rem(-80);
+  @include mq(md) {
+    width: rem(360);
+    top: rem(-96);
+    left: rem(-96);
+  }
 }
 .p-other::after {
   position: absolute;
@@ -32,13 +37,19 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(360);
+  width: rem(180);
   height: auto;
   aspect-ratio: 360 / 360;
   object-fit: cover;
-  bottom: rem(490);
-  right: 0;
   z-index: 1;
+  right: rem(-90);
+  top: rem(760);
+  @include mq(md) {
+    right: 0;
+    top: initial;
+    width: rem(360);
+    bottom: rem(490);
+  }
 }
 .p-other__content {
   position: relative;
@@ -51,6 +62,10 @@
 
 .p-other__table {
   margin-top: rem(56);
+  margin-right: calc(50% - 50vw);
+  @include mq(md) {
+    margin-right: initial;
+  }
 }
 .p-other__attention {
   background: #fff;

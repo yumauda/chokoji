@@ -17,12 +17,18 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(360);
   height: auto;
   aspect-ratio: 360 / 357;
   object-fit: cover;
-  top: rem(-40);
-  right: rem(-40);
+  width: rem(180);
+  top: rem(-64);
+  right: rem(-88);
+  @include mq(md){
+    width: rem(360);
+    top: rem(-40);
+    right: rem(-40);
+    
+  }
 }
 
 .p-flow__content {
@@ -40,13 +46,19 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(360);
+  width: rem(180);
   height: auto;
   aspect-ratio: 360 / 357;
   object-fit: cover;
-  top: rem(660);
-  left: rem(-330);
   z-index: 1;
+  left: rem(-90);
+  top: rem(1280);
+  @include mq(md){
+    width: rem(360);
+    top: rem(660);
+    left: rem(-330);
+    
+  }
 }
 .p-flow__content::after {
   position: absolute;
@@ -55,13 +67,19 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(360);
+  width: rem(180);
   height: auto;
   aspect-ratio: 360 / 357;
   object-fit: cover;
-  top: rem(1400);
-  right: rem(-240);
   z-index: 1;
+  right: rem(-90);
+  top: rem(2400);
+  @include mq(md){
+    top: rem(1400);
+    width: rem(360);
+    right: rem(-240);
+    
+  }
 }
 .p-flow__title {
   text-align: center;
@@ -89,6 +107,8 @@
   display: flex;
   margin-top: rem(40);
   gap: rem(20);
+  position: relative;
+  z-index: 10;
   @include mq(md) {
     gap: rem(28);
     margin-top: rem(56);
@@ -107,9 +127,13 @@
 
 .p-flow__right {
   flex: 1;
+  position: relative;
+  z-index: 10;
 }
 
 .p-flow__row {
+  position: relative;
+  z-index: 10;
   @include mq(md) {
     display: flex;
     gap: rem(32);
