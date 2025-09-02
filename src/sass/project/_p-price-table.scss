@@ -2,6 +2,9 @@
 
 .p-price-table {
   overflow-x: auto;
+  @include mq(md) {
+    overflow-x: visible;
+  }
 
   &__table {
     width: 100%;
@@ -94,13 +97,7 @@
   font-size: rem(25);
   font-weight: 700;
 }
-.bg-990000 {
-  font-size: rem(18);
-  position: relative;
-  border-top: 3px solid #cc0000;
-  border-left: 3px solid #cc0000;
-  border-right: 3px solid #cc0000;
-}
+
 .border-inline-red {
   border-left: 3px solid #cc0000;
   border-right: 3px solid #cc0000;
@@ -108,16 +105,26 @@
 .border-bottom-red {
   border-bottom: 3px solid #cc0000;
 }
+.bg-990000 {
+  font-size: rem(18);
+  position: relative;
+  border-top: 3px solid #cc0000;
+  border-left: 3px solid #cc0000;
+  border-right: 3px solid #cc0000;
+  z-index: 1;
+}
 .bg-990000::before {
   content: "";
   position: absolute;
   background: #990000;
-  top: rem(-40);
+  top: rem(-28);
   left: 0;
   right: 0;
   bottom: 0;
   width: 100%;
   z-index: 0;
+  height: calc(100% + 28px);
+  z-index: -1; // テキストの後ろに回す
 }
 .p-price-table__heading-text {
   font-size: rem(18);
@@ -125,7 +132,7 @@
   color: #fff;
   position: relative;
   z-index: 2;
-  margin-top: rem(-12);
+  margin-top: rem(-20);
 }
 .bg-fafac7 {
   background: #fafac7;

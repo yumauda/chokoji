@@ -5158,6 +5158,11 @@ th {
 .p-price-table {
   overflow-x: auto;
 }
+@media screen and (min-width: 768px) {
+  .p-price-table {
+    overflow-x: visible;
+  }
+}
 .p-price-table__table {
   width: 100%;
   border-collapse: collapse;
@@ -5254,15 +5259,6 @@ th {
   font-weight: 700;
 }
 
-.bg-990000 {
-  font-size: 18px;
-  font-size: 1.125rem;
-  position: relative;
-  border-top: 3px solid #cc0000;
-  border-left: 3px solid #cc0000;
-  border-right: 3px solid #cc0000;
-}
-
 .border-inline-red {
   border-left: 3px solid #cc0000;
   border-right: 3px solid #cc0000;
@@ -5272,17 +5268,29 @@ th {
   border-bottom: 3px solid #cc0000;
 }
 
+.bg-990000 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  position: relative;
+  border-top: 3px solid #cc0000;
+  border-left: 3px solid #cc0000;
+  border-right: 3px solid #cc0000;
+  z-index: 1;
+}
+
 .bg-990000::before {
   content: "";
   position: absolute;
   background: #990000;
-  top: -40px;
-  top: -2.5rem;
+  top: -28px;
+  top: -1.75rem;
   left: 0;
   right: 0;
   bottom: 0;
   width: 100%;
   z-index: 0;
+  height: calc(100% + 28px);
+  z-index: -1;
 }
 
 .p-price-table__heading-text {
@@ -5292,8 +5300,8 @@ th {
   color: #fff;
   position: relative;
   z-index: 2;
-  margin-top: -12px;
-  margin-top: -0.75rem;
+  margin-top: -20px;
+  margin-top: -1.25rem;
 }
 
 .bg-fafac7 {
@@ -5390,7 +5398,7 @@ th {
 }
 @media screen and (min-width: 768px) {
   .p-qa__block {
-    max-width: 52.875rem;
+    max-width: 62.5rem;
     margin-top: 2.5rem;
   }
 }
@@ -5520,7 +5528,7 @@ th {
 }
 @media screen and (min-width: 768px) {
   .p-qa__inner {
-    padding-right: 2.75rem;
+    padding-right: 2.25rem;
     padding-left: 2.75rem;
   }
 }
@@ -5537,7 +5545,7 @@ th {
   position: relative;
   color: #333;
   line-height: 1.8461538462;
-  letter-spacing: 0.065em;
+  letter-spacing: 0.03em;
   position: relative;
   font-size: 15px;
   font-size: 0.9375rem;

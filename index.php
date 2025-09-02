@@ -81,7 +81,7 @@ if (!empty($_SESSION['CONTACT'])) {
   <meta property="og:title" content="お寺の本堂で執り行う家族葬「お寺葬」 | 長野県上田市の御祈祷寺「長光寺」" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
+  <meta property="og:image" content="/images/common/ogp.jpg" />
   <meta property="og:site_name" content="お寺の本堂で執り行う家族葬「お寺葬」 | 長野県上田市の御祈祷寺「長光寺」" />
   <meta property="og:description" content="長光寺のお寺葬は、伝統と格式を重視したお寺の本堂にて執り行う家族葬です。住職自らがご家族と向き合い「本当に必要な事」だけをご提案。真心のこもったご葬儀で、故人様を心を込めてお送りいたします。宗旨宗派は不問、どなたでもご利用可能です。" />
   <!-- ファビコン -->
@@ -90,6 +90,7 @@ if (!empty($_SESSION['CONTACT'])) {
     rel="apple-touch-icon"
     sizes="180x180"
     href="/images/common/apple-touch-icon.png" />
+
   <!-- css -->
   <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/css/styles.css" />
@@ -126,7 +127,7 @@ if (!empty($_SESSION['CONTACT'])) {
   </script>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  
+
   <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
@@ -1074,7 +1075,7 @@ if (!empty($_SESSION['CONTACT'])) {
             <summary class="p-qa__summary js-summary">
               <p class="p-qa__q">Q.</p>
               <h3 class="p-qa__ttl">
-                事前相談はできますか？
+                本当に50万円以上かかりませんか？
               </h3>
             </summary>
             <div class="p-qa__inner js-content">
@@ -1087,7 +1088,24 @@ if (!empty($_SESSION['CONTACT'])) {
               </div>
             </div>
           </details>
-          <details class="p-qa__content p-qa__content--last js-details fadein">
+          <details class="p-qa__content js-details fadein">
+            <summary class="p-qa__summary js-summary">
+              <p class="p-qa__q">Q.</p>
+              <h3 class="p-qa__ttl">
+                お寺へのお布施は別に必要ですか？
+              </h3>
+            </summary>
+            <div class="p-qa__inner js-content">
+              <div class="p-qa__wrap">
+                <div class="p-qa__content p-qa__content--open01">
+                  <p class="p-qa__txt">ぜひ事前相談をお勧めいたします。</p>
+                  <p class="p-qa__txt">葬儀は人生で最も大切な決断の一つです。どんな住職に葬儀をしてもらうのか、どんなお堂で大切な人を送るか、できる限り事前にご確認いただきたいと思います。</p>
+                  <p class="p-qa__txt">住職が直接お堂をご案内し、葬儀の流れや本堂の雰囲気を実際にご覧いただけます。ご不安な点やご質問など、どんなことでもお気軽にお聞かせください。電話やフォームからもご相談いただけます。</p>
+                </div>
+              </div>
+            </div>
+          </details>
+          <details class="p-qa__content js-details fadein">
             <summary class="p-qa__summary js-summary">
               <p class="p-qa__q">Q.</p>
               <h3 class="p-qa__ttl">
@@ -1104,6 +1122,126 @@ if (!empty($_SESSION['CONTACT'])) {
               </div>
             </div>
           </details>
+          <details class="p-qa__content js-details fadein">
+            <summary class="p-qa__summary js-summary">
+              <p class="p-qa__q">Q.</p>
+              <h3 class="p-qa__ttl">
+                亡くなったらまず、どうすればいいですか？
+              </h3>
+            </summary>
+            <div class="p-qa__inner js-content">
+              <div class="p-qa__wrap">
+                <div class="p-qa__content p-qa__content--open01">
+                  <p class="p-qa__txt">ぜひ事前相談をお勧めいたします。</p>
+                  <p class="p-qa__txt">葬儀は人生で最も大切な決断の一つです。どんな住職に葬儀をしてもらうのか、どんなお堂で大切な人を送るか、できる限り事前にご確認いただきたいと思います。</p>
+                  <p class="p-qa__txt">住職が直接お堂をご案内し、葬儀の流れや本堂の雰囲気を実際にご覧いただけます。ご不安な点やご質問など、どんなことでもお気軽にお聞かせください。電話やフォームからもご相談いただけます。</p>
+                </div>
+              </div>
+            </div>
+          </details>
+          <details class="p-qa__content js-details fadein">
+            <summary class="p-qa__summary js-summary">
+              <p class="p-qa__q">Q.</p>
+              <h3 class="p-qa__ttl">
+                誰が搬送や納棺をしますか？
+              </h3>
+            </summary>
+            <div class="p-qa__inner js-content">
+              <div class="p-qa__wrap">
+                <div class="p-qa__content p-qa__content--open01">
+                  <p class="p-qa__txt">ぜひ事前相談をお勧めいたします。</p>
+                  <p class="p-qa__txt">葬儀は人生で最も大切な決断の一つです。どんな住職に葬儀をしてもらうのか、どんなお堂で大切な人を送るか、できる限り事前にご確認いただきたいと思います。</p>
+                  <p class="p-qa__txt">住職が直接お堂をご案内し、葬儀の流れや本堂の雰囲気を実際にご覧いただけます。ご不安な点やご質問など、どんなことでもお気軽にお聞かせください。電話やフォームからもご相談いただけます。</p>
+                </div>
+              </div>
+            </div>
+          </details>
+          <details class="p-qa__content js-details fadein">
+            <summary class="p-qa__summary js-summary">
+              <p class="p-qa__q">Q.</p>
+              <h3 class="p-qa__ttl">
+                事情があり、通夜を行わず1日だけで費用を抑えたいのですが…。
+              </h3>
+            </summary>
+            <div class="p-qa__inner js-content">
+              <div class="p-qa__wrap">
+                <div class="p-qa__content p-qa__content--open01">
+                  <p class="p-qa__txt">ぜひ事前相談をお勧めいたします。</p>
+                  <p class="p-qa__txt">葬儀は人生で最も大切な決断の一つです。どんな住職に葬儀をしてもらうのか、どんなお堂で大切な人を送るか、できる限り事前にご確認いただきたいと思います。</p>
+                  <p class="p-qa__txt">住職が直接お堂をご案内し、葬儀の流れや本堂の雰囲気を実際にご覧いただけます。ご不安な点やご質問など、どんなことでもお気軽にお聞かせください。電話やフォームからもご相談いただけます。</p>
+                </div>
+              </div>
+            </div>
+          </details>
+          <details class="p-qa__content js-details fadein">
+            <summary class="p-qa__summary js-summary">
+              <p class="p-qa__q">Q.</p>
+              <h3 class="p-qa__ttl">
+                お寺の檀家でなくても利用できますか？ 宗旨宗派は問われますか？
+              </h3>
+            </summary>
+            <div class="p-qa__inner js-content">
+              <div class="p-qa__wrap">
+                <div class="p-qa__content p-qa__content--open01">
+                  <p class="p-qa__txt">ぜひ事前相談をお勧めいたします。</p>
+                  <p class="p-qa__txt">葬儀は人生で最も大切な決断の一つです。どんな住職に葬儀をしてもらうのか、どんなお堂で大切な人を送るか、できる限り事前にご確認いただきたいと思います。</p>
+                  <p class="p-qa__txt">住職が直接お堂をご案内し、葬儀の流れや本堂の雰囲気を実際にご覧いただけます。ご不安な点やご質問など、どんなことでもお気軽にお聞かせください。電話やフォームからもご相談いただけます。</p>
+                </div>
+              </div>
+            </div>
+          </details>
+          <details class="p-qa__content js-details fadein">
+            <summary class="p-qa__summary js-summary">
+              <p class="p-qa__q">Q.</p>
+              <h3 class="p-qa__ttl">
+                戒名は授かれますか？
+              </h3>
+            </summary>
+            <div class="p-qa__inner js-content">
+              <div class="p-qa__wrap">
+                <div class="p-qa__content p-qa__content--open01">
+                  <p class="p-qa__txt">ぜひ事前相談をお勧めいたします。</p>
+                  <p class="p-qa__txt">葬儀は人生で最も大切な決断の一つです。どんな住職に葬儀をしてもらうのか、どんなお堂で大切な人を送るか、できる限り事前にご確認いただきたいと思います。</p>
+                  <p class="p-qa__txt">住職が直接お堂をご案内し、葬儀の流れや本堂の雰囲気を実際にご覧いただけます。ご不安な点やご質問など、どんなことでもお気軽にお聞かせください。電話やフォームからもご相談いただけます。</p>
+                </div>
+              </div>
+            </div>
+          </details>
+          <details class="p-qa__content js-details fadein">
+            <summary class="p-qa__summary js-summary">
+              <p class="p-qa__q">Q.</p>
+              <h3 class="p-qa__ttl">
+                葬儀後の法要や永代供養もお願いできますか？
+              </h3>
+            </summary>
+            <div class="p-qa__inner js-content">
+              <div class="p-qa__wrap">
+                <div class="p-qa__content p-qa__content--open01">
+                  <p class="p-qa__txt">ぜひ事前相談をお勧めいたします。</p>
+                  <p class="p-qa__txt">葬儀は人生で最も大切な決断の一つです。どんな住職に葬儀をしてもらうのか、どんなお堂で大切な人を送るか、できる限り事前にご確認いただきたいと思います。</p>
+                  <p class="p-qa__txt">住職が直接お堂をご案内し、葬儀の流れや本堂の雰囲気を実際にご覧いただけます。ご不安な点やご質問など、どんなことでもお気軽にお聞かせください。電話やフォームからもご相談いただけます。</p>
+                </div>
+              </div>
+            </div>
+          </details>
+          <details class="p-qa__content p-qa__content--last js-details fadein">
+            <summary class="p-qa__summary js-summary">
+              <p class="p-qa__q">Q.</p>
+              <h3 class="p-qa__ttl">
+                直葬（火葬のみ）で済ませましたが、やはり葬儀をしてあげたいです。
+              </h3>
+            </summary>
+            <div class="p-qa__inner js-content">
+              <div class="p-qa__wrap">
+                <div class="p-qa__content p-qa__content--open01">
+                  <p class="p-qa__txt">ぜひ事前相談をお勧めいたします。</p>
+                  <p class="p-qa__txt">葬儀は人生で最も大切な決断の一つです。どんな住職に葬儀をしてもらうのか、どんなお堂で大切な人を送るか、できる限り事前にご確認いただきたいと思います。</p>
+                  <p class="p-qa__txt">住職が直接お堂をご案内し、葬儀の流れや本堂の雰囲気を実際にご覧いただけます。ご不安な点やご質問など、どんなことでもお気軽にお聞かせください。電話やフォームからもご相談いただけます。</p>
+                </div>
+              </div>
+            </div>
+          </details>
+          
         </div>
       </div>
     </section>
