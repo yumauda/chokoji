@@ -74,14 +74,15 @@
   background: #fff;
   z-index: 10;
   padding-left: rem(16);
+  padding-right: rem(40);
   list-style: none;
-  border-top: 1px solid #cc0000;
+  border-top: 1px solid #cccccc;
   display: flex;
-  align-items: center;
   gap: rem(8);
   padding-top: rem(12);
   padding-bottom: rem(12);
   @include mq(md) {
+    align-items: center;
     padding-top: rem(20);
     padding-bottom: rem(20);
   }
@@ -92,13 +93,15 @@
   font-family: $second-font-family;
   font-size: rem(16);
   z-index: 10;
+  margin-top: rem(-2);
   position: relative;
   @include mq(md) {
+    margin-top: initial;
     font-size: rem(20);
   }
 }
 .p-qa__content--last {
-  border-bottom: 1px solid #cc0000;
+  border-bottom: 1px solid #cccccc;
 }
 .p-qa__summary::before {
   content: "";
@@ -163,7 +166,7 @@
 
 .p-qa__wrap {
   padding-top: rem(18);
-  padding-bottom: rem(18);
+  padding-bottom: rem(40);
 }
 .p-qa__txt {
   font-weight: 400;

@@ -2,15 +2,25 @@
 
 .p-mv {
   overflow-x: clip;
+  @include mq(md) {
+    height: rem(900);
+  }
 }
+
 .p-mv__content {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   width: 100vw;
   position: relative;
+  @include mq(md) {
+    height: rem(900);
+  }
 }
 .p-mv__img {
   position: relative;
+  @include mq(md) {
+    height: rem(900);
+  }
 }
 .p-mv__img::before {
   content: "";
@@ -29,6 +39,7 @@
   aspect-ratio: 380 / 700;
   @include mq(md) {
     aspect-ratio: 2000 / 1200;
+    height: rem(900);
   }
 }
 .p-mv__detail {

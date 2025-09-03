@@ -11,6 +11,7 @@
     padding-bottom: rem(100);
   }
 }
+
 .p-contact::before {
   position: absolute;
   content: "";
@@ -50,7 +51,12 @@
     left: rem(-64);
   }
 }
-
+.p-contact--confirm {
+  background: #fff;
+}
+.p-contact--confirm::before {
+  display: none;
+}
 .p-contact__content {
   position: relative;
   z-index: 10;

@@ -14,7 +14,10 @@
   right: rem(20);
   z-index: 9999;
   @include mq(md) {
-    display: none;
+    top: rem(32);
+    right: rem(50);
+    width: rem(48);
+    height: rem(48);
   }
 }
 .p-drawer-icon.is-active {
@@ -52,6 +55,11 @@
   justify-content: center;
   flex-direction: column;
   gap: rem(6);
+  @include mq(md) {
+    width: rem(48);
+    height: rem(48);
+    gap: rem(15);
+  }
 }
 .p-drawer-icon__bar1 {
   height: 1px;
@@ -61,7 +69,7 @@
   display: flex;
   transition: 0.3s ease-in-out;
   @include mq(md) {
-    width: rem(28);
+    width: rem(48);
   }
 }
 .p-drawer-icon__bar1.is-scrolled,
@@ -77,7 +85,7 @@
   display: flex;
   transition: 0.3s ease-in-out;
   @include mq(md) {
-    width: rem(28);
+    width: rem(48);
   }
 }
 
@@ -89,7 +97,7 @@
   width: rem(20);
   transition: 0.3s ease-in-out;
   @include mq(md) {
-    width: rem(28);
+    width: rem(48);
   }
 }
 
@@ -109,6 +117,11 @@
   padding-left: rem(30);
   padding-right: rem(32);
   overflow-y: auto;
+  @include mq(md) {
+    width: rem(350);
+    padding-left: rem(48);
+    padding-top: rem(140);
+  }
 }
 .p-drawer-content.is-active {
   visibility: visible;
@@ -120,15 +133,8 @@
   @include mq(md) {
     max-width: rem(992);
     width: 100%;
-    padding-top: rem(64);
     margin-left: auto;
     margin-right: auto;
-    padding-left: rem(25);
-    padding-right: rem(25);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
 .p-drawer-content__lists {

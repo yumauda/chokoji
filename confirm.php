@@ -57,25 +57,25 @@ if (!empty($_SESSION['CONTACT'])) {
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 	<meta name="format-detection" content="telephone=no" />
 	<!-- meta情報 -->
-	<title>長光寺ホームページ</title>
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
+	<title>お寺の本堂で執り行う家族葬「お寺葬」 | 長野県上田市の御祈祷寺「長光寺」</title>
+	<meta name="description" content="長光寺のお寺葬は、伝統と格式を重視したお寺の本堂にて執り行う家族葬です。住職自らがご家族と向き合い「本当に必要な事」だけをご提案。真心のこもったご葬儀で、故人様を心を込めてお送りいたします。宗旨宗派は不問、どなたでもご利用可能です。" />
+	<meta name="keywords" content="お寺葬,家族葬,長光寺" />
 	<!-- ogp -->
-	<meta property="og:title" content="" />
-	<meta property="og:type" content="" />
+	<meta property="og:title" content="お寺の本堂で執り行う家族葬「お寺葬」 | 長野県上田市の御祈祷寺「長光寺」" />
+	<meta property="og:type" content="website" />
 	<meta property="og:url" content="" />
-	<meta property="og:image" content="" />
-	<meta property="og:site_name" content="" />
-	<meta property="og:description" content="" />
+	<meta property="og:image" content="/images/common/ogp.jpg" />
+	<meta property="og:site_name" content="お寺の本堂で執り行う家族葬「お寺葬」 | 長野県上田市の御祈祷寺「長光寺」" />
+	<meta property="og:description" content="長光寺のお寺葬は、伝統と格式を重視したお寺の本堂にて執り行う家族葬です。住職自らがご家族と向き合い「本当に必要な事」だけをご提案。真心のこもったご葬儀で、故人様を心を込めてお送りいたします。宗旨宗派は不問、どなたでもご利用可能です。" />
 	<!-- ファビコン -->
-	<link rel="icon" href="/images/common/favicon.ico" />
+	<link rel="icon" href="https://m-chokoji.com/oterasou/images/common/favicon.ico" />
 	<link
 		rel="apple-touch-icon"
 		sizes="180x180"
-		href="/images/common/apple-touch-icon.png" />
+		href="https://m-chokoji.com/oterasou/images/common/apple-touch-icon.png" />
 	<!-- css -->
 	<link rel="stylesheet" href="/css/swiper-bundle.min.css" />
-	<link rel="stylesheet" href="/css/styles.css" />
+	<link rel="stylesheet" href="/css/styles.css?20250903" />
 	<!-- JavaScript -->
 	<script>
 		(function(d) {
@@ -119,22 +119,22 @@ if (!empty($_SESSION['CONTACT'])) {
 			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 	<section class="nosp" id="wrapper">
-		<?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
+		<?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header-confirm.php'); ?>
 
 
-		<section class="p-contact">
+		<section class="p-contact p-contact--confirm">
 			<div class="l-inner">
 				<div class="p-contact__confirm-content">
 
 					<div class="block1" id="form">
 						<!-- <h2 class="mtitlebox">お問い合わせ</h2> -->
-	
+
 						<p class="mex p-contact__submit-message">下記内容でよろしければ送信ボタンを押して送信してください。</p>
 						<?php
 						if ($caution == 1) {
 							echo '不正なアクセス';
 						} else {
-	
+
 							$kindline = '';
 							if (!empty($_POST["kind1"]) && $_POST["kind1"] == "1") {
 								$kindline = $kindlist[1];
@@ -152,7 +152,7 @@ if (!empty($_SESSION['CONTACT'])) {
 								$kindline .= $kindlist[3];
 							}
 						?>
-	
+
 							<div class="form_block confirm p-contact__confirm">
 								<table>
 									<tr>
@@ -177,14 +177,14 @@ if (!empty($_SESSION['CONTACT'])) {
 									</tr>
 								</table>
 							</div>
-	
+
 							<form method="post" name="nextForm">
 								<input type="hidden" name="mode" value="send" />
 							</form>
 							<form method="post" name="backForm">
 								<input type="hidden" name="mode" value="back" />
 							</form>
-	
+
 							<div class="p-contact__btn-block">
 								<p class="back p-contact__btn-back"><a href="javascript:document.backForm.submit();">戻る</a></p>
 								<p class="submit p-contact__btn-submit"><a href="javascript:document.nextForm.submit();">送信する</a></p>
@@ -192,7 +192,7 @@ if (!empty($_SESSION['CONTACT'])) {
 						<?php
 						}
 						?>
-	
+
 					</div>
 				</div>
 			</div>

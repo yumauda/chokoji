@@ -5,10 +5,11 @@ let swiper = new Swiper(".swiper1", {
   rewind: true,
   centeredSlides: false,
   effect: "fade",
+  delay: 2000,
   autoplay: {
-    delay: 2500,
+    delay: 8000,
   },
-  speed: 300,
+  speed: 1300,
   slidesPerView: 1,
   spaceBetween: 20,
   pagination: {

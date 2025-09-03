@@ -80,25 +80,25 @@ if (!empty($_SESSION['CONTACT'])) {
   <!-- ogp -->
   <meta property="og:title" content="お寺の本堂で執り行う家族葬「お寺葬」 | 長野県上田市の御祈祷寺「長光寺」" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="/images/common/ogp.jpg" />
+  <meta property="og:url" content="https://m-chokoji.com/oterasou" />
+  <meta property="og:image" content="https://m-chokoji.com/oterasou/images/common/ogp.jpg" />
   <meta property="og:site_name" content="お寺の本堂で執り行う家族葬「お寺葬」 | 長野県上田市の御祈祷寺「長光寺」" />
   <meta property="og:description" content="長光寺のお寺葬は、伝統と格式を重視したお寺の本堂にて執り行う家族葬です。住職自らがご家族と向き合い「本当に必要な事」だけをご提案。真心のこもったご葬儀で、故人様を心を込めてお送りいたします。宗旨宗派は不問、どなたでもご利用可能です。" />
   <!-- ファビコン -->
-  <link rel="icon" href="/images/common/favicon.ico" />
+  <link rel="icon" href="https://m-chokoji.com/oterasou/images/common/favicon.ico" />
   <link
     rel="apple-touch-icon"
     sizes="180x180"
-    href="/images/common/apple-touch-icon.png" />
+    href="https://m-chokoji.com/oterasou//images/common/apple-touch-icon.png" />
 
   <!-- css -->
   <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="/css/styles.css?20250902" />
+  <link rel="stylesheet" href="/css/styles.css?20250905" />
   <!-- JavaScript -->
   <script>
     (function(d) {
+      kitId: 'lre1rcx',
       var config = {
-          kitId: 'lre1rcx',
           scriptTimeout: 3000,
           async: true
         },
@@ -132,7 +132,7 @@ if (!empty($_SESSION['CONTACT'])) {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 
-  <script defer src="/js/swiper.js"></script>
+  <script defer src="/js/swiper.js?20250903"></script>
   <script defer src="/js/gsap.js"></script>
   <script defer src="/js/script.js"></script>
   <!-- Google tag (gtag.js) -->
@@ -960,7 +960,7 @@ if (!empty($_SESSION['CONTACT'])) {
                 </figure>
                 <div class="p-flow__detail">
                   <div class="p-flow__detail-top">
-                    <p class="p-flow__num">07</p>
+                    <p class="p-flow__num">08</p>
                     <h3 class="p-flow__detail-title">収骨・解散</h3>
                   </div>
                   <div class="p-flow__detail-textWrapper">
