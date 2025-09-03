@@ -89,11 +89,11 @@ if (!empty($_SESSION['CONTACT'])) {
   <link
     rel="apple-touch-icon"
     sizes="180x180"
-    href="https://m-chokoji.com/oterasou//images/common/apple-touch-icon.png" />
+    href="https://m-chokoji.com/oterasou/images/common/apple-touch-icon.png" />
 
   <!-- css -->
   <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="/css/styles.css?20250905" />
+  <link rel="stylesheet" href="/css/styles.css?20250906" />
   <!-- JavaScript -->
   <script>
     (function(d) {
@@ -836,7 +836,10 @@ if (!empty($_SESSION['CONTACT'])) {
           </div>
           <div class="p-flow__block">
             <div class="p-flow__line">
-              <img decoding="async" loading="lazy" src="/images/common/flow_line.png" alt="" width="431" height="38">
+              <picture>
+                <source srcset="/images/common/flow_line.png" media="(min-width: 768px)" width="1238" height="570" />
+                <img src="/images/common/flow_line_sp.png" alt="" width="355" height="227">
+              </picture>
             </div>
             <div class="p-flow__right">
               <div class="p-flow__row fadein">
@@ -1241,7 +1244,7 @@ if (!empty($_SESSION['CONTACT'])) {
               </div>
             </div>
           </details>
-          
+
         </div>
       </div>
     </section>
@@ -1367,7 +1370,7 @@ if (!empty($_SESSION['CONTACT'])) {
             <p class="p-contact__num-text">24時間365日対応</p>
           </div>
 
-          <form method="post" name="cform" action="#form" class="p-contact__form fadein">
+          <form method="post" name="cform" action="#form" class="p-contact__form">
             <div class="form_block">
               <table class="p-contact__table">
                 <tr>
