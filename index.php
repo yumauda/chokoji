@@ -80,7 +80,7 @@ if (!empty($_SESSION['CONTACT'])) {
   <!-- ogp -->
   <meta property="og:title" content="お寺の本堂で執り行う家族葬「お寺葬」 | 長野県上田市の御祈祷寺「長光寺」" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://m-chokoji.com/oterasou" />
+  <meta property="og:url" content="https://m-chokoji.com/oterasou/" />
   <meta property="og:image" content="https://m-chokoji.com/oterasou/images/common/ogp.jpg" />
   <meta property="og:site_name" content="お寺の本堂で執り行う家族葬「お寺葬」 | 長野県上田市の御祈祷寺「長光寺」" />
   <meta property="og:description" content="長光寺のお寺葬は、伝統と格式を重視したお寺の本堂にて執り行う家族葬です。住職自らがご家族と向き合い「本当に必要な事」だけをご提案。真心のこもったご葬儀で、故人様を心を込めてお送りいたします。宗旨宗派は不問、どなたでもご利用可能です。" />
@@ -93,7 +93,7 @@ if (!empty($_SESSION['CONTACT'])) {
 
   <!-- css -->
   <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="/css/styles.css?20250906" />
+  <link rel="stylesheet" href="/css/styles.css?20250908" />
   <!-- JavaScript -->
   <script>
     (function(d) {
@@ -1374,7 +1374,7 @@ if (!empty($_SESSION['CONTACT'])) {
             <div class="form_block">
               <table class="p-contact__table">
                 <tr>
-                  <th class="ne ne--kind"><b>お問い合わせ種別</b></th>
+                  <th class="ne ne--kind">お問い合わせ種別</th>
                   <td class="input2">
                     <ul>
                       <li><input type="checkbox" name="kind1" value="1" id="kind1" <?= rc_check('kind1', 1); ?> /><label for="kind1" class="checkbox"><?= $kindlist[1]; ?></label></li>
@@ -1387,7 +1387,7 @@ if (!empty($_SESSION['CONTACT'])) {
                   </td>
                 </tr>
                 <tr>
-                  <th class="ne"><b>お名前</b></th>
+                  <th class="ne">お名前</th>
                   <td class="input">
                     <p class="tdline"><input type="text" name="name" value="<?= value_check('name'); ?>" placeholder="例：長光 太郎" class="input100"></p>
                     <?= error_check($errors, 'name'); ?>
@@ -1395,14 +1395,14 @@ if (!empty($_SESSION['CONTACT'])) {
                   </td>
                 </tr>
                 <tr>
-                  <th class="ne"><b>電話番号</b></th>
+                  <th class="ne">電話番号</th>
                   <td class="input">
                     <p class="tdline"><input type="text" name="tel" value="<?= value_check('tel'); ?>" placeholder="例：09012345678" class="input100"></p>
                     <?= error_check($errors, 'tel'); ?>
                   </td>
                 </tr>
                 <tr>
-                  <th class="ne"><b>メールアドレス</b></th>
+                  <th class="ne">メールアドレス</th>
                   <td class="input">
                     <p class="tdline tdline__required"><input type="text" name="email" value="<?= value_check('email'); ?>" placeholder="例：info@m-chokoji.com（半角英数）" class="input100"></p>
                     <?= error_check($errors, 'email'); ?>
@@ -1413,7 +1413,7 @@ if (!empty($_SESSION['CONTACT'])) {
                 </tr>
 
                 <tr>
-                  <th><b>お問い合わせ内容</b></th>
+                  <th>お問い合わせ内容</th>
                   <td class="input">
                     <div class="tdline">
                       <textarea name="message" class="tarea100"><?= value_check('message'); ?></textarea>

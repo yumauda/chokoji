@@ -2,7 +2,9 @@
 
 .p-price-table {
   overflow-x: auto;
+  padding-top: rem(40);
   @include mq(md) {
+    padding-top: initial;
     overflow-x: visible;
   }
 

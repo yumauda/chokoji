@@ -4574,12 +4574,13 @@ th {
 }
 
 .p-other__table {
-  margin-top: 56px;
-  margin-top: 3.5rem;
   margin-right: calc(50% - 50vw);
+  margin-top: 16px;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 768px) {
   .p-other__table {
+    margin-top: 3.5rem;
     margin-right: 0;
     margin-right: initial;
   }
@@ -4660,10 +4661,15 @@ th {
 }
 
 .p-other__box-text {
-  font-size: 16px;
-  font-size: 1rem;
   color: #333;
   line-height: 2;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+@media screen and (min-width: 768px) {
+  .p-other__box-text {
+    font-size: 1rem;
+  }
 }
 
 .p-other__box-text + .p-other__box-text {
@@ -5183,9 +5189,13 @@ th {
 
 .p-price-table {
   overflow-x: auto;
+  padding-top: 40px;
+  padding-top: 2.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-price-table {
+    padding-top: 0;
+    padding-top: initial;
     overflow-x: visible;
   }
 }

@@ -61,9 +61,10 @@
 }
 
 .p-other__table {
-  margin-top: rem(56);
   margin-right: calc(50% - 50vw);
+  margin-top: rem(16);
   @include mq(md) {
+    margin-top: rem(56);
     margin-right: initial;
   }
 }
@@ -125,9 +126,12 @@
 }
 
 .p-other__box-text {
-  font-size: rem(16);
   color: #333;
   line-height: 2;
+  font-size: rem(15);
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 .p-other__box-text + .p-other__box-text {
   margin-top: rem(24);
