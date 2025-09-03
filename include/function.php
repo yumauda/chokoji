@@ -7,8 +7,8 @@
 // #################################################################
 
 	//基本設定
-	$admin_mail = 'firststep@first-step-yuma.com';
-	// $admin_mail = 'shin@shin-design.jp';
+	/* $admin_mail = 'firststep@first-step-yuma.com'; */
+	$admin_mail = 'shin@shin-design.jp';
 
 	// $admin_mail = 'info@regraviti.com';
 	$admin_name = '【寺葬】';
