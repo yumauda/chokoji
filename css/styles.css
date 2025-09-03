@@ -4624,7 +4624,7 @@ th {
   position: absolute;
   content: "";
   background: #fff;
-  height: 3px;
+  height: 4px;
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
@@ -5309,7 +5309,7 @@ th {
   font-size: 1.125rem;
   position: relative;
   /*   border-left: 3px solid #cc0000;
-    border-right: 3px solid #cc0000; */
+  border-right: 3px solid #cc0000; */
   z-index: 1;
 }
 
@@ -5349,6 +5349,15 @@ th {
 .text-left {
   text-align: left;
   vertical-align: middle;
+}
+
+.p-price-table__item--20 {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+.p-price-table__item--tin {
+  font-weight: 400;
 }
 
 .p-qa {

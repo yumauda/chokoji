@@ -110,7 +110,7 @@
 .bg-990000 {
   font-size: rem(18);
   position: relative;
-/*   border-left: 3px solid #cc0000;
+  /*   border-left: 3px solid #cc0000;
   border-right: 3px solid #cc0000; */
   z-index: 1;
 }
@@ -144,4 +144,10 @@
 .text-left {
   text-align: left;
   vertical-align: middle;
+}
+.p-price-table__item--20 {
+  font-size: rem(20);
+}
+.p-price-table__item--tin {
+  font-weight: 400;
 }

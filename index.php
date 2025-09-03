@@ -93,7 +93,7 @@ if (!empty($_SESSION['CONTACT'])) {
 
   <!-- css -->
   <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="/css/styles.css?20250908" />
+  <link rel="stylesheet" href="/css/styles.css?20250909" />
   <!-- JavaScript -->
   <script>
     (function(d) {
@@ -1001,9 +1001,9 @@ if (!empty($_SESSION['CONTACT'])) {
                 <tbody class="p-price-table__body">
                   <tr class="p-price-table__row">
                     <th class="p-price-table__item-title">初期提示価格</th>
-                    <td class="p-price-table__item bg-fffff1 color-red border-inline-red">50万円</td>
-                    <td class="p-price-table__item">40〜70万円</td>
-                    <td class="p-price-table__item">10〜40万円</td>
+                    <td class="p-price-table__item bg-fffff1 color-red border-inline-red"><span class="p-price-table__item--20">50</span>万円</td>
+                    <td class="p-price-table__item"><span class="p-price-table__item--20">40〜70</span>万円</td>
+                    <td class="p-price-table__item"><span class="p-price-table__item--20">10〜40</span>万円</td>
                   </tr>
                   <tr class="p-price-table__row">
                     <th class="p-price-table__item-title bg-fbe7e7">総額の目安</th>
@@ -1038,8 +1038,8 @@ if (!empty($_SESSION['CONTACT'])) {
                   <tr class="p-price-table__row">
                     <th class="p-price-table__item-title">安置日数</th>
                     <td class="p-price-table__item bg-fffff1 border-inline-red">日数の制限無し</td>
-                    <td class="p-price-table__item">2日間程度</td>
-                    <td class="p-price-table__item">1日分</td>
+                    <td class="p-price-table__item p-price-table__item--tin">2日間程度</td>
+                    <td class="p-price-table__item p-price-table__item--tin">1日分</td>
                   </tr>
                   <tr class="p-price-table__row">
                     <th class="p-price-table__item-title bg-f5f5f5">追加費用</th>
