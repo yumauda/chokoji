@@ -93,7 +93,7 @@ if (!empty($_SESSION['CONTACT'])) {
 
   <!-- css -->
   <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="/css/styles.css?20250909" />
+  <link rel="stylesheet" href="/css/styles.css?20250910" />
   <!-- JavaScript -->
   <script>
     (function(d) {
@@ -299,7 +299,7 @@ if (!empty($_SESSION['CONTACT'])) {
                 <img decoding="async" loading="lazy" src="/images/common/feature_3.jpg" alt="" width="740" height="500">
               </figure>
               <div class="p-feature__detail">
-                <h3 class="p-feature__text-title">由緒ある本堂で<br>心安らぐ葬送</h3>
+                <h3 class="p-feature__text-title">由緒ある<span class="p-feature__text-title--yellow">本堂</span>で<br>心安らぐ葬送</h3>
                 <div class="p-feature__text-wrapper">
 
                   <div class="p-feature__svg-wrapper">
@@ -334,7 +334,7 @@ if (!empty($_SESSION['CONTACT'])) {
                 <img decoding="async" loading="lazy" src="/images/common/feature_4.jpg" alt="" width="740" height="500">
               </figure>
               <div class="p-feature__detail">
-                <h3 class="p-feature__text-title">宗旨宗派不問<br>どなたでもご利用可能</h3>
+                <h3 class="p-feature__text-title">宗旨宗派<span class="p-feature__text-title--red">不問</span><br>どなたでもご利用可能</h3>
                 <div class="p-feature__text-wrapper">
                   <div class="p-feature__svg-wrapper">
                     <svg
@@ -366,7 +366,7 @@ if (!empty($_SESSION['CONTACT'])) {
                 <img decoding="async" loading="lazy" src="/images/common/feature_5.jpg" alt="" width="740" height="500">
               </figure>
               <div class="p-feature__detail">
-                <h3 class="p-feature__text-title">葬儀後も続く<br>末永いお付き合い</h3>
+                <h3 class="p-feature__text-title"><span class="p-feature__text-title--yellow">葬儀後</span>も続く<br>末永いお付き合い</h3>
                 <div class="p-feature__text-wrapper">
                   <div class="p-feature__svg-wrapper">
                     <svg
