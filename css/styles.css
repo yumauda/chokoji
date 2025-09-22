@@ -1389,8 +1389,6 @@ input[type=checkbox] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1050px;
-  max-width: 65.625rem;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -1407,8 +1405,8 @@ input[type=checkbox] {
 
 .p-floating__title {
   letter-spacing: 0.05em;
-  font-size: 30px;
-  font-size: 1.875rem;
+  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #333;
   font-family: "source-han-serif-japanese", serif;
@@ -1431,8 +1429,8 @@ input[type=checkbox] {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  gap: min(15px, 4vw);
-  gap: min(0.9375rem, 4vw);
+  gap: min(5px, 1.3333333333vw);
+  gap: min(0.3125rem, 1.3333333333vw);
 }
 @media screen and (min-width: 768px) {
   .p-floating__row {
@@ -1483,10 +1481,10 @@ input[type=checkbox] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 6px;
-  margin-top: 0.375rem;
-  width: 16px;
-  width: 1rem;
+  margin-top: 0;
+  margin-top: initial;
+  width: 12px;
+  width: 0.75rem;
 }
 @media screen and (min-width: 768px) {
   .p-floating__tel-logo {
@@ -1511,8 +1509,8 @@ input[type=checkbox] {
   color: #990000;
   font-weight: 600;
   font-family: "source-han-serif-japanese", serif;
-  font-size: min(19px, 5.0666666667vw);
-  font-size: min(1.1875rem, 5.0666666667vw);
+  font-size: min(16px, 4.2666666667vw);
+  font-size: min(1rem, 4.2666666667vw);
 }
 @media screen and (min-width: 768px) {
   .p-floating__tel {
@@ -1532,6 +1530,22 @@ input[type=checkbox] {
   }
 }
 
+.p-floating__btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6px;
+  gap: 0.375rem;
+}
+@media screen and (min-width: 768px) {
+  .p-floating__btn-wrapper {
+    gap: 1.5rem;
+  }
+}
+
 .p-floating__btn {
   background: #990000;
   color: #fff;
@@ -1546,18 +1560,29 @@ input[type=checkbox] {
           justify-content: center;
   font-weight: 400;
   border-radius: 9999px;
-  width: min(170px, 45.3333333333vw);
-  width: min(10.625rem, 45.3333333333vw);
+  width: min(100px, 26.6666666667vw);
+  width: min(6.25rem, 26.6666666667vw);
   height: min(40px, 10.6666666667vw);
   height: min(2.5rem, 10.6666666667vw);
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 12px;
+  font-size: 0.75rem;
 }
 @media screen and (min-width: 768px) {
   .p-floating__btn {
     font-size: 1rem;
     height: 3.75rem;
     width: 15.625rem;
+  }
+}
+
+.p-floating__btn-line {
+  background: #01bc4e;
+  width: min(90px, 24vw);
+  width: min(5.625rem, 24vw);
+}
+@media screen and (min-width: 768px) {
+  .p-floating__btn-line {
+    width: 12.5rem;
   }
 }
 
@@ -2009,12 +2034,12 @@ input[type=checkbox] {
 
 @media screen and (min-width: 768px) {
   .p-footer__right {
-    margin-left: min(6.25rem, 7.5vw);
+    margin-left: min(3.375rem, 3.75vw);
     border-left: 1px solid #fff;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    padding-left: min(5.625rem, 6.25vw);
+    padding-left: min(3.375rem, 3.75vw);
   }
 }
 
@@ -2125,7 +2150,7 @@ input[type=checkbox] {
 }
 @media screen and (min-width: 768px) {
   .p-footer__tel {
-    font-size: min(2.375rem, 2.6388888889vw);
+    font-size: min(2rem, 2.2222222222vw);
   }
 }
 
@@ -2148,13 +2173,22 @@ input[type=checkbox] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  gap: 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .p-footer__btn-wrapper {
-    display: inline;
-    display: initial;
     margin-top: 0;
     margin-top: initial;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1.5rem;
   }
 }
 
@@ -2175,14 +2209,23 @@ input[type=checkbox] {
   font-weight: 600;
   font-family: "source-han-serif-japanese", serif;
   border-radius: 9999px;
-  width: 300px;
-  width: 18.75rem;
+  width: 250px;
+  width: 15.625rem;
   height: 70px;
   height: 4.375rem;
 }
 @media screen and (min-width: 768px) {
   .p-footer__btn {
-    width: min(21.875rem, 24.3055555556vw);
+    width: min(15.625rem, 17.3611111111vw);
+  }
+}
+
+.p-footer__btn-line {
+  background: #01bc4e;
+}
+@media screen and (min-width: 768px) {
+  .p-footer__btn-line {
+    width: min(12.5rem, 13.8888888889vw);
   }
 }
 

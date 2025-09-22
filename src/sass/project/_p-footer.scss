@@ -94,10 +94,10 @@
 
 .p-footer__right {
   @include mq(md) {
-    margin-left: min(rem(100), calc(108 / 1440) * 100vw);
+    margin-left: min(rem(54), calc(54 / 1440) * 100vw);
     border-left: 1px solid #fff;
     flex: 1;
-    padding-left: min(rem(90), calc(90 / 1440) * 100vw);
+    padding-left: min(rem(54), calc(54 / 1440) * 100vw);
   }
 }
 
@@ -165,7 +165,7 @@
   font-family: $second-font-family;
   font-size: rem(35);
   @include mq(md) {
-    font-size: min(rem(38), calc(38 / 1440) * 100vw);
+    font-size: min(rem(32), calc(32 / 1440) * 100vw);
   }
 }
 
@@ -180,9 +180,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: rem(20);
   @include mq(md) {
-    display: initial;
     margin-top: initial;
+    flex-direction: row;
+    gap: rem(24);
   }
 }
 
@@ -196,10 +199,16 @@
   font-weight: 600;
   font-family: $second-font-family;
   border-radius: 9999px;
-  width: rem(300);
+  width: rem(250);
   height: rem(70);
   @include mq(md) {
-    width: min(rem(350), calc(350 / 1440) * 100vw);
+    width: min(rem(250), calc(250 / 1440) * 100vw);
+  }
+}
+.p-footer__btn-line {
+  background: #01bc4e;
+  @include mq(md) {
+    width: min(rem(200), calc(200 / 1440) * 100vw);
   }
 }
 .p-footer__small {

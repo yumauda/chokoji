@@ -25,6 +25,7 @@
 
                 <div class="p-floating__btn-wrapper">
                     <a href="#form" class="p-floating__btn">お問い合わせ</a>
+                    <a href="#form" class="p-floating__btn p-floating__btn-line">LINEで相談</a>
                 </div>
             </div>
         </div>

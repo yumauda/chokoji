@@ -27,7 +27,6 @@
 .p-floating__content {
   display: flex;
   align-items: center;
-  max-width: rem(1050);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -42,7 +41,7 @@
 
 .p-floating__title {
   letter-spacing: 0.05em;
-  font-size: rem(30);
+  font-size: rem(24);
   font-weight: 600;
   color: #333;
   font-family: $second-font-family;
@@ -55,7 +54,7 @@
   align-items: center;
   justify-content: center;
   flex: 1;
-  gap: min(rem(15), calc(15 / 375) * 100vw);
+  gap: min(rem(5), calc(5 / 375) * 100vw);
   @include mq(md) {
     justify-content: flex-end;
     gap: rem(35);
@@ -80,8 +79,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: rem(6);
-  width: rem(16);
+  margin-top: initial;
+  width: rem(12);
   @include mq(md) {
     width: rem(30);
   }
@@ -103,7 +102,7 @@
   color: #990000;
   font-weight: 600;
   font-family: $second-font-family;
-  font-size: min(rem(19), calc(19 / 375) * 100vw);
+  font-size: min(rem(16), calc(16 / 375) * 100vw);
   @include mq(md) {
     font-size: rem(35);
   }
@@ -119,6 +118,12 @@
 }
 
 .p-floating__btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: rem(6);
+  @include mq(md) {
+    gap: rem(24);
+  }
 }
 
 .p-floating__btn {
@@ -129,12 +134,19 @@
   justify-content: center;
   font-weight: 400;
   border-radius: 9999px;
-  width: min(rem(170), calc(170 / 375) * 100vw);
+  width: min(rem(100), calc(100 / 375) * 100vw);
   height: min(rem(40), calc(40 / 375) * 100vw);
-  font-size: rem(14);
+  font-size: rem(12);
   @include mq(md) {
     font-size: rem(16);
     height: rem(60);
     width: rem(250);
+  }
+}
+.p-floating__btn-line {
+  background: #01bc4e;
+  width: min(rem(90), calc(90 / 375) * 100vw);
+  @include mq(md) {
+    width: rem(200);
   }
 }

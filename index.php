@@ -92,8 +92,8 @@ if (!empty($_SESSION['CONTACT'])) {
     href="https://m-chokoji.com/oterasou/images/common/apple-touch-icon.png" />
 
   <!-- css -->
-  <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="/css/styles.css?20250910" />
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/styles.css?20250910" />
   <!-- JavaScript -->
   <script>
     (function(d) {
@@ -132,9 +132,9 @@ if (!empty($_SESSION['CONTACT'])) {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 
-  <script defer src="/js/swiper.js?20250903"></script>
-  <script defer src="/js/gsap.js"></script>
-  <script defer src="/js/script.js"></script>
+  <script defer src="./js/swiper.js?20250903"></script>
+  <script defer src="./js/gsap.js"></script>
+  <script defer src="./js/script.js"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7188YSY97L"></script>
   <script>
@@ -150,7 +150,79 @@ if (!empty($_SESSION['CONTACT'])) {
 </head>
 
 <body>
-  <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
+  <?php include_once($_SERVER['DOCUMENT_ROOT'] . '../includes/header.php'); ?>
+  <header class="p-header">
+    <div class="l-inner">
+      <div class="p-header__content">
+
+        <div class="p-header__logo-wrapper">
+          <a href="/" class="p-header__logo">
+            <img decoding="async" loading="lazy" src="./images/common/header_logo.png" alt="長光寺" width="1107" height="361">
+          </a>
+        </div>
+        <div class="p-header__menu">
+          <div class="p-header__tel-wrapper">
+            <p class="p-header__tel-text">もしもの時も、24時間365日受付</p>
+            <div class="p-header__tel-container">
+              <a href="tel:0268-42-2975" class="p-header__tel-logo">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="26px" height="26px" viewBox="0 0 26 26">
+                  <path fill-rule="evenodd"
+                    d="M23.946,17.117 C22.342,17.117 20.771,16.868 19.282,16.376 C18.555,16.125 17.730,16.318 17.252,16.806 L14.300,19.035 C10.913,17.227 8.745,15.060 6.962,11.698 L9.132,8.816 C9.677,8.270 9.873,7.470 9.639,6.722 C9.144,5.224 8.892,3.651 8.892,2.049 C8.892,0.918 7.971,-0.003 6.839,-0.003 L2.049,-0.003 C0.917,-0.003 -0.004,0.918 -0.004,2.049 C-0.004,15.255 10.740,25.999 23.946,25.999 C25.078,25.999 25.999,25.078 25.999,23.947 L25.999,19.171 C25.999,18.039 25.078,17.117 23.946,17.117 Z" />
+                </svg>
+              </a>
+              <a href="tel:0268-42-2975" class="p-header__tel">0268-42-2975</a>
+            </div>
+          </div>
+          <button class="p-header__drawer p-drawer-icon">
+            <span class="p-drawer-icon__bars">
+              <span class="p-drawer-icon__bar1"></span>
+              <span class="p-drawer-icon__bar2"></span>
+              <span class="p-drawer-icon__bar3"></span>
+            </span>
+          </button>
+        </div>
+        <div class="p-header__drawer-content p-drawer-content">
+          <div class="p-drawer-content__items">
+            <ul class="p-drawer-content__lists" id="drawer">
+              <li class="p-drawer-content__list">
+                <a href="#about" class="p-drawer-content__link">お寺葬とは</a>
+              </li>
+              <li class="p-drawer-content__list">
+                <a href="#feature" class="p-drawer-content__link">5つの特徴</a>
+              </li>
+              <li class="p-drawer-content__list">
+                <a href="#plan" class="p-drawer-content__link">葬儀プラン</a>
+              </li>
+              <li class="p-drawer-content__list">
+                <a href="#habits" class="p-drawer-content__link">永代供養</a>
+              </li>
+              <li class="p-drawer-content__list">
+                <a href="#flow" class="p-drawer-content__link">葬儀の流れ</a>
+              </li>
+              <li class="p-drawer-content__list">
+                <a href="#other" class="p-drawer-content__link">他社との比較</a>
+              </li>
+              <li class="p-drawer-content__list">
+                <a href="#qa" class="p-drawer-content__link">よくある質問</a>
+              </li>
+              <li class="p-drawer-content__list">
+                <a href="#temple" class="p-drawer-content__link">運営寺院</a>
+              </li>
+              <li class="p-drawer-content__list">
+                <a href="#area" class="p-drawer-content__link">対応エリア</a>
+              </li>
+              <li class="p-drawer-content__list">
+                <a href="#form" class="p-drawer-content__link">お問い合わせ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
   <main>
     <section class="p-mv">
@@ -178,17 +250,17 @@ if (!empty($_SESSION['CONTACT'])) {
               <!-- Slides -->
               <div class="swiper-slide">
                 <figure class="p-mv__img">
-                  <img src="/images/common/slider_1.jpg" alt="" width="431" height="380">
+                  <img src="./images/common/slider_1.jpg" alt="" width="431" height="380">
                 </figure>
               </div>
               <div class="swiper-slide">
                 <figure class="p-mv__img">
-                  <img src="/images/common/slider_2.jpg" alt="" width="431" height="380">
+                  <img src="./images/common/slider_2.jpg" alt="" width="431" height="380">
                 </figure>
               </div>
               <div class="swiper-slide">
                 <figure class="p-mv__img">
-                  <img src="/images/common/slider_3.jpg" alt="" width="431" height="380">
+                  <img src="./images/common/slider_3.jpg" alt="" width="431" height="380">
                 </figure>
               </div>
             </div>
@@ -230,7 +302,7 @@ if (!empty($_SESSION['CONTACT'])) {
           <ul class="p-feature__grid">
             <li class="p-feature__grid-list js-feature" data-number="1">
               <figure class="p-feature__img">
-                <img decoding="async" loading="lazy" src="/images/common/feature_1.jpg" alt="" width="740" height="500">
+                <img decoding="async" loading="lazy" src="./images/common/feature_1.jpg" alt="" width="740" height="500">
               </figure>
               <div class="p-feature__detail">
                 <h3 class="p-feature__text-title">住職が主体だから<br>どこまでも<span class="p-feature__text-title--yellow">安心</span></h3>
@@ -262,7 +334,7 @@ if (!empty($_SESSION['CONTACT'])) {
             </li>
             <li class="p-feature__grid-list p-feature__detail--white js-feature" data-number="2">
               <figure class="p-feature__img">
-                <img decoding="async" loading="lazy" src="/images/common/feature_2.jpg" alt="" width="740" height="500">
+                <img decoding="async" loading="lazy" src="./images/common/feature_2.jpg" alt="" width="740" height="500">
               </figure>
               <div class="p-feature__detail">
                 <h3 class="p-feature__text-title">必要な<span class="p-feature__text-title--red">費用</span>だけを<br>わかりやすく</h3>
@@ -296,7 +368,7 @@ if (!empty($_SESSION['CONTACT'])) {
             </li>
             <li class="p-feature__grid-list js-feature" data-number="3">
               <figure class="p-feature__img">
-                <img decoding="async" loading="lazy" src="/images/common/feature_3.jpg" alt="" width="740" height="500">
+                <img decoding="async" loading="lazy" src="./images/common/feature_3.jpg" alt="" width="740" height="500">
               </figure>
               <div class="p-feature__detail">
                 <h3 class="p-feature__text-title">由緒ある<span class="p-feature__text-title--yellow">本堂</span>で<br>心安らぐ葬送</h3>
@@ -331,7 +403,7 @@ if (!empty($_SESSION['CONTACT'])) {
           <ul class="p-feature__flex">
             <li class="p-feature__grid-list p-feature__detail--white js-feature" data-number="4">
               <figure class="p-feature__img">
-                <img decoding="async" loading="lazy" src="/images/common/feature_4.jpg" alt="" width="740" height="500">
+                <img decoding="async" loading="lazy" src="./images/common/feature_4.jpg" alt="" width="740" height="500">
               </figure>
               <div class="p-feature__detail">
                 <h3 class="p-feature__text-title">宗旨宗派<span class="p-feature__text-title--red">不問</span><br>どなたでもご利用可能</h3>
@@ -363,7 +435,7 @@ if (!empty($_SESSION['CONTACT'])) {
             </li>
             <li class="p-feature__grid-list js-feature" data-number="5">
               <figure class="p-feature__img">
-                <img decoding="async" loading="lazy" src="/images/common/feature_5.jpg" alt="" width="740" height="500">
+                <img decoding="async" loading="lazy" src="./images/common/feature_5.jpg" alt="" width="740" height="500">
               </figure>
               <div class="p-feature__detail">
                 <h3 class="p-feature__text-title"><span class="p-feature__text-title--yellow">葬儀後</span>も続く<br>末永いお付き合い</h3>
@@ -396,7 +468,7 @@ if (!empty($_SESSION['CONTACT'])) {
           <div class="p-plan__anchor js-plan">
             <a href="#plan1" class="p-plan__anchor-link">
               <figure class="p-plan__anchor-img">
-                <img decoding="async" loading="lazy" src="/images/common/plan_img1.jpg" alt="お寺葬基本プラン" width="370" height="250">
+                <img decoding="async" loading="lazy" src="./images/common/plan_img1.jpg" alt="お寺葬基本プラン" width="370" height="250">
               </figure>
               <div class="p-plan__anchor-detail">
                 <h3 class="p-plan__anchor-title">お寺葬基本プラン</h3>
@@ -406,7 +478,7 @@ if (!empty($_SESSION['CONTACT'])) {
             </a>
             <a href="#plan2" class="p-plan__anchor-link">
               <figure class="p-plan__anchor-img">
-                <img decoding="async" loading="lazy" src="/images/common/plan_img2.jpg" alt="永代供養付プラン" width="370" height="250">
+                <img decoding="async" loading="lazy" src="./images/common/plan_img2.jpg" alt="永代供養付プラン" width="370" height="250">
               </figure>
               <div class="p-plan__anchor-detail">
                 <h3 class="p-plan__anchor-title">永代供養付プラン</h3>
@@ -419,7 +491,7 @@ if (!empty($_SESSION['CONTACT'])) {
             <div class="p-plan__block" id="plan1">
               <div class="p-plan__row p-plan__row--1 fadein">
                 <figure class="p-plan__img">
-                  <img decoding="async" loading="lazy" src="/images/common/plan_img3.jpg" alt="お寺葬基本プラン" width="740" height="500">
+                  <img decoding="async" loading="lazy" src="./images/common/plan_img3.jpg" alt="お寺葬基本プラン" width="740" height="500">
                 </figure>
                 <div class="p-plan__detail">
                   <h3 class="p-plan__detail-title">お寺葬基本プラン</h3>
@@ -429,7 +501,7 @@ if (!empty($_SESSION['CONTACT'])) {
                     お通夜・ご葬儀（初七日）と二日間かけて執り行います。<br>
                     戒名授与も含まれます。</p>
                   <figure class="p-plan__flow p-plan__flow--1">
-                    <img decoding="async" loading="lazy" src="/images/common/plan_flow1.png" alt="お寺葬基本プラン" width="300" height="130">
+                    <img decoding="async" loading="lazy" src="./images/common/plan_flow1.png" alt="お寺葬基本プラン" width="300" height="130">
                   </figure>
                 </div>
               </div>
@@ -440,97 +512,92 @@ if (!empty($_SESSION['CONTACT'])) {
 
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan1.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan1.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan2.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan2.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan3.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan3.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan4.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan4.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan5.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan5.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan6.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan6.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan7.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan7.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan8.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan8.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan19.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan9.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan9.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan10.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan10.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan11.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan11.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan12.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan12.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan13.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan13.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan14.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan14.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan15.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan15.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan16.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan16.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan17.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan17.jpg" alt="" width="120" height="120">
-                      </figure>
-                    </li>
-                    <li class="p-plan__list">
-                      <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan18.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan18.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                   </ul>
@@ -540,37 +607,37 @@ if (!empty($_SESSION['CONTACT'])) {
                   <ul class="p-plan__lists fadein">
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan19.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan19.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan200.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan200.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan21.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan21.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan22.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan22.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan23.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan23.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan24.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan24.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan25.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan25.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
 
@@ -583,7 +650,7 @@ if (!empty($_SESSION['CONTACT'])) {
             <div class="p-plan__block" id="plan2">
               <div class="p-plan__row fadein">
                 <figure class="p-plan__img">
-                  <img decoding="async" loading="lazy" src="/images/common/plan_img4.jpg" alt="永代供養付プラン" width="740" height="500">
+                  <img decoding="async" loading="lazy" src="./images/common/plan_img4.jpg" alt="永代供養付プラン" width="740" height="500">
                 </figure>
                 <div class="p-plan__detail">
                   <h3 class="p-plan__detail-title">永代供養付プラン</h3>
@@ -592,7 +659,7 @@ if (!empty($_SESSION['CONTACT'])) {
                   <p class="p-plan__text">お寺葬基本プランに永代供養を付けたプランです。<br>
                     お通夜・ご葬儀・四十九日法要・納骨式を三日間かけて執り行います。戒名授与も含まれます。</p>
                   <figure class="p-plan__flow p-plan__flow--2">
-                    <img decoding="async" loading="lazy" src="/images/common/plan_flow2.png" alt="永代供養付プラン" width="300" height="130">
+                    <img decoding="async" loading="lazy" src="./images/common/plan_flow2.png" alt="永代供養付プラン" width="300" height="130">
                   </figure>
                 </div>
               </div>
@@ -603,112 +670,107 @@ if (!empty($_SESSION['CONTACT'])) {
 
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan1.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan1.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan28.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan28.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan26.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan26.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan27.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan27.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan29.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan29.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan3.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan3.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan4.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan4.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan5.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan5.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan6.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan6.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan7.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan7.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan8.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan8.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan19.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan9.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan9.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan10.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan10.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan11.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan11.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan12.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan12.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan13.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan13.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan14.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan14.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan15.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan15.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan16.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan16.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan17.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan17.jpg" alt="" width="120" height="120">
-                      </figure>
-                    </li>
-                    <li class="p-plan__list">
-                      <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan18.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan18.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                   </ul>
@@ -718,38 +780,38 @@ if (!empty($_SESSION['CONTACT'])) {
                   <ul class="p-plan__lists fadein">
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan30.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan30.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan31.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan31.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
 
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan21.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan21.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan22.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan22.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan23.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan23.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan24.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan24.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                     <li class="p-plan__list">
                       <figure class="p-plan__list-img">
-                        <img decoding="async" loading="lazy" src="/images/common/plan25.jpg" alt="" width="120" height="120">
+                        <img decoding="async" loading="lazy" src="./images/common/plan25.jpg" alt="" width="120" height="120">
                       </figure>
                     </li>
                   </ul>
@@ -776,7 +838,7 @@ if (!empty($_SESSION['CONTACT'])) {
           <ul class="p-habits__lists">
             <li class="p-habits__list fadein">
               <figure class="p-habits__img p-habits__img--1">
-                <img decoding="async" loading="lazy" src="/images/common/habits_1.png" alt="全て個別安置" width="431" height="38">
+                <img decoding="async" loading="lazy" src="./images/common/habits_1.png" alt="全て個別安置" width="431" height="38">
               </figure>
               <div class="p-habits__detail">
                 <h3 class="p-habits__detail-title">全て個別安置</h3>
@@ -785,7 +847,7 @@ if (!empty($_SESSION['CONTACT'])) {
             </li>
             <li class="p-habits__list fadein">
               <figure class="p-habits__img p-habits__img--1">
-                <img decoding="async" loading="lazy" src="/images/common/habits_2.png" alt="20年間個別安置" width="431" height="38">
+                <img decoding="async" loading="lazy" src="./images/common/habits_2.png" alt="20年間個別安置" width="431" height="38">
               </figure>
               <div class="p-habits__detail">
                 <h3 class="p-habits__detail-title">20年間個別安置</h3>
@@ -794,7 +856,7 @@ if (!empty($_SESSION['CONTACT'])) {
             </li>
             <li class="p-habits__list fadein">
               <figure class="p-habits__img p-habits__img--1">
-                <img decoding="async" loading="lazy" src="/images/common/habits_3.png" alt="宗旨宗派不問" width="431" height="38">
+                <img decoding="async" loading="lazy" src="./images/common/habits_3.png" alt="宗旨宗派不問" width="431" height="38">
               </figure>
               <div class="p-habits__detail">
                 <h3 class="p-habits__detail-title">宗旨宗派不問</h3>
@@ -803,7 +865,7 @@ if (!empty($_SESSION['CONTACT'])) {
             </li>
             <li class="p-habits__list fadein">
               <figure class="p-habits__img p-habits__img--4">
-                <img decoding="async" loading="lazy" src="/images/common/habits_4.png" alt="全て個別安置" width="431" height="38">
+                <img decoding="async" loading="lazy" src="./images/common/habits_4.png" alt="全て個別安置" width="431" height="38">
               </figure>
               <div class="p-habits__detail">
                 <h3 class="p-habits__detail-title">年2回の合同供養</h3>
@@ -812,7 +874,7 @@ if (!empty($_SESSION['CONTACT'])) {
             </li>
             <li class="p-habits__list fadein">
               <figure class="p-habits__img p-habits__img--1">
-                <img decoding="async" loading="lazy" src="/images/common/habits_5.png" alt="全て個別安置" width="431" height="38">
+                <img decoding="async" loading="lazy" src="./images/common/habits_5.png" alt="全て個別安置" width="431" height="38">
               </figure>
               <div class="p-habits__detail">
                 <h3 class="p-habits__detail-title">毎日の墓前供養</h3>
@@ -837,14 +899,14 @@ if (!empty($_SESSION['CONTACT'])) {
           <div class="p-flow__block">
             <div class="p-flow__line">
               <picture>
-                <source srcset="/images/common/flow_line.png" media="(min-width: 768px)" width="1238" height="570" />
-                <img src="/images/common/flow_line_sp.png" alt="" width="355" height="227">
+                <source srcset="./images/common/flow_line.png" media="(min-width: 768px)" width="1238" height="570" />
+                <img src="./images/common/flow_line_sp.png" alt="" width="355" height="227">
               </picture>
             </div>
             <div class="p-flow__right">
               <div class="p-flow__row fadein">
                 <figure class="p-flow__img">
-                  <img decoding="async" loading="lazy" src="/images/common/flow_img1.jpg" alt="ご連絡" width="300" height="200">
+                  <img decoding="async" loading="lazy" src="./images/common/flow_img1.jpg" alt="ご連絡" width="300" height="200">
                 </figure>
                 <div class="p-flow__detail">
                   <div class="p-flow__detail-top">
@@ -868,7 +930,7 @@ if (!empty($_SESSION['CONTACT'])) {
               </div>
               <div class="p-flow__row fadein">
                 <figure class="p-flow__img">
-                  <img decoding="async" loading="lazy" src="/images/common/flow_img2.jpg" alt="ご連絡" width="300" height="200">
+                  <img decoding="async" loading="lazy" src="./images/common/flow_img2.jpg" alt="ご連絡" width="300" height="200">
                 </figure>
                 <div class="p-flow__detail">
                   <div class="p-flow__detail-top">
@@ -883,23 +945,23 @@ if (!empty($_SESSION['CONTACT'])) {
               </div>
               <div class="p-flow__row fadein">
                 <figure class="p-flow__img">
-                  <img decoding="async" loading="lazy" src="/images/common/flow_img3.jpg" alt="ご遺体安置・枕経" width="300" height="200">
+                  <img decoding="async" loading="lazy" src="./images/common/flow_img3.jpg" alt="ご遺体安置・枕経" width="300" height="200">
                 </figure>
                 <div class="p-flow__detail">
                   <div class="p-flow__detail-top">
                     <p class="p-flow__num">03</p>
-                    <h3 class="p-flow__detail-title">ご遺体安置・枕経</h3>
+                    <h3 class="p-flow__detail-title">ご安置・枕経</h3>
                   </div>
                   <div class="p-flow__detail-textWrapper">
                     <p class="p-flow__detail-text">安置後、ご家族が落ち着けるよう配慮いたします。<br>
-                      ご安置後、住職が枕経（まくらきょう）をお勤めし、故人様のご冥福をお祈りします。</p>
+                      ご安置後、住職が枕経（まくらぎょう）をお勤めし、故人様のご冥福をお祈りします。</p>
                   </div>
 
                 </div>
               </div>
               <div class="p-flow__row fadein">
                 <figure class="p-flow__img">
-                  <img decoding="async" loading="lazy" src="/images/common/flow_img4.jpg" alt="喪主様との打ち合わせ" width="300" height="200">
+                  <img decoding="async" loading="lazy" src="./images/common/flow_img4.jpg" alt="喪主様との打ち合わせ" width="300" height="200">
                 </figure>
                 <div class="p-flow__detail">
                   <div class="p-flow__detail-top">
@@ -914,7 +976,7 @@ if (!empty($_SESSION['CONTACT'])) {
               </div>
               <div class="p-flow__row fadein">
                 <figure class="p-flow__img">
-                  <img decoding="async" loading="lazy" src="/images/common/flow_img5.jpg" alt="お通夜" width="300" height="200">
+                  <img decoding="async" loading="lazy" src="./images/common/flow_img5.jpg" alt="お通夜" width="300" height="200">
                 </figure>
                 <div class="p-flow__detail">
                   <div class="p-flow__detail-top">
@@ -929,7 +991,7 @@ if (!empty($_SESSION['CONTACT'])) {
               </div>
               <div class="p-flow__row fadein">
                 <figure class="p-flow__img">
-                  <img decoding="async" loading="lazy" src="/images/common/flow_img6.jpg" alt="ご葬儀・初七日法要" width="300" height="200">
+                  <img decoding="async" loading="lazy" src="./images/common/flow_img6.jpg" alt="ご葬儀・初七日法要" width="300" height="200">
                 </figure>
                 <div class="p-flow__detail">
                   <div class="p-flow__detail-top">
@@ -944,7 +1006,7 @@ if (!empty($_SESSION['CONTACT'])) {
               </div>
               <div class="p-flow__row fadein">
                 <figure class="p-flow__img">
-                  <img decoding="async" loading="lazy" src="/images/common/flow_img7.jpg" alt="火葬" width="300" height="200">
+                  <img decoding="async" loading="lazy" src="./images/common/flow_img7.jpg" alt="火葬" width="300" height="200">
                 </figure>
                 <div class="p-flow__detail">
                   <div class="p-flow__detail-top">
@@ -959,7 +1021,7 @@ if (!empty($_SESSION['CONTACT'])) {
               </div>
               <div class="p-flow__row fadein">
                 <figure class="p-flow__img">
-                  <img decoding="async" loading="lazy" src="/images/common/flow_img8.jpg" alt="火収骨・解散葬" width="300" height="200">
+                  <img decoding="async" loading="lazy" src="./images/common/flow_img8.jpg" alt="火収骨・解散葬" width="300" height="200">
                 </figure>
                 <div class="p-flow__detail">
                   <div class="p-flow__detail-top">
@@ -972,7 +1034,7 @@ if (!empty($_SESSION['CONTACT'])) {
 
                 </div>
               </div>
-
+              <p class="p-plan__attention">※順序や内容が前後する場合があります。</p>
             </div>
           </div>
         </div>
@@ -995,7 +1057,7 @@ if (!empty($_SESSION['CONTACT'])) {
                       <p class="p-price-table__heading-text">長光寺の<br>お寺葬基本プラン</p>
                     </th>
                     <th class="p-price-table__heading">A社（大手）<br>家族葬プラン</th>
-                    <th class="p-price-table__heading">B社（新聞）<br>家族葬プラン</th>
+                    <th class="p-price-table__heading">B社（新興）<br>家族葬プラン</th>
                   </tr>
                 </thead>
                 <tbody class="p-price-table__body">
@@ -1084,9 +1146,8 @@ if (!empty($_SESSION['CONTACT'])) {
             <div class="p-qa__inner js-content">
               <div class="p-qa__wrap">
                 <div class="p-qa__content p-qa__content--open01">
-                  <p class="p-qa__txt">ぜひ事前相談をお勧めいたします。</p>
-                  <p class="p-qa__txt">葬儀は人生で最も大切な決断の一つです。どんな住職に葬儀をしてもらうのか、どんなお堂で大切な人を送るか、できる限り事前にご確認いただきたいと思います。</p>
-                  <p class="p-qa__txt">住職が直接お堂をご案内し、葬儀の流れや本堂の雰囲気を実際にご覧いただけます。ご不安な点やご質問など、どんなことでもお気軽にお聞かせください。電話やフォームからもご相談いただけます。</p>
+                  <p class="p-qa__txt">はい、基本お寺葬プランの場合は、火葬場費用（上田市の場合14,000円〜18,000円）のみ別途必要ですが、それ以外はオプションを追加しない限り追加費用はかかりません。</p>
+                  <p class="p-qa__txt">必ず事前にお見積もりをお出ししますので、ご安心ください。</p>
                 </div>
               </div>
             </div>
@@ -1101,9 +1162,24 @@ if (!empty($_SESSION['CONTACT'])) {
             <div class="p-qa__inner js-content">
               <div class="p-qa__wrap">
                 <div class="p-qa__content p-qa__content--open01">
-                  <p class="p-qa__txt">ぜひ事前相談をお勧めいたします。</p>
-                  <p class="p-qa__txt">葬儀は人生で最も大切な決断の一つです。どんな住職に葬儀をしてもらうのか、どんなお堂で大切な人を送るか、できる限り事前にご確認いただきたいと思います。</p>
-                  <p class="p-qa__txt">住職が直接お堂をご案内し、葬儀の流れや本堂の雰囲気を実際にご覧いただけます。ご不安な点やご質問など、どんなことでもお気軽にお聞かせください。電話やフォームからもご相談いただけます。</p>
+                  <p class="p-qa__txt">いいえ。<br>
+                  お寺葬は法要一式（導師出仕・読経・戒名授与）を含む総額です。追加の『お布施』は不要です。</p>
+                </div>
+              </div>
+            </div>
+          </details>
+          <details class="p-qa__content js-details fadein">
+            <summary class="p-qa__summary js-summary">
+              <p class="p-qa__q">Q.</p>
+              <h3 class="p-qa__ttl">
+                他の葬儀社の互助会に加入しているのですが、お寺葬はできますか？
+              </h3>
+            </summary>
+            <div class="p-qa__inner js-content">
+              <div class="p-qa__wrap">
+                <div class="p-qa__content p-qa__content--open01">
+                  <p class="p-qa__txt">はい、可能です。互助会に入っていてもお寺葬をご依頼いただけます。<br>
+                  （途中解約や方法などについてもご説明いたしますので、安心してご相談ください）</p>
                 </div>
               </div>
             </div>
@@ -1135,9 +1211,9 @@ if (!empty($_SESSION['CONTACT'])) {
             <div class="p-qa__inner js-content">
               <div class="p-qa__wrap">
                 <div class="p-qa__content p-qa__content--open01">
-                  <p class="p-qa__txt">ぜひ事前相談をお勧めいたします。</p>
-                  <p class="p-qa__txt">葬儀は人生で最も大切な決断の一つです。どんな住職に葬儀をしてもらうのか、どんなお堂で大切な人を送るか、できる限り事前にご確認いただきたいと思います。</p>
-                  <p class="p-qa__txt">住職が直接お堂をご案内し、葬儀の流れや本堂の雰囲気を実際にご覧いただけます。ご不安な点やご質問など、どんなことでもお気軽にお聞かせください。電話やフォームからもご相談いただけます。</p>
+                  <p class="p-qa__txt">まずは長光寺にご連絡ください（24時間対応）。<br>
+                  当寺と提携する葬儀の専門家がすぐにお迎えに伺い、住職が責任をもって窓口となります。<br>
+                  ご家族が業者と直接やり取りするご負担はありません。</p>
                 </div>
               </div>
             </div>
@@ -1152,9 +1228,8 @@ if (!empty($_SESSION['CONTACT'])) {
             <div class="p-qa__inner js-content">
               <div class="p-qa__wrap">
                 <div class="p-qa__content p-qa__content--open01">
-                  <p class="p-qa__txt">ぜひ事前相談をお勧めいたします。</p>
-                  <p class="p-qa__txt">葬儀は人生で最も大切な決断の一つです。どんな住職に葬儀をしてもらうのか、どんなお堂で大切な人を送るか、できる限り事前にご確認いただきたいと思います。</p>
-                  <p class="p-qa__txt">住職が直接お堂をご案内し、葬儀の流れや本堂の雰囲気を実際にご覧いただけます。ご不安な点やご質問など、どんなことでもお気軽にお聞かせください。電話やフォームからもご相談いただけます。</p>
+                  <p class="p-qa__txt">長光寺と提携する地元提携葬祭スタッフが24時間体制で担当します。<br>
+                  すべて長光寺が窓口になりますのでご安心ください。</p>
                 </div>
               </div>
             </div>
@@ -1169,9 +1244,9 @@ if (!empty($_SESSION['CONTACT'])) {
             <div class="p-qa__inner js-content">
               <div class="p-qa__wrap">
                 <div class="p-qa__content p-qa__content--open01">
-                  <p class="p-qa__txt">ぜひ事前相談をお勧めいたします。</p>
-                  <p class="p-qa__txt">葬儀は人生で最も大切な決断の一つです。どんな住職に葬儀をしてもらうのか、どんなお堂で大切な人を送るか、できる限り事前にご確認いただきたいと思います。</p>
-                  <p class="p-qa__txt">住職が直接お堂をご案内し、葬儀の流れや本堂の雰囲気を実際にご覧いただけます。ご不安な点やご質問など、どんなことでもお気軽にお聞かせください。電話やフォームからもご相談いただけます。</p>
+                  <p class="p-qa__txt">もちろんです。ご家族様それぞれに様々なご事情があるかと存じます。<br>
+                  長光寺のお寺葬は、ご家族のお気持ちに寄り添うことを第一に考えております。</p>
+                  <p class="p-qa__txt">決まった形に当てはめるのではなく、ご予算やご要望に応じて、内容を調整した専用のプランをご提案いたしますので、まずはお気兼ねなくご相談ください。</p>
                 </div>
               </div>
             </div>
@@ -1186,9 +1261,8 @@ if (!empty($_SESSION['CONTACT'])) {
             <div class="p-qa__inner js-content">
               <div class="p-qa__wrap">
                 <div class="p-qa__content p-qa__content--open01">
-                  <p class="p-qa__txt">ぜひ事前相談をお勧めいたします。</p>
-                  <p class="p-qa__txt">葬儀は人生で最も大切な決断の一つです。どんな住職に葬儀をしてもらうのか、どんなお堂で大切な人を送るか、できる限り事前にご確認いただきたいと思います。</p>
-                  <p class="p-qa__txt">住職が直接お堂をご案内し、葬儀の流れや本堂の雰囲気を実際にご覧いただけます。ご不安な点やご質問など、どんなことでもお気軽にお聞かせください。電話やフォームからもご相談いただけます。</p>
+                  <p class="p-qa__txt">はい、宗旨宗派を問わず、どなたでもご利用いただけます。<br>
+                  檀家になる必要もございません。</p>
                 </div>
               </div>
             </div>
@@ -1203,9 +1277,8 @@ if (!empty($_SESSION['CONTACT'])) {
             <div class="p-qa__inner js-content">
               <div class="p-qa__wrap">
                 <div class="p-qa__content p-qa__content--open01">
-                  <p class="p-qa__txt">ぜひ事前相談をお勧めいたします。</p>
-                  <p class="p-qa__txt">葬儀は人生で最も大切な決断の一つです。どんな住職に葬儀をしてもらうのか、どんなお堂で大切な人を送るか、できる限り事前にご確認いただきたいと思います。</p>
-                  <p class="p-qa__txt">住職が直接お堂をご案内し、葬儀の流れや本堂の雰囲気を実際にご覧いただけます。ご不安な点やご質問など、どんなことでもお気軽にお聞かせください。電話やフォームからもご相談いただけます。</p>
+                  <p class="p-qa__txt">もちろんお授けします。<br>
+                  故人様のお人柄やご家族の想いを伺い、ご家族の希望に沿ったお戒名をお授けいたします。戒名料は料金に含まれておりますので、ご安心ください。</p>
                 </div>
               </div>
             </div>
@@ -1220,9 +1293,7 @@ if (!empty($_SESSION['CONTACT'])) {
             <div class="p-qa__inner js-content">
               <div class="p-qa__wrap">
                 <div class="p-qa__content p-qa__content--open01">
-                  <p class="p-qa__txt">ぜひ事前相談をお勧めいたします。</p>
-                  <p class="p-qa__txt">葬儀は人生で最も大切な決断の一つです。どんな住職に葬儀をしてもらうのか、どんなお堂で大切な人を送るか、できる限り事前にご確認いただきたいと思います。</p>
-                  <p class="p-qa__txt">住職が直接お堂をご案内し、葬儀の流れや本堂の雰囲気を実際にご覧いただけます。ご不安な点やご質問など、どんなことでもお気軽にお聞かせください。電話やフォームからもご相談いただけます。</p>
+                  <p class="p-qa__txt">はい、葬儀後の法要や永代供養も一貫してお手伝いしております。</p>
                 </div>
               </div>
             </div>
@@ -1237,9 +1308,7 @@ if (!empty($_SESSION['CONTACT'])) {
             <div class="p-qa__inner js-content">
               <div class="p-qa__wrap">
                 <div class="p-qa__content p-qa__content--open01">
-                  <p class="p-qa__txt">ぜひ事前相談をお勧めいたします。</p>
-                  <p class="p-qa__txt">葬儀は人生で最も大切な決断の一つです。どんな住職に葬儀をしてもらうのか、どんなお堂で大切な人を送るか、できる限り事前にご確認いただきたいと思います。</p>
-                  <p class="p-qa__txt">住職が直接お堂をご案内し、葬儀の流れや本堂の雰囲気を実際にご覧いただけます。ご不安な点やご質問など、どんなことでもお気軽にお聞かせください。電話やフォームからもご相談いただけます。</p>
+                  <p class="p-qa__txt">もちろんです。ご遺骨をお持ちいただければ、本堂でのご葬儀や戒名の授与も承っております。どうぞお気軽にご相談ください。</p>
                 </div>
               </div>
             </div>
@@ -1257,7 +1326,7 @@ if (!empty($_SESSION['CONTACT'])) {
         <div class="p-temple__content">
           <div class="p-temple__row fadein">
             <figure class="p-temple__img">
-              <img decoding="async" loading="lazy" src="/images/common/temple_img.jpg" alt="寺葬のお寺" width="1000" height="667">
+              <img decoding="async" loading="lazy" src="./images/common/temple_img.jpg" alt="寺葬のお寺" width="1000" height="667">
             </figure>
             <div class="p-temple__text-wrapper">
               <p class="p-temple__text">突然のご逝去に、気持ちも段取りも追いつかない——<br>
@@ -1269,7 +1338,7 @@ if (!empty($_SESSION['CONTACT'])) {
 
           </div>
           <div class="p-temple__bottomText-wrapper fadein">
-            <p class="p-temple__text">お迎え・ご安置から、祭壇やお花、遺影写真の準備、通夜・葬儀・初七日のお勤めまで——<br>複雑な費用計算に悩まされることなく、明確な一つのご布施で必要なものを全て整えさせていただきます。流れを最初に丁寧にご説明し、あとから迷いが生じないよう、住職が終始伴走いたします。</p>
+            <p class="p-temple__text">お迎え・ご安置から、祭壇やお花、遺影写真の準備、通夜・葬儀・初七日のお勤めまで——<br>複雑な費用計算に悩まされることなく、明確な一つのお布施で必要なものを全て整えさせていただきます。流れを最初に丁寧にご説明し、あとから迷いが生じないよう、住職が終始伴走いたします。</p>
             <p class="p-temple__text">手配に追われることなく、ただ故人さまとの思い出を語り合う。<br class="u-desktop">
               気兼ねなく、心からの「ありがとう」を伝える。</p>
             <p class="p-temple__text">家族葬という温かな輪の中で、「いのち」のつながりと「ご縁」の尊さを、静かに見つめ直すお手伝いをいたします。<br>
@@ -1308,7 +1377,7 @@ if (!empty($_SESSION['CONTACT'])) {
               <dd class="p-temple__dd">TEL：<a class="p-temple__dd-tel" href="tel:0268-42-2975">0268-42-2975</a><br>公式HP：<a class="p-temple__dd-link" href="https://m-chokoji.com" target="_blank" rel="noopener noreferrer">https://m-chokoji.com</a></dd>
             </div>
             <div class="p-temple__dlRow">
-              <dt class="p-temple__dt">アクセス</dt>
+              <dt class="p-temple__dt">法務内容</dt>
               <dd class="p-temple__dd">
                 <p class="p-temple__dd-text">葬儀・法事</p>
                 <p class="p-temple__dd-text">墓地・永代供養</p>
@@ -1336,7 +1405,7 @@ if (!empty($_SESSION['CONTACT'])) {
             </div>
           </div>
           <figure class="p-area__img fadein">
-            <img decoding="async" loading="lazy" src="/images/common/area_img.png" alt="長野県・東信エリア" width="650" height="400">
+            <img decoding="async" loading="lazy" src="./images/common/area_img.png" alt="長野県・東信エリア" width="650" height="400">
           </figure>
         </div>
       </div>
@@ -1424,7 +1493,7 @@ if (!empty($_SESSION['CONTACT'])) {
             </div>
 
             <p class="checkbox">
-              当サイトの「お問い合わせ」をご利用いただいた際に、お客様の個人情報の取扱いを行いますが、<br class="pc" />そのお客様の個人情報を、お客様の同意なしに第三者に開示することはありません。<br class="pc" />送信後、送信完了メールを記載いただいたメールアドレスに自動送信いたします。
+              当サイトの「お問い合わせ」をご利用いただいた際に、お客様の個人情報の取扱いを行いますが、<br class="pc" />そのお客様の個人情報を、お客様の同意なしに第三者に開示することはありません。<br class="u-desktop">送信後、送信完了メールを記載いただいたメールアドレスに自動送信いたします。
             </p>
 
             <div class="btn_block fade op">
@@ -1438,7 +1507,151 @@ if (!empty($_SESSION['CONTACT'])) {
     </section>
 
   </main>
-  <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
+  <div class="p-floating">
+    <div class="l-inner">
+      <div class="p-floating__content">
+        <div class="p-floating__title-wrapper">
+          <p class="p-floating__title">ご相談とお見積りは<span>無料</span>です</p>
+        </div>
+        <div class="p-floating__row">
+          <div class="p-floating__vertical">
+            <div class="p-floating__tel-wrapper">
+              <div class="p-floating__tel-logo">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="26px" height="26px" viewBox="0 0 26 26">
+                  <path fill-rule="evenodd"
+                    d="M23.946,17.117 C22.342,17.117 20.771,16.868 19.282,16.376 C18.555,16.125 17.730,16.318 17.252,16.806 L14.300,19.035 C10.913,17.227 8.745,15.060 6.962,11.698 L9.132,8.816 C9.677,8.270 9.873,7.470 9.639,6.722 C9.144,5.224 8.892,3.651 8.892,2.049 C8.892,0.918 7.971,-0.003 6.839,-0.003 L2.049,-0.003 C0.917,-0.003 -0.004,0.918 -0.004,2.049 C-0.004,15.255 10.740,25.999 23.946,25.999 C25.078,25.999 25.999,25.078 25.999,23.947 L25.999,19.171 C25.999,18.039 25.078,17.117 23.946,17.117 Z" />
+                </svg>
+              </div>
+              <div class="p-floating__tel-num">
+                <a href="tel:0268-42-2975" class="p-floating__tel">0268-42-2975</a>
+              </div>
+            </div>
+            <p class="p-floating__tel-text">24時間365日対応</p>
+          </div>
+
+          <div class="p-floating__btn-wrapper">
+            <a href="#form" class="p-floating__btn">お問い合わせ</a>
+            <a href="https://lin.ee/jJ8f82a" class="p-floating__btn p-floating__btn-line" target="_blank" rel="noopener noreferrer">LINEで相談</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="p-footer">
+    <div class="l-inner">
+      <div class="p-footer__content">
+        <div class="p-footer__left">
+          <div class="p-footer__logo">
+            <a href="/" class="p-footer__home">
+              <img decoding="async" loading="lazy" src="./images/common/footer_logo.png" alt="お寺葬" width="450" height="236">
+            </a>
+          </div>
+          <div class="p-footer__text-wrapper p-footer__text-wrapper--mobile">
+            <p class="p-footer__text">運営寺院：明玉山 長光寺<br>
+              〒386-0403 長野県上田市腰越1530</p>
+          </div>
+          <ul class="p-footer__lists">
+            <li class="p-footer__list">
+              <a href="https://m-chokoji.com" class="p-footer__link" target="_blank" rel="noopener noreferrer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="20px" height="21px">
+                  <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                    d="M9.999,0.490 L0.724,9.689 L0.724,20.502 L8.172,20.502 L8.172,14.473 L11.827,14.473 L11.827,20.478 L11.827,20.495 L11.827,20.495 L11.827,20.502 L19.275,20.502 L19.275,9.771 L9.999,0.490 Z" />
+                </svg>
+              </a>
+            </li>
+            <li class="p-footer__list">
+              <a href="https://tera-blo.com/" class="p-footer__link" target="_blank" rel="noopener noreferrer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="21px" height="23px">
+                  <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                    d="M16.175,7.197 C16.357,7.307 17.283,7.672 18.277,7.287 C18.839,7.431 17.113,9.549 14.311,9.775 C13.144,9.956 15.126,10.320 16.024,9.927 C16.707,9.797 14.537,12.585 11.362,12.683 C9.186,12.750 8.262,15.124 6.831,17.721 C6.085,19.075 4.812,18.301 5.507,16.990 C5.507,16.990 8.028,11.917 8.666,10.696 C8.666,10.696 11.316,4.735 15.620,3.270 C19.842,1.834 20.489,0.862 20.489,0.862 C20.489,0.862 21.120,6.592 16.175,7.197 ZM9.863,6.476 L3.329,6.476 C3.132,6.477 2.963,6.552 2.833,6.679 C2.703,6.809 2.627,6.975 2.626,7.170 L2.626,19.304 C2.627,19.500 2.703,19.665 2.833,19.795 C2.963,19.922 3.132,19.997 3.329,19.998 L15.633,19.998 C15.831,19.997 15.1000,19.922 16.130,19.795 C16.259,19.665 16.335,19.500 16.336,19.304 L16.336,11.711 C16.927,11.134 17.293,10.535 17.317,10.050 C17.739,9.819 18.112,9.556 18.432,9.280 C18.440,9.287 18.445,9.293 18.445,9.293 L18.445,19.304 C18.446,20.067 18.129,20.767 17.622,21.266 C17.116,21.766 16.406,22.077 15.633,22.077 L3.329,22.077 C2.556,22.077 1.846,21.766 1.341,21.266 C0.833,20.767 0.516,20.067 0.517,19.304 L0.517,7.170 C0.516,6.407 0.833,5.707 1.341,5.208 C1.846,4.708 2.556,4.395 3.329,4.396 L11.715,4.396 C11.712,4.400 11.709,4.404 11.706,4.408 C11.008,5.063 10.392,5.777 9.863,6.476 Z" />
+                </svg>
+              </a>
+            </li>
+            <li class="p-footer__list">
+              <a href="https://www.instagram.com/myougyokuzan_chokoji/" class="p-footer__link" target="_blank" rel="noopener noreferrer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="21px" height="22px">
+                  <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                    d="M14.751,21.158 L6.247,21.158 C3.072,21.158 0.499,18.587 0.499,15.416 L0.499,6.581 C0.499,3.410 3.072,0.839 6.247,0.839 L14.751,0.839 C17.926,0.839 20.500,3.410 20.500,6.581 L20.500,15.416 C20.500,18.587 17.926,21.158 14.751,21.158 ZM18.459,6.581 C18.459,4.539 16.796,2.878 14.751,2.878 L6.247,2.878 C4.203,2.878 2.540,4.539 2.540,6.581 L2.540,15.416 C2.540,17.458 4.203,19.120 6.247,19.120 L14.751,19.120 C16.796,19.120 18.459,17.458 18.459,15.416 L18.459,6.581 ZM15.891,6.786 C15.242,6.786 14.717,6.260 14.717,5.613 C14.717,4.966 15.242,4.441 15.891,4.441 C16.539,4.441 17.064,4.966 17.064,5.613 C17.064,6.260 16.539,6.786 15.891,6.786 ZM10.499,16.231 C7.611,16.231 5.261,13.884 5.261,10.999 C5.261,8.114 7.611,5.766 10.499,5.766 C13.388,5.766 15.737,8.114 15.737,10.999 C15.737,13.884 13.388,16.231 10.499,16.231 ZM10.499,7.397 C8.511,7.397 6.893,9.012 6.893,10.999 C6.893,12.985 8.511,14.600 10.499,14.600 C12.487,14.600 14.105,12.985 14.105,10.999 C14.105,9.012 12.487,7.397 10.499,7.397 Z" />
+                </svg>
+              </a>
+            </li>
+            <li class="p-footer__list">
+              <a href="https://x.com/chokoji_uedashi" class="p-footer__link" target="_blank" rel="noopener noreferrer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="21px" height="21px">
+                  <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                    d="M12.389,8.870 L19.841,0.119 L18.075,0.119 L11.605,7.717 L6.437,0.119 L0.476,0.119 L8.291,11.609 L0.476,20.786 L2.243,20.786 L9.075,12.761 L14.533,20.786 L20.493,20.786 L12.389,8.870 L12.389,8.870 ZM9.971,11.710 L9.179,10.566 L2.879,1.462 L5.591,1.462 L10.675,8.809 L11.467,9.953 L18.076,19.503 L15.364,19.503 L9.971,11.710 L9.971,11.710 Z" />
+                </svg>
+              </a>
+            </li>
+            <li class="p-footer__list">
+              <a href="https://lin.ee/vzVMrqT" class="p-footer__link" target="_blank" rel="noopener noreferrer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="21px" height="19px">
+                  <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                    d="M20.924,8.247 C20.924,3.841 16.437,0.257 10.922,0.257 C5.408,0.257 0.921,3.841 0.921,8.247 C0.921,12.196 4.479,15.504 9.285,16.130 C9.611,16.199 10.054,16.341 10.166,16.615 C10.267,16.864 10.233,17.254 10.199,17.506 C10.199,17.506 10.082,18.201 10.056,18.348 C10.012,18.597 9.855,19.321 10.922,18.879 C11.990,18.436 16.682,15.540 18.781,13.162 L18.780,13.162 C20.229,11.598 20.924,10.010 20.924,8.247 ZM7.393,10.599 C7.393,10.705 7.306,10.791 7.199,10.791 L4.397,10.791 L4.396,10.791 C4.344,10.791 4.297,10.770 4.262,10.737 C4.261,10.736 4.260,10.735 4.259,10.734 C4.257,10.733 4.257,10.732 4.257,10.731 C4.223,10.698 4.201,10.651 4.201,10.599 L4.201,10.599 L4.201,6.310 C4.201,6.203 4.289,6.118 4.397,6.118 L5.098,6.118 C5.206,6.118 5.293,6.203 5.293,6.310 L5.293,9.716 L7.199,9.716 C7.306,9.716 7.393,9.802 7.393,9.908 L7.393,10.599 ZM9.085,10.599 C9.085,10.705 8.998,10.791 8.890,10.791 L8.189,10.791 C8.081,10.791 7.994,10.705 7.994,10.599 L7.994,6.309 C7.994,6.203 8.081,6.118 8.189,6.118 L8.890,6.118 C8.998,6.118 9.085,6.203 9.085,6.309 L9.085,10.599 ZM13.914,10.599 C13.914,10.705 13.827,10.791 13.719,10.791 L13.017,10.791 C13.000,10.791 12.983,10.788 12.967,10.784 C12.967,10.784 12.966,10.783 12.965,10.783 C12.960,10.782 12.956,10.780 12.951,10.779 C12.949,10.779 12.948,10.777 12.946,10.777 C12.942,10.776 12.940,10.775 12.936,10.773 C12.933,10.772 12.930,10.770 12.927,10.769 C12.924,10.768 12.924,10.767 12.921,10.766 C12.918,10.763 12.913,10.761 12.909,10.759 C12.909,10.758 12.908,10.758 12.908,10.757 C12.889,10.745 12.872,10.729 12.858,10.710 L10.858,8.051 L10.858,10.599 C10.858,10.705 10.771,10.791 10.663,10.791 L9.962,10.791 C9.854,10.791 9.767,10.705 9.767,10.599 L9.767,6.309 C9.767,6.203 9.854,6.118 9.962,6.118 L10.663,6.118 C10.666,6.118 10.667,6.118 10.670,6.118 C10.674,6.118 10.677,6.118 10.680,6.119 C10.683,6.119 10.687,6.119 10.691,6.120 C10.693,6.120 10.696,6.120 10.699,6.120 C10.702,6.121 10.706,6.122 10.710,6.123 C10.712,6.124 10.715,6.125 10.717,6.125 C10.721,6.126 10.724,6.127 10.728,6.129 C10.731,6.129 10.732,6.130 10.735,6.131 C10.738,6.133 10.742,6.134 10.746,6.136 C10.748,6.136 10.750,6.138 10.752,6.138 C10.755,6.140 10.759,6.142 10.762,6.145 C10.764,6.145 10.766,6.146 10.768,6.148 C10.772,6.150 10.775,6.152 10.778,6.155 C10.780,6.156 10.782,6.157 10.783,6.158 C10.787,6.161 10.790,6.164 10.794,6.168 C10.795,6.168 10.796,6.169 10.797,6.170 C10.802,6.174 10.805,6.177 10.809,6.182 L10.810,6.183 C10.816,6.189 10.821,6.196 10.825,6.202 L12.823,8.858 L12.823,6.309 C12.823,6.203 12.909,6.118 13.017,6.118 L13.719,6.118 C13.827,6.118 13.914,6.203 13.914,6.309 L13.914,10.599 ZM17.788,7.000 C17.788,7.106 17.701,7.192 17.593,7.192 L15.687,7.192 L15.687,7.916 L17.593,7.916 C17.701,7.916 17.788,8.003 17.788,8.109 L17.788,8.799 C17.788,8.906 17.701,8.991 17.593,8.991 L15.687,8.991 L15.687,9.716 L17.593,9.716 C17.701,9.716 17.788,9.802 17.788,9.908 L17.788,10.599 C17.788,10.705 17.701,10.791 17.593,10.791 L14.790,10.791 C14.738,10.791 14.691,10.770 14.656,10.737 C14.655,10.736 14.654,10.735 14.653,10.734 C14.652,10.734 14.651,10.732 14.650,10.731 C14.616,10.698 14.596,10.651 14.596,10.599 L14.596,6.310 C14.596,6.258 14.616,6.211 14.650,6.177 C14.651,6.176 14.652,6.175 14.653,6.174 C14.654,6.173 14.654,6.172 14.655,6.172 C14.690,6.138 14.738,6.118 14.790,6.118 L17.593,6.118 C17.701,6.118 17.788,6.203 17.788,6.310 L17.788,7.000 Z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="p-footer__right">
+          <div class="p-footer__right-top">
+            <p class="p-footer__title">ご相談とお見積りは<span>無料</span>です</p>
+            <div class="p-footer__text-wrapper">
+              <p class="p-footer__text">ご相談者様のご要望を丁寧にお伺いし、適切なご提案をさせていただきます。<br class="u-desktop">
+                一同、心よりお問い合わせお待ちしております。</p>
+            </div>
+          </div>
+          <div class="p-footer__row">
+            <div class="p-footer__vertical">
+              <div class="p-footer__tel-wrapper">
+                <div class="p-footer__tel-logo">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="26px" height="26px">
+                    <path fill-rule="evenodd"
+                      d="M23.946,17.117 C22.342,17.117 20.771,16.868 19.282,16.376 C18.555,16.125 17.730,16.318 17.252,16.806 L14.300,19.035 C10.913,17.227 8.745,15.060 6.962,11.698 L9.132,8.816 C9.677,8.270 9.873,7.470 9.639,6.722 C9.144,5.224 8.892,3.651 8.892,2.049 C8.892,0.918 7.971,-0.003 6.839,-0.003 L2.049,-0.003 C0.917,-0.003 -0.004,0.918 -0.004,2.049 C-0.004,15.255 10.740,25.999 23.946,25.999 C25.078,25.999 25.999,25.078 25.999,23.947 L25.999,19.171 C25.999,18.039 25.078,17.117 23.946,17.117 Z" />
+                  </svg>
+                </div>
+                <div class="p-footer__tel-num">
+                  <a href="tel:0268-42-2975" class="p-footer__tel">0268-42-2975</a>
+                </div>
+              </div>
+              <p class="p-footer__tel-text">24時間365日対応</p>
+            </div>
+
+            <div class="p-footer__btn-wrapper">
+              <a href="#form" class="p-footer__btn">お問い合わせ</a>
+              <a href="https://lin.ee/jJ8f82a" class="p-footer__btn p-footer__btn-line" target="_blank" rel="noopener noreferrer">LINEで相談</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-footer__small">
+        <small>© 長光寺 All rights Reserved.</small>
+      </div>
+    </div>
+  </footer>
+  <?php include_once($_SERVER['DOCUMENT_ROOT'] . '../includes/footer.php'); ?>
 </body>
 
 </html>
